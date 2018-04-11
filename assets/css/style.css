@@ -51,14 +51,28 @@ z-index: 999;
     height: 256;
     cursor: pointer;    
 }
-#woafbimg
+.imglink
 {
-    margin: 0;
-    position: absolute;
+	transition: 0.3s ease;
+}
+.imglink:hover
+{	
+	transform: scale(1.25,1.25);
+}
+#woafblink
+{
+	display: inline-block;
+	position: absolute;
+	margin: 0;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -95%);
+}
+#woafbimg
+{
+    width: 300;
+    height: 300;  
     border: 1px solid rgb(187, 187, 187);
     border-radius: 2px;
 }
