@@ -1,3 +1,4 @@
+
   @font-face {
 	font-family:text; 
 	src:url(../../fonts/kenyan_coffee_rg_it.ttf);
@@ -17,7 +18,7 @@
 } 
   @keyframes fadebg {
 		0%   { opacity: 0;}
-		100% {opacity: 0.75;}
+		100% {opacity: 0.85;}
 }  
   html {
 	background:black;
@@ -45,6 +46,26 @@
 	width: 100%;
 	text-align: center;
   }
+  #button {
+	animation-name: fadedelay;
+	animation-duration: 4s;
+	animation-timing-function:ease-out;
+	position:absolute;
+	margin:0 auto;
+  }
+  #button a {
+	position:absolute;
+	left:0;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+	height:84px;
+	z-index:2;
+  }
+  #button a.top:hover {
+	opacity:0;
+  }
   .fadebg {
     animation-timing-function:ease-in;
     animation-name: fadebg;
@@ -58,12 +79,7 @@
     right: 0;
     z-index: -1;
     background: black;
-	opacity: 0.75;
-	-webkit-filter: blur(2px);
-	-moz-filter: blur(2px);
-	-o-filter: blur(2px);
-	-ms-filter: blur(2px);
-	filter: blur(2px);
+	opacity: 0.85;
 }
 .video{
 	height: auto;
@@ -100,14 +116,14 @@
   }
   a[href^="/"] {
 	text-decoration: none;
-	color: #d8d8d8;
+	color: #86af84;
 	padding: 0% 4%;
 	transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
 	font-size:100%;
   }
   
   a[href^="/"]:hover {
-	background-color:#ffffff;
-	color:black;
+	background-color:rgb(181, 224, 181);
+	color:rgb(92, 75, 92);
   }
   
