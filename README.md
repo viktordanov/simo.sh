@@ -1,2 +1,2 @@
-# simo3003.ga
+# simooo.ga
 GitHub repo for my website.
