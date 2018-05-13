@@ -1,4 +1,3 @@
-	@import url(font-awesome.min.css);
   @font-face {
 	font-family:text; 
 	src:url(../../fonts/kenyan_coffee_rg_it.ttf);
@@ -20,6 +19,20 @@
 		0%   { opacity: 0;}
 		100% {opacity: 0.9;}
 }  
+ a:visited, a:link, a:active
+{
+	text-decoration: none!important;
+	color: inherit;
+	-webkit-box-shadow: none!important;
+	box-shadow: none!important;
+}
+a:hover
+{
+	text-decoration: none!important;
+	color: #8e62a1;
+	-webkit-box-shadow: none!important;
+	box-shadow: none!important;
+}
   html {
 	background:black;
 	height:100%;
@@ -28,6 +41,7 @@
   body {
 	height:100%; 
 	width:100%; 
+	min-width: 50%;
 	margin: 0 auto;
   }
   nav {
@@ -104,7 +118,7 @@
   }
   .scrolldown {
 	display: inline-block;
-	background-color:#d8d8d8;
+	background-color: #f5ffff;
 	top:100%;
 	width: 100%;
 	position: relative;
@@ -112,11 +126,12 @@
 	}
 	.links {
 	display: inline-block;
-	background-color:#d8d8d8;
+	background-color:#d0ebcf;
 	top:100%;
 	width: 100%;
 	position: relative;
 	margin: 0 auto;
+	padding: 5% 0%;
 	}
 	.projects {
 	display: inline-block;
@@ -135,9 +150,11 @@
 	}
 	.container{
 		position: absolute;
+		font-size: 2rem;
 		top:100%;
 		width: 100%;
 		margin: 0 auto;
+	 color: #9f86aa;
 	}
   h2 {
 	font-family:text; 
@@ -156,6 +173,6 @@
   
   a[href^="/"]:hover {
 	background-color: #d0ebcf;
-	color:rgb(153, 146, 153);
+	color:#9f86aa;
   }
   
