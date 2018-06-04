@@ -13,6 +13,10 @@ body {
     margin: 0 auto;
 }
 
+a{
+    cursor:pointer;
+}
+
 #header {
     background-color: white;
     position: fixed;
@@ -96,6 +100,7 @@ img{
     top: 100%;
     width: 100%;
     position: relative;
+    text-align: center;
     padding: 5% 0%;
     scroll-behavior: smooth;
 }
