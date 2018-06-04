@@ -12,28 +12,32 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/main.js"></script>
 </head>
 
 <body>
+    <a id="main"></a>
     <div id="header">
         <div id="petsText">Funny Pets!</div>
         <div class="topnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="pages/gallery.html">Gallery</a>
-            <a href="../index.html">About me</a>
-            <a href="pages/contacts.html">Contact</a>
+            <a id="goToHome">Home</a>
+            <a id="goToGallery">Gallery</a>
+            <a id="goToAbout">About me</a>
+            <a id="goToContact">Contact</a>
         </div>
     </div>
     <div style="font-size:4rem;" class="backarrow">
-        <a>
+        <a id="backarrow">
             <i class="fas fa-chevron-circle-up fa-fw"></i>
         </a>
+
     </div>
     <div class="container">
         <div class="scrolldown">
-            <a name="henlo"></a>
+            <a id="henlo"></a>
             <h1 style="text-align:center">Home</h1>
             <p style="text-align:center">This is a website, made for the lovely pets of their caring owners!
                 <br>Here you can find funny pictures of all sorts of pets!
@@ -42,7 +46,7 @@
             <img src="images/img1.png" class="centerImg">
         </div>
         <div class="gallery">
-            <a name="gallery"></a>
+            <a id="gallery"></a>
             <h1 style="text-align:center">Gallery</h1>
             <img src="images/1.jpg" alt="img1">
             <br>
@@ -71,7 +75,7 @@
             <img src="images/13.jpg" alt="img13">
         </div>
         <div class="contact">
-            <a name="contact"></a>
+            <a id="contact"></a>
             <h1 style="text-align:center">Contact</h1>
             <p style="text-align:center">You can e-mail me
                 <br>at
