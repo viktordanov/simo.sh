@@ -1,206 +1,254 @@
   @font-face {
-	font-family:text; 
-	src:url(../../fonts/kenyan_coffee_rg_it.ttf);
+      font-family: text;
+      src: url(../../fonts/kenyan_coffee_rg_it.ttf);
   }
-  @keyframes fade{
-	from {opacity:0.0;}
-	to {opacity:1.0;}
+
+  @keyframes fade {
+      from {
+          opacity: 0.0;
+      }
+      to {
+          opacity: 1.0;
+      }
   }
-  @keyframes fadedelay{
-	0% {opacity:0.0;}
-	50% {opacity:0.0;}
-	100% {opacity:1.0;}
+
+  @keyframes fadedelay {
+      0% {
+          opacity: 0.0;
+      }
+      50% {
+          opacity: 0.0;
+      }
+      100% {
+          opacity: 1.0;
+      }
   }
+
   @keyframes fadetext {
-		0%   { opacity: 0;}
-		100% {opacity: 1;}
-} 
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+
   @keyframes fadebg {
-		0%   { opacity: 0;}
-		100% {opacity: 0.9;}
-}  
- a:visited, a:link, a:active
-{
-	text-decoration: none!important;
-	color: inherit;
-	-webkit-box-shadow: none!important;
-	box-shadow: none!important;
-}
-a:hover
-{
-	text-decoration: none!important;
-	color: #8e62a1;
-	-webkit-box-shadow: none!important;
-	box-shadow: none!important;
-}
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 0.9;
+      }
+  }
+
+  a:visited,
+  a:link,
+  a:active {
+      text-decoration: none !important;
+      color: inherit;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+  }
+
+  a:hover {
+      text-decoration: none !important;
+      color: #8e62a1;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+  }
+
   html {
-	background:black;
-	height:100%;
-	width:100%;
+      background: black;
+      height: 100%;
+      width: 100%;
   }
+
   body {
-	height:100%; 
-	width:100%; 
-	min-width: 50%;
-	margin: 0 auto;
-	}
+      height: 100%;
+      width: 100%;
+      min-width: 50%;
+      margin: 0 auto;
+  }
+
   nav {
-	color: #d0ebcf;
-	font-family: text;
-	margin: 0 auto;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
-	animation-name: fadedelay;
-	animation-duration: 2s;
-	animation-timing-function: ease-out;
-	font-size: 300%;
-	white-space:nowrap;
-	z-index:1;
-	width: 100%;
-	text-align: center;
-	text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;	
+      color: #d0ebcf;
+      font-family: text;
+      margin: 0 auto;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      animation-name: fadedelay;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+      font-size: 300%;
+      white-space: nowrap;
+      z-index: 1;
+      width: 100%;
+      text-align: center;
+      text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;
   }
+
   #button {
-	animation-name: fadedelay;
-	animation-duration: 4s;
-	animation-timing-function:ease-out;
-	position:absolute;
-	margin:0 auto;
+      animation-name: fadedelay;
+      animation-duration: 4s;
+      animation-timing-function: ease-out;
+      position: absolute;
+      margin: 0 auto;
   }
+
   #button a {
-	position:absolute;
-	left:0;
-	-webkit-transition: opacity 0.2s ease-in-out;
-	-moz-transition: opacity 0.2s ease-in-out;
-	-o-transition: opacity 0.2s ease-in-out;
-	transition: opacity 0.2s ease-in-out;
-	height:84px;
-	z-index:2;
+      position: absolute;
+      left: 0;
+      -webkit-transition: opacity 0.2s ease-in-out;
+      -moz-transition: opacity 0.2s ease-in-out;
+      -o-transition: opacity 0.2s ease-in-out;
+      transition: opacity 0.2s ease-in-out;
+      height: 84px;
+      z-index: 2;
   }
+
   #button a.top:hover {
-	opacity:0;
+      opacity: 0;
   }
+
   .fadebg {
-    animation-timing-function:ease-in;
-    animation-name: fadebg;
-    animation-duration: 2s;
-}
+      animation-timing-function: ease-in;
+      animation-name: fadebg;
+      animation-duration: 2s;
+  }
 
-#ppfplogo, #ske4ovelogo, #etglogo, #dplogo, #osuspeedlogo{  
-		width: 256;
-    height: 256;
-    cursor: pointer;    
-}
+  #ppfplogo,
+  #ske4ovelogo,
+  #etglogo,
+  #dplogo,
+  #osuspeedlogo {
+      width: 256;
+      height: 256;
+      cursor: pointer;
+  }
 
-.imglink
-{
-	transition: 0.3s ease;
-}
-.imglink:hover
-{	
-	transform: scale(1.25,1.25);
-}
+  .imglink {
+      transition: 0.3s ease;
+  }
+
+  .imglink:hover {
+      transform: scale(1.25, 1.25);
+  }
+
   .overlay {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    background: black;
-		opacity: 0.9;
-		position: absolute;
-		width: 100%;
-		height: 100%; 
-		overflow: hidden;
-}
-.video{
-	height: auto;
-	width: auto;
-	min-width: 100%;
-	min-height: 100%;
-  position: absolute;
-	object-fit: cover;
-	object-position: -40% -50%;
-  z-index: -1;
-  background: black;
-	opacity: 0.9;
-}
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      background: black;
+      opacity: 0.9;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+  }
+
+  .video {
+      height: auto;
+      width: auto;
+      min-width: 100%;
+      min-height: 100%;
+      position: absolute;
+      object-fit: cover;
+      object-position: -40% -50%;
+      z-index: -1;
+      background: black;
+      opacity: 0.9;
+  }
+
   h1 {
-	font-family:text; 
-	color:#9f86aa;
-	text-align:center;
-   font-size: 150%;
-	}
+      font-family: text;
+      color: #9f86aa;
+      text-align: center;
+      font-size: 150%;
+  }
+
   .scrolldown {
-	display: inline-block;
-	background-color: #f5ffff;
-	top:100%;
-	width: 100%;
-	position: relative;
-	padding: 5% 0%;
-	scroll-behavior: smooth;
-	}
-	.backarrow{
-    position: fixed;
-		right: 20px;
-    bottom: 20px;
-		z-index:1;
-	}
-	.links {
-	display: inline-block;
-	background-color:#d0ebcf;
-	top:100%;
-	width: 100%;
-	position: relative;
-	padding: 3% 0%;
-	scroll-behavior: smooth;
-	}
-	.projects {
-	display: inline-block;
-	background-color:#d8d8d8;
-	top:100%;
-	width: 100%;
-	position: relative;
-	padding: 5% 0%;
-	scroll-behavior: smooth;
-	}
-	.contact {
-	display: inline-block;
-	background-color:#f5ffff;;
-	top:100%;
-	width: 100%;
-	position: relative;
-	padding: 5% 0%;
-	scroll-behavior: smooth;
-	}
-	.container{
-	position: absolute;
-	font-size: 2rem;
-	top:100%;
-	width: 100%;
-	margin: 0 auto;
-	color: #9f86aa;
-	scroll-behavior: smooth;
-	overflow:hidden
-	}
-  h2,h3,h4 {
-	font-family:text; 
-	text-align:center;
+      display: inline-block;
+      background-color: #f5ffff;
+      top: 100%;
+      width: 100%;
+      position: relative;
+      padding: 5% 0%;
+      scroll-behavior: smooth;
   }
+
+  .backarrow {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1;
+  }
+
+  .links {
+      display: inline-block;
+      background-color: #d0ebcf;
+      top: 100%;
+      width: 100%;
+      position: relative;
+      padding: 3% 0%;
+      scroll-behavior: smooth;
+  }
+
+  .projects {
+      display: inline-block;
+      background-color: #d8d8d8;
+      top: 100%;
+      width: 100%;
+      position: relative;
+      padding: 5% 0%;
+      scroll-behavior: smooth;
+  }
+
+  .contact {
+      display: inline-block;
+      background-color: #f5ffff;
+      ;
+      top: 100%;
+      width: 100%;
+      position: relative;
+      padding: 5% 0%;
+      scroll-behavior: smooth;
+  }
+
+  .container {
+      position: absolute;
+      font-size: 2rem;
+      top: 100%;
+      width: 100%;
+      margin: 0 auto;
+      color: #9f86aa;
+      scroll-behavior: smooth;
+      overflow: hidden
+  }
+
+  h2,
+  h3,
+  h4 {
+      font-family: text;
+      text-align: center;
+  }
+
   p {
-	font-family:text; 
+      font-family: text;
   }
+
   a[href^="/"] {
-	text-decoration: none;
-	color: #d0ebcf;
-	padding: 0% 5%;
-	transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-	text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;
-	font-size:100%;
+      text-decoration: none;
+      color: #d0ebcf;
+      padding: 0% 5%;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+      text-shadow: 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black, 0px 0px 1px black;
+      font-size: 100%;
   }
-  
+
   a[href^="/"]:hover {
-	color:#9f86aa;
+      color: #9f86aa;
   }
-  

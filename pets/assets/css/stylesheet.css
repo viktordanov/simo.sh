@@ -65,6 +65,7 @@ body {
     width: 100%;
     color: #e0b2c7;
     scroll-behavior: smooth;
+    overflow: hidden
 }
 
 .scrolldown,
@@ -105,6 +106,7 @@ a:hover {
     bottom: 20px;
     z-index: 1;
 }
-.backarrow a:hover{
+
+.backarrow a:hover {
     color: #e0b2c7;
 }
