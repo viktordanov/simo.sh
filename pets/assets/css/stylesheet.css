@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+@import url("../../fonts/PuppyBellies.ttf");
+body {
+    background-image: url("../../images/background.jpg");
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+
+#header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 5rem;
+    background-color: white;
+    box-shadow: 2px 2px 8px #888888;
+    z-index: 999;
+}
+
+#petsText {
+    margin-top: 1%;
+    font-weight: 50;
+}
+
+.topnav {
+    position: relative;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-weight: 50;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.topnav a {
+    color: #e0b2c7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 50;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.topnav a:hover {
+    background-color: #fae0eb;
+    color: #ffffff;
+    font-weight: 50;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.topnav a.active {
+    background-color: #fae0eb;
+    color: white;
+    font-weight: 50;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.container {
+    position: absolute;
+    font-size: 2rem;
+    top: 100%;
+    width: 100%;
+    color: #e0b2c7;
+    scroll-behavior: smooth;
+}
+
+.scrolldown,
+.contact {
+    display: inline-block;
+    background-color: #fceff5;
+    top: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5% 0%;
+    scroll-behavior: smooth;
+}
+
+h1,
+p {
+    font-family: "PuppyBellies";
+}
+
+a:visited,
+a:link,
+a:active {
+    text-decoration: none !important;
+    color: inherit;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: #8e62a1;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.backarrow {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1;
+}
+.backarrow a:hover{
+    color: #e0b2c7;
+}

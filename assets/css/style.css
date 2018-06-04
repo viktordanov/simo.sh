@@ -143,8 +143,8 @@ a:hover
 	}
 	.backarrow{
     position: fixed;
-		bottom: 40px;
-		left:95%;
+		right: 20px;
+    bottom: 20px;
 		z-index:1;
 	}
 	.links {
