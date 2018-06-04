@@ -3,8 +3,10 @@
 body {
     background-image: url("../../images/background.jpg");
     background-size: cover;
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
+    min-width: 50%;
+    margin: 0 auto;
 }
 
 #header {
@@ -77,6 +79,21 @@ body {
     position: relative;
     padding: 5% 0%;
     scroll-behavior: smooth;
+}
+
+.gallery {
+    display: inline-block;
+    background-color: #f5e3eb;
+    top: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5% 0%;
+    scroll-behavior: smooth;
+}
+
+.gallery p,
+    {
+    color: #fceff5;
 }
 
 h1,
