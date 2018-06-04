@@ -199,7 +199,7 @@
 
   .projects {
       display: inline-block;
-      background-color: #d8d8d8;
+      background-color: #d6bed6;
       top: 100%;
       width: 100%;
       position: relative;
@@ -210,7 +210,6 @@
   .contact {
       display: inline-block;
       background-color: #f5ffff;
-      ;
       top: 100%;
       width: 100%;
       position: relative;
