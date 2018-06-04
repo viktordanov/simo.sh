@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 @import url("https://simooo.ga/pets/fonts/PuppyBellies.ttf");
+@font-face{
+    font-family: Puppy;
+    src: url("../../fonts/PuppyBellies.ttf");
+}
 body {
     background-image: url("../../images/background.jpg");
     background-size: cover;
@@ -102,7 +106,7 @@ body {
 
 h1,
 p {
-    font-family: "PuppyBellies";
+    font-family: Puppy, serif;
 }
 
 a:visited,
