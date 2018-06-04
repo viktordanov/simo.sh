@@ -20,7 +20,7 @@ body {
     left: 0;
     width: 100%;
     text-align: center;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: Puppy, serif;
     font-size: 5rem;
     box-shadow: 2px 2px 8px #888888;
     z-index: 999;
@@ -51,21 +51,21 @@ body {
     text-decoration: none;
     font-size: 17px;
     font-weight: 50;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: Puppy, serif;
 }
 
 .topnav a:hover {
     background-color: #fae0eb;
     color: #ffffff;
     font-weight: 50;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: Puppy, serif;
 }
 
 .topnav a.active {
     background-color: #fae0eb;
     color: white;
     font-weight: 50;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: Puppy, serif;
 }
 
 .container {
