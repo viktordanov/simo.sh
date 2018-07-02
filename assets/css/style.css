@@ -1,0 +1,30 @@
+body {
+    display: flex !important;
+    min-height: 100vh !important;
+    flex-direction: column !important;
+}
+
+main {
+    flex: 1 0 auto !important;
+}
+
+.parallax-container {
+    height: 200 !important;
+}
+
+.backarrow {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1;
+    color: #f0f0f0;
+}
+
+a:visited,
+a:link,
+a:active {
+    text-decoration: none !important;
+    color: inherit;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
