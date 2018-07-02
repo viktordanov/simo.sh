@@ -1,8 +1,8 @@
-$(document).ready(function () {
+// $(document).ready(function () {
 
-$('#goToLinks').click(function({
-$('html, body').animate({
-scrollTop: $("#links").offset().top
-}, 500); 
-}));
-});
+// $('#goToLinks').click(function({
+// $('html, body').animate({
+// scrollTop: $("#links").offset().top
+// }, 500); 
+// }));
+// });
