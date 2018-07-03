@@ -1,6 +1,6 @@
  $(document).ready(function () {
     $('#aboutDiv').hide();
-    $('#projectsDiv').hide();
+    // $('#projectsDiv').hide();
     $('#linksDiv').hide();
 
     $('.sidenav').sidenav();
