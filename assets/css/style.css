@@ -28,9 +28,42 @@ main {
     height: 100%;
 }
 
-a:visited,
-a:link,
-a:active {
+.imglink {
+    transition: 0.3s ease;
+}
+
+.imglink:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.links {
+    display: inline-block;
+    background-color: #d0ebcf;
+    top: 100%;
+    width: 100%;
+    position: relative;
+    padding: 3% 0%;
+    scroll-behavior: smooth;
+}
+
+a {
+    cursor: pointer;
+}
+
+#ppfplogo,
+#ske4ovelogo,
+#etglogo,
+#dplogo,
+#osuspeedlogo,
+#funnypetslogo{
+    width: 256;
+    height: 256;
+    cursor: pointer;
+}
+
+a:visited:not(.link),
+a:link:not(.link),
+a:active:not(.link) {
     text-decoration: none !important;
     color: inherit;
     -webkit-box-shadow: none !important;

@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--Google Analytics-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119885780-2"></script>
-    <script src="assets/js/"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -24,9 +23,11 @@
     <!--Materialize & jQuery-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!--JS-->
+    <script src="assets/js/main.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css?version=1.2">
     <!--Icomoon & fontawesome-->
@@ -106,8 +107,8 @@
 
         <div class="parallax-container">
             <div class="valign-wrapper h100">
-                <h1 id="title" class="white-text overlay center-align">
-                    About me
+                <h1 class="white-text overlay center-align">
+                    <a href="#!" id="aboutA">About me</a>
                 </h1>
                 <div class="parallax">
                     <img src="images/waterfall.png">
@@ -115,50 +116,77 @@
             </div>
         </div>
 
+        <div class="section white" id="aboutDiv">
+            <div class="row center container">
+                <h2 class="header">Hey!</h2>
+                <h4 class="grey-text text-darken-3 lighten-3">
+                    My name Simo Aleksandrov and I'm a 16 year old kiddo from Ruse, Bulgaria.
+                    <br> I've been interested in programming since when I was in the 4th grade, but only recently got more into
+                    it!
+                    <br> I study at the High School of Mathematics "Baba Tonka" and am in the 10th grade.
+                    <br> I've got a bunch of hobbies and interests, some of which include programming, playing videogames, watching
+                    anime, listening to music and more!
+                    <br> I love music genres such as post-rock, psytrance and more!
+                    <br> You can check out my last.fm in the
+                    <a class="link" href="#linksA">links</a> tab.
+                    <br> Some of my favorite anime shows are
+                    <a class="link" href="https://kitsu.io/anime/made-in-abyss">Made in Abyss</a>,
+                    <a class="link" href="https://kitsu.io/anime/mahou-shoujo-madoka-magica">Madoka Magica</a>,
+                    <a class="link" href="https://kitsu.io/anime/steins-gate">Steins;Gate</a> and
+                    <a class="link" href="https://kitsu.io/anime/little-witch-academia">Little Witch Academia</a>!
+                    <br> You can check out my kitsu.io in the
+                    <a class="link" href="#linksA">links</a> tab.
+                    <br> I usually play either osu! or CPMA in my free time.
+                    <br> I mainly code in C# and JavaScript, but would also like to work with C++.
+                    <br> I'm a big fan of frameworks. Some that I've used and/or like are
+                    <a class="link" href="https://electronjs.org/">Electron</a>,
+                    <a class="link" href="https://materializecss.com/">Materialize</a>,
+                    <a class="link" href="https://vuejs.org/">Vue.js</a> and
+                    <a class="link" href="https://facebook.github.io/react-native/">React Native</a>.
+                    <br>
+                </h4>
+            </div>
+        </div>
+
         <div class="parallax-container">
             <div class="valign-wrapper h100">
-                <h1 id="title" class="white-text overlay center-align">
-                    Projects
+                <h1 class="white-text overlay center-align">
+                    <a href="#!" id="projectsA">Projects</a>
                 </h1>
+                
                 <div class="parallax">
                     <img src="images/slope.png">
                 </div>
             </div>
         </div>
 
+        <div class="section white" id="projectsDiv">
+            <div class="row center container">
+                <h2 class="header">Projects</h2>
+
+            </div>
+        </div>
+
         <div class="parallax-container">
             <div class="valign-wrapper h100">
-                <h1 id="title" class="white-text overlay center-align">
-                    Links
+                <h1 class="white-text overlay center-align">
+                    <a href="#!" id="linksA">Links</a>
                 </h1>
                 <div class="parallax">
                     <img src="images/leaves.jpg">
                 </div>
             </div>
         </div>
-    </main>
 
-    <!-- <footer class="page-footer green darken-3">
-        <div class="container center">
-            <h5 class="white-text">Contact</h5>
-            <p class="grey-text text-lighten-4">You can e-mail me at
-                <a href="mailto:fr3fou@icloud.com">fr3fou@icloud.com </a>or message me
-                <a href="https://discord.gg">@fr3fou#7177</a>
-            </p>
-        </div>
-        <div class="footer-copyright">
-            <div class="container center">
-                uwu
+        <div class="section white" id="linksDiv">
+            <div class="row container">
+                <h2 class="header">Links</h2>
+                <p class="grey-text text-darken-3 lighten-3"></p>
             </div>
         </div>
-    </footer> -->
 
-    <script>
-        $(document).ready(function () {
-            $('.sidenav').sidenav();
-            $('.parallax').parallax();
-        });
-    </script>
+    </main>
+
 </body>
 
 </html>
