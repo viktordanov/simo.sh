@@ -8,17 +8,20 @@ main {
     flex: 1 0 auto !important;
 }
 
-
 .parallax-container {
-    height: 200 !important;
+    height: 650px;
 }
 
-.backarrow {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 1;
-    color: #f0f0f0;
+#flowers {
+    height: 1000px;
+}
+
+.overlay {
+    width: 100%;
+  }
+
+.h100 {
+    height: 100%;
 }
 
 a:visited,
