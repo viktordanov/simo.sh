@@ -30,10 +30,13 @@ main {
 
 .imglink {
     transition: 0.3s ease;
+    width: 256 !important;
+    height: 256 !important;
+    cursor: pointer !important;
 }
 
 .imglink:hover {
-    transform: scale(1.25, 1.25);
+    transform: scale(1.1, 1.1);
 }
 
 .links {
@@ -50,16 +53,6 @@ a {
     cursor: pointer;
 }
 
-#ppfplogo,
-#ske4ovelogo,
-#etglogo,
-#dplogo,
-#osuspeedlogo,
-#funnypetslogo{
-    width: 256;
-    height: 256;
-    cursor: pointer;
-}
 
 a:visited:not(.link),
 a:link:not(.link),
