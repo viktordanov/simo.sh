@@ -17,12 +17,14 @@ main {
     text-shadow: 2px 2px 2px #777777;
 }
 
-h1{
-    text-shadow: 2px 2px 1px #777777;
-}
+
 
 #flowers {
     height: 1000px;
+}
+
+#top-navbar {
+background: linear-gradient(45deg, rgba(151,233,173,1) 30%, rgba(127,173,189,1) 75%) !important;
 }
 
 .overlay {
@@ -65,7 +67,9 @@ a {
     cursor: pointer;
 }
 
-
+h1{
+    text-shadow: 2px 2px 1px #777777;
+}
 
 a:visited:not(.link),
 a:link:not(.link),
