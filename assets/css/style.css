@@ -44,8 +44,8 @@ p {
 }
 
 .wlts-challanger-wrapper {
-    -webkit-animation: slide-in-elliptic-top-fwd 1.5s cubic-bezier(0.86, 0, 0.07, 1) both;
-    animation: slide-in-elliptic-top-fwd 1.5s cubic-bezier(0.86, 0, 0.07, 1) both;
+    -webkit-animation: slide-in-elliptic-top-fwd 1.5s cubic-bezier(.86,0,.19,1.2)  both;
+    animation: slide-in-elliptic-top-fwd 1.5s cubic-bezier(.86,0,.19,1.2)  both;
 }
 
 .wlts-challanger-logo {
@@ -58,7 +58,7 @@ p {
 }
 
 .wlts-challanger-logo:hover {
-    transform: scale(1.25);
+    transform: scale(1.1);
 }
 
 .about-me {
@@ -89,8 +89,8 @@ p {
     font-family: 'Avenir';
     font-size: 21px;
     color: #e4ded6;
-    -webkit-animation: tracking-in-contract 1.5s cubic-bezier(0.86, 0, 0.07, 1) both;
-    animation: tracking-in-contract 1.5s cubic-bezier(0.86, 0, 0.07, 1) both;
+    -webkit-animation: tracking-in-contract 1.5s cubic-bezier(.86,0,.19,1.2)  both;
+    animation: tracking-in-contract 1.5s cubic-bezier(.86,0,.19,1.2)  both;
 }
 
 @keyframes fadein {
