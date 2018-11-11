@@ -44,8 +44,8 @@ p {
 }
 
 .wlts-challanger-wrapper {
-    -webkit-animation: slide-in-elliptic-top-fwd 1.5s cubic-bezier(.86,0,.19,1.2)  both;
-    animation: slide-in-elliptic-top-fwd 1.5s cubic-bezier(.86,0,.19,1.2)  both;
+    -webkit-animation: slide-in-elliptic-top-fwd 1.5s cubic-bezier(.86, 0, .19, 1.2) both;
+    animation: slide-in-elliptic-top-fwd 1.5s cubic-bezier(.86, 0, .19, 1.2) both;
 }
 
 .wlts-challanger-logo {
@@ -76,21 +76,54 @@ p {
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: #363636;
+    background-color: #262626;
 }
 
+.languages {
+    width: 100%;
+    overflow: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #303030;
+}
+
+.hobbies {
+    width: 100%;
+    overflow: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #353535;
+}
+
+.contact {
+    width: 100%;
+    overflow: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #404040;
+}
 .text {
     padding: 10% 25% 10% 25%;
     font-size: 0.8rem;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .text {
+        padding: 10% 5% 10% 5%;
+        font-size: 0.8rem;
+    }
+}
+
 #title-name {
     margin: 10% 0 0 0;
     font-family: 'Avenir';
-    font-size: 21px;
+    font-size: 20px;
     color: #e4ded6;
-    -webkit-animation: tracking-in-contract 1.5s cubic-bezier(.86,0,.19,1.2)  both;
-    animation: tracking-in-contract 1.5s cubic-bezier(.86,0,.19,1.2)  both;
+    -webkit-animation: tracking-in-contract 1.5s cubic-bezier(.86, 0, .19, 1.2) both;
+    animation: tracking-in-contract 1.5s cubic-bezier(.86, 0, .19, 1.2) both;
 }
 
 @keyframes fadein {
@@ -138,27 +171,28 @@ p {
 
 @-webkit-keyframes tracking-in-contract {
     0% {
-      letter-spacing: 1em;
-      opacity: 0;
+        letter-spacing: 1em;
+        opacity: 0;
     }
     40% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
     100% {
-      letter-spacing: normal;
-      opacity: 1;
+        letter-spacing: 0;
+        opacity: 1;
     }
-  }
-  @keyframes tracking-in-contract {
+}
+
+@keyframes tracking-in-contract {
     0% {
-      letter-spacing: 1em;
-      opacity: 0;
+        letter-spacing: 1em;
+        opacity: 0;
     }
     40% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
     100% {
-      letter-spacing: normal;
-      opacity: 1;
+        letter-spacing: 0;
+        opacity: 1;
     }
-  }
+}
