@@ -97,7 +97,7 @@ p {
     background-color: #353535;
 }
 
-.contact {
+.achievements {
     width: 100%;
     overflow: auto;
     align-items: center;
@@ -105,6 +105,16 @@ p {
     justify-content: center;
     background-color: #404040;
 }
+
+.contact {
+    width: 100%;
+    overflow: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #454545;
+}
+
 .text {
     padding: 10% 25% 10% 25%;
     font-size: 0.8rem;
