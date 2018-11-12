@@ -112,8 +112,7 @@ p {
 
 @media (min-width: 320px) and (max-width: 480px) {
     .text {
-        padding: 10% 5% 10% 5%;
-        font-size: 0.8rem;
+        padding: 10% 2.5% 10% 2.5%;
     }
 }
 
