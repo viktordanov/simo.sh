@@ -1,207 +1,215 @@
 @font-face {
-    font-family: 'Avenir';
-    src: url('../../fonts/Avenir-Medium.ttf');
+  font-family: "Avenir";
+  src: url("../../fonts/Avenir-Medium.ttf");
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body,
 html {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 h2 {
-    margin: 0;
-    font-family: 'Avenir';
-    font-size: 36px;
-    color: #d3cdc5;
+  margin: 0;
+  font-family: "Avenir";
+  font-size: 36px;
+  color: #d3cdc5;
 }
 
 p {
-    font-family: 'Avenir';
-    font-size: 24px;
-    text-align: center;
-    color: #d3cdc5;
+  font-family: "Avenir";
+  font-size: 24px;
+  text-align: center;
+  color: #d3cdc5;
 }
 
 .container {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  background-color: #202020;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: 0;
-    background-color: #181818;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #181818;
 }
 
 .wlts-challanger-wrapper {
-    -webkit-animation: slide-in-elliptic-top-fwd 1.5s cubic-bezier(.86, 0, .19, 1.2) both;
-    animation: slide-in-elliptic-top-fwd 1.5s cubic-bezier(.86, 0, .19, 1.2) both;
+  -webkit-animation: slide-in-elliptic-top-fwd 1.5s
+    cubic-bezier(0.86, 0, 0.19, 1.2) both;
+  animation: slide-in-elliptic-top-fwd 1.5s cubic-bezier(0.86, 0, 0.19, 1.2)
+    both;
 }
 
 .wlts-challanger-logo {
-    box-shadow: 5px 10px;
-    width: 50%;
-    height: 50%;
-    box-shadow: 0 0 2px 1px #d3cdc5;
-    border-radius: 10%;
-    transition: all .75s ease-in-out;
+  box-shadow: 5px 10px;
+  width: 50%;
+  height: 50%;
+  box-shadow: 0 0 2px 1px #d3cdc5;
+  border-radius: 10%;
+  transition: all 0.45s ease-in-out;
 }
 
 .wlts-challanger-logo:hover {
-    transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+.topic {
+  width: 75%;
+  margin-top: 5%;
+  overflow: auto;
+  border-radius: 7px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.12);
+  text-align: center;
 }
 
 .about-me {
-    width: 100%;
-    overflow: auto;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: #232323;
+  background-color: #242424;
 }
 
 .projects {
-    width: 100%;
-    overflow: auto;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: #262626;
+  background-color: #262626;
 }
 
 .languages {
-    width: 100%;
-    overflow: auto;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: #303030;
+  background-color: #303030;
 }
 
 .hobbies {
-    width: 100%;
-    overflow: auto;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: #353535;
+  background-color: #353535;
 }
 
 .achievements {
-    width: 100%;
-    overflow: auto;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: #404040;
+  background-color: #404040;
 }
 
 .contact {
-    width: 100%;
-    overflow: auto;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: #454545;
+  background-color: #454545;
+  margin-bottom: 5%;
 }
 
 .text {
-    padding: 10% 25% 10% 25%;
-    font-size: 0.8rem;
+  padding: 10% 25% 10% 25%;
+  font-size: 0.8rem;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-    .text {
-        padding: 10% 2.5% 10% 2.5%;
-    }
+@media (max-width: 768px) {
+  .text {
+    padding: 10% 2.5% 10% 2.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .topic {
+    margin-top: 0;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .contact {
+    margin-bottom: 0;
+  }
 }
 
 #title-name {
-    margin: 10% 0 0 0;
-    font-family: 'Avenir';
-    font-size: 20px;
-    color: #e4ded6;
-    -webkit-animation: tracking-in-contract 1.5s cubic-bezier(.86, 0, .19, 1.2) both;
-    animation: tracking-in-contract 1.5s cubic-bezier(.86, 0, .19, 1.2) both;
+  margin: 10% 0 0 0;
+  font-family: "Avenir";
+  font-size: 20px;
+  color: #e4ded6;
+  -webkit-animation: tracking-in-contract 1.5s cubic-bezier(0.86, 0, 0.19, 1.2)
+    both;
+  animation: tracking-in-contract 1.5s cubic-bezier(0.86, 0, 0.19, 1.2) both;
 }
 
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes slide-in-elliptic-top-fwd {
-    0% {
-        -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-        transform: translateY(-600px) rotateX(-30deg) scale(0);
-        -webkit-transform-origin: 50% 100%;
-        transform-origin: 50% 100%;
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateY(0) rotateX(0) scale(1);
-        transform: translateY(0) rotateX(0) scale(1);
-        -webkit-transform-origin: 50% 1400px;
-        transform-origin: 50% 1400px;
-        opacity: 1;
-    }
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
 }
 
 @keyframes slide-in-elliptic-top-fwd {
-    0% {
-        -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-        transform: translateY(-600px) rotateX(-30deg) scale(0);
-        -webkit-transform-origin: 50% 100%;
-        transform-origin: 50% 100%;
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateY(0) rotateX(0) scale(1);
-        transform: translateY(0) rotateX(0) scale(1);
-        -webkit-transform-origin: 50% 1400px;
-        transform-origin: 50% 1400px;
-        opacity: 1;
-    }
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes tracking-in-contract {
-    0% {
-        letter-spacing: 1em;
-        opacity: 0;
-    }
-    40% {
-        opacity: 0.6;
-    }
-    100% {
-        letter-spacing: 0;
-        opacity: 1;
-    }
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes tracking-in-contract {
-    0% {
-        letter-spacing: 1em;
-        opacity: 0;
-    }
-    40% {
-        opacity: 0.6;
-    }
-    100% {
-        letter-spacing: 0;
-        opacity: 1;
-    }
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: 0;
+    opacity: 1;
+  }
 }
