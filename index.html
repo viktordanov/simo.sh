@@ -55,25 +55,37 @@
       crossorigin="anonymous"
     />
     <!-- Title -->
-    <title>[ Simo Aleksandrov ]</title>
+    <title>~ Simo Aleksandrov ~</title>
   </head>
 
   <body>
     <div class="container">
       <div class="intro">
-        <div class="wlts-challanger-wrapper">
-          <a href="https://www.youtube.com/watch?v=tUVrh0bz3pg">
-            <img
-              class="wlts-challanger-logo"
-              src="./images/wlts.jpeg"
-              alt="wlts"
-            />
+        <svg
+          class="wave"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 126"
+          preserveAspectRatio="none"
+        >
+          <style type="text/css">
+            .st0 {
+              fill: #ffcef0;
+            }
+          </style>
+          <path
+            class="st0"
+            d="M685.6,38.8C418.7-11.1,170.2,9.9,0,30v96h1440V30C1252.7,52.2,1010,99.4,685.6,38.8z"
+          />
+        </svg>
+        <div class="image-wrapper">
+          <a href="https://github.com/fr3fou">
+            <img class="image-logo" src="images/avatar.png" alt="github-logo" />
           </a>
-          <h1 id="title-name">[ Simo Aleksandrov ]</h1>
+          <h1 id="title-name">~ Simo Aleksandrov ~</h1>
         </div>
       </div>
       <div class="flex">
-        <div class="topic about-me" data-aos="flip-right">
+        <div class="topic" data-aos="zoom-in">
           <div class="text">
             <h2>Hi there! 🚀</h2>
             <p>
@@ -84,8 +96,8 @@
             </p>
           </div>
         </div>
-        <div class="topic projects" data-aos="flip-left">
-          <div class="text">
+        <div class="topic" data-aos="zoom-in">
+          <div class="text" id="projects">
             <h2>Projects 📎</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
@@ -95,8 +107,8 @@
             </p>
           </div>
         </div>
-        <div class="topic languages" data-aos="flip-right">
-          <div class="text">
+        <div class="topic" data-aos="zoom-in">
+          <div class="text" id="languages">
             <h2>Programming Languages 📚</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
@@ -106,8 +118,8 @@
             </p>
           </div>
         </div>
-        <div class="topic hobbies" data-aos="flip-left">
-          <div class="text">
+        <div class="topic" data-aos="zoom-in">
+          <div class="text" id="hobbies">
             <h2>Hobbies 🎉</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
@@ -117,8 +129,8 @@
             </p>
           </div>
         </div>
-        <div class="topic achievements" data-aos="flip-right">
-          <div class="text">
+        <div class="topic" data-aos="zoom-in">
+          <div class="text" id="achievements">
             <h2>Achievements 🏆</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
@@ -128,8 +140,8 @@
             </p>
           </div>
         </div>
-        <div class="topic contact" data-aos="flip-left">
-          <div class="text">
+        <div class="topic" data-aos="zoom-in">
+          <div class="text" id="contact">
             <h2>Contact 📱</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
@@ -144,9 +156,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        mirror: true,
-        easing: "ease-in-out-quad",
-        duration: 700
+        easing: "ease-out-back",
+        duration: 350,
+        mirror: true
       });
     </script>
   </body>
