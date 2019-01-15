@@ -58,10 +58,10 @@ li:last-child {
   text-align: center;
   justify-content: center;
   margin: 0;
-  background-image: url(https://andreilungu.com/wp-content/uploads/2018/09/ExcelBufferNavPatternFeaturedImg-3556x1778.jpg);
+  background-image: url(../../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top right;
+  background-position: bottom left;
 }
 
 .tint {
@@ -159,7 +159,49 @@ li:last-child {
 }
 
 .achievement-image {
+  width: 50%;
+  margin: 1%;
+  transition: all 0.2s ease-in-out;
+}
+
+.achievement-image:hover {
   width: 100%;
+}
+
+.link {
+  display: contents;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievement {
+  flex-basis: 45%;
+}
+
+a:visited:not(.link),
+a:link:not(.link),
+a:active:not(.link) {
+  text-decoration: none !important;
+  color: inherit;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.contacts * {
+  transition: all 0.2s ease-in-out;
+  font-size: 5rem;
+  color: #232323;
+}
+
+.contacts *:hover {
+  transform: scale(0.9);
+  color: pink;
 }
 
 #title-name {
