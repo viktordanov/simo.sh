@@ -1,335 +1,446 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!--Meta-->
+  <head>
+    <!-- Meta -->
     <meta charset="utf-8" />
-    <meta id="keywords" content="fr3fou, simo3003, GitHub, Simo Aleksandrov, osu!,Steam, Delirium Products">
-    <meta id="robots" content="index,follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Google Analytics-->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119885780-2"></script>
+    <meta
+      id="keywords"
+      content="fr3fou, simo3003, GitHub, Simo Aleksandrov, osu!,Steam, Delirium Products"
+    />
+    <meta id="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-119885780-2"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-119885780-2');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-119885780-2");
     </script>
-    <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <!--Materialize & jQuery-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <!--JS-->
-    <script src="assets/js/main.js"></script>
-    <!--CSS-->
-    <link rel="stylesheet" href="assets/css/style.css?version=1.3">
-    <!--Icomoon & fontawesome-->
-    <link rel="stylesheet" href="assets/css/icomoon.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
-    <!--Title-->
-    <title>Simo Aleksandrov</title>
-</head>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <!-- JS -->
+    <script defer src="assets/js/main.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css?version=1.3" />
+    <!-- Icomoon & fontawesome -->
+    <link rel="stylesheet" href="assets/css/icomoon.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <!-- Title -->
+    <title>~ Simo Aleksandrov ~</title>
+  </head>
 
-<body>
-
-    <header>
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper" id="top-navbar">
-                    <a class="brand-logo center grey-text text-darken-3 lighten-3">fr3fou.me</a>
-                    <a href="#" data-target="mobile" class="sidenav-trigger">
-                        <a href="#" data-target="mobile" class="sidenav-trigger">
-                            <i class="material-icons grey-text text-darken-3 lighten-3">menu</i>
-                        </a>
-                    </a>
-                    <ul class="grey-text text-darken-3 right hide-on-med-and-down">
-                        <li>
-                            <a href="#!" id="aboutButton">About me</a>
-                        </li>
-                        <li>
-                            <a href="#!" id="projectsButton">Projects</a>
-                        </li>
-                        <li>
-                            <a href="blog/index.html" id="blogButton">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#!" id="linksButton">Links</a>
-                        </li>
-                        <li>
-                            <a href="mailto:fr3fou@icloud.com" class="waves-effect white-text waves-light btn">
-                               <i class="material-icons right">contacts</i>Contact me</a>
-                        </li>
-                    </ul>
-                </div>
-        </div>
-        </nav>
-        </div>
-        <ul class="sidenav" id="mobile">
-            <li>
-                <a href="#!" id="aboutButtonM">About me</a>
-            </li>
-            <li>
-                <a href="#!" id="projectsButtonM">Projects</a>
-            </li>
-            <li>
-                <a href="blog/index.html" id="blogButtonM">Blog</a>
-            </li>
-            <li>
-                <a href="#!" id="linksButtonM">Links</a>
-            </li>
-            <li>
-                <a href="mailto:fr3fou@icloud.com" class="waves-effect white-text waves-light btn">
-                    <i class="material-icons right white-text">contacts</i>Contact me</a>
-            </li>
-        </ul>
-    </header>
-
-    <main>
-        <a id="mainAnchor"></a>
-        <div class="fixed-action-btn">
-            <a id="back" class="waves-effect waves-light btn-floating btn-large white lighten-1">
-                <i class="large grey-text text-darken-3 lighten-3 material-icons">arrow_drop_up</i>
+  <body>
+    <div class="container">
+      <div class="intro">
+        <div class="tint">
+          <svg
+            class="wave"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 126"
+            preserveAspectRatio="none"
+          >
+            <style type="text/css">
+              .st0 {
+                fill: #ffcef0;
+              }
+            </style>
+            <path
+              class="st0"
+              d="M685.6,38.8C418.7-11.1,170.2,9.9,0,30v96h1440V30C1252.7,52.2,1010,99.4,685.6,38.8z"
+            />
+          </svg>
+          <div class="image-wrapper">
+            <a href="https://github.com/fr3fou">
+              <img
+                class="image-logo"
+                src="images/avatar.png"
+                alt="github-logo"
+              />
             </a>
+            <h1 id="title-name">
+              ~ Simo Aleksandrov ~<br />
+              ~ Web & Mobile Developer ~
+            </h1>
+          </div>
         </div>
+      </div>
+      <div class="flex">
+        <div class="topic" data-aos="zoom-in">
+          <div class="text">
+            <h2>Hi there! 🚀</h2>
+            <p>
+              My name is Simo Aleksandrov, but go under the nickname "fr3fou".
+              <br />
+              I'm just a 16 year boy that likes to code, play video games,
+              listen to music and watch anime. I'm in the 10th grade of "MG Baba
+              Tonka" in Ruse, Bulgaria. I've been coding since I was in the 4th
+              grade, but only during the last year (2018), I got more involved
+              and interested. I primarily do web and mobile development, but
+              have knowledge in desktop development using C# / Java too. I use
+              Linux (more speicifically Arch / Antergos) as my daily operating
+              system and do all of my work here! I'm a fan of open-source
+              projects and love contributing to such! I also really like helping
+              people out with coding related problems.
+            </p>
+          </div>
+        </div>
+        <div class="topic" data-aos="zoom-in">
+          <div class="text">
+            <h2>Projects 📎</h2>
+            <div class="subtopics">
+              <div class="subtopic">
+                <a href="https://deliriumproducts.github.io">
+                  <img
+                    src="images/dplogobackground.png"
+                    alt="dp"
+                    class="subtopic-image"
+                    id="dp"
+                  />
+                </a>
+                <h3>Delirium Products!</h3>
+                🍫 Software development team established in Ruse, Bulgaria.
+              </div>
+              <div class="subtopic">
+                <a
+                  href="https://github.com/deliriumproducts/english-test-generator"
+                >
+                  <img src="images/etg.png" alt="etg" class="subtopic-image" />
+                </a>
+                <h3>English Test Generator</h3>
+                📕 Creating tests has never been easier.
+              </div>
+              <div class="subtopic">
+                <a href="https://github.com/deliriumproducts/luncher-box">
+                  <img src="images/meat.png" alt="lb" class="subtopic-image" />
+                </a>
+                <h3>Luncher Box</h3>
+                🍖 Cheap to setup web application for making orders without
+                having to wait for waiters.
+              </div>
+              <div class="subtopic">
+                <a href="https://github.com/deliriumproducts/postbank-calendar">
+                  <img src="images/pbc.png" alt="pbc" class="subtopic-image" />
+                </a>
+                <h3>Postbank Calendar</h3>
+                📅 Mobile calendar, made for Postbank. Available on Android and
+                iOS
+              </div>
+              <div class="subtopic">
+                <a href="https://github.com/deliriumproducts/osu-git">
+                  <img
+                    src="images/osugit.png"
+                    alt="og"
+                    class="subtopic-image"
+                  />
+                </a>
+                <h3>osu!git</h3>
+                🔄 Simplistic git client made with osu!mappers in mind.
+              </div>
+              <div class="subtopic">
+                <a href="https://osuspeed.ml">
+                  <img
+                    src="images/osuspeed.png"
+                    alt="osp"
+                    class="subtopic-image"
+                  />
+                </a>
+                <h3>osu!speed</h3>
+                🏃 Check how you can stream in osu!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="topic" data-aos="zoom-in">
+          <div class="text">
+            <h2>Programming Languages and Technologies 📚</h2>
+            <div class="subtopics">
+              <div class="subtopic">
+                <a href="https://www.typescriptlang.org/">
+                  <img src="images/ts.png" alt="ts" class="subtopic-image" />
+                </a>
+                <h3>TypeScript</h3>
+              </div>
+              <div class="subtopic">
+                <img src="images/js.png" alt="ts" class="subtopic-image" />
+                <h3>JavaScript</h3>
+              </div>
+              <div class="subtopic">
+                <a href="https://reactjs.org">
+                  <img
+                    src="images/react.png"
+                    alt="react"
+                    class="subtopic-image"
+                  />
+                </a>
+                <h3>React.js</h3>
+              </div>
+              <div class="subtopic">
+                <a href="https://nodejs.org">
+                  <img
+                    src="images/node.png"
+                    alt="node"
+                    class="subtopic-image"
+                  />
+                </a>
+                <h3>Node.js</h3>
+              </div>
+              <div class="subtopic">
+                <img src="images/html.png" alt="html" class="subtopic-image" />
+                <h3>HTML</h3>
+              </div>
+              <div class="subtopic">
+                <img src="images/css.png" alt="css" class="subtopic-image" />
+                <h3>CSS</h3>
+              </div>
+              <div class="subtopic">
+                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">
+                  <img src="images/cs.png" alt="cs" class="subtopic-image" />
+                </a>
+                <h3>C#</h3>
+              </div>
+              <div class="subtopic">
+                <a href="https://www.mysql.com/">
+                  <img src="images/sql.png" alt="sql" class="subtopic-image" />
+                </a>
+                <h3>MySQL</h3>
+              </div>
+              <div class="subtopic">
+                <a href="https://www.java.com/en/">
+                  <img
+                    src="images/java.png"
+                    alt="java"
+                    class="subtopic-image"
+                  />
+                </a>
+                <h3>Java</h3>
+              </div>
+              <div class="subtopic">
+                <a href="http://youmightnotneedjquery.com/">
+                  <img
+                    src="images/jquery.png"
+                    alt="jquery"
+                    class="subtopic-image"
+                  />
+                </a>
+                <h3>jQuery</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="topic" data-aos="zoom-in">
+          <div class="text">
+            <h2>Achievements 🏆</h2>
+            <p>
+              Over the last year, I've accumulated multiple achievements /
+              awards. <br />
+            </p>
 
-        <div id="flowers" class="parallax-container">
-            <div class="valign-wrapper h100">
-                <h1 id="title" class="white-text overlay center-align">
-                    Simo Aleksandrov
-                </h1>
-                <div class="parallax">
-                    <img src="images/first.png">
-                </div>
-            </div>
-        </div>
-
-        <div class="parallax-container">
-            <div class="valign-wrapper h100">
-                <h1 class="white-text overlay center-align">
-                    <a href="#!" id="aboutA">About me</a>
-                </h1>
-                <div class="parallax">
-                    <img src="images/waterfall.png">
-                </div>
-            </div>
-        </div>
-		
-        <a id="aboutAnchor" class="anchor"></a>
-		
-        <div class="section white" id="aboutDiv">
-            <div class="row center container">
-                <h2 class="header">Hey!</h2>
-                <h4 class="grey-text text-darken-3 lighten-3">
-                    My name is Simo Aleksandrov and I'm a 16 year old kiddo from Ruse, Bulgaria.
-                    <br> I've been interested in programming since when I was in the 4th grade, but only recently got more into
-                    it!
-                    <br> I study at the High School of Mathematics "Baba Tonka" and am in the 10th grade.
-                    <br> I've got a bunch of hobbies and interests, some of which include programming, playing videogames, watching
-                    anime, listening to music and more!
-                    <br> I love music genres such as post-rock, psytrance and more!
-                    <br> You can check out my last.fm in the
-                    <a class="link" href="#linksA">links</a> tab.
-                    <br> Some of my favorite anime shows are
-					
-                    <a class="link" href="https://kitsu.io/anime/made-in-abyss">Made in Abyss</a>,
-                    <a class="link" href="https://kitsu.io/anime/mahou-shoujo-madoka-magica">Madoka Magica</a>,
-                    <a class="link" href="https://kitsu.io/anime/steins-gate">Steins;Gate</a> and
-                    <a class="link" href="https://kitsu.io/anime/little-witch-academia">Little Witch Academia</a>!
-                    <br> I usually play either osu! or CPMA in my free time.
-                    <br> I mainly code in C# and JavaScript, but would also like to work with C++.
-                    <br> I'm a big fan of frameworks. Some that I've used and/or like are
-                    <a class="link" href="https://electronjs.org/">Electron</a>,
-                    <a class="link" href="https://materializecss.com/">Materialize</a>,
-                    <a class="link" href="https://vuejs.org/">Vue.js</a> and
-                    <a class="link" href="https://facebook.github.io/react-native/">React Native</a>.
-                    <br>
-                </h4>
-            </div>
-        </div>
-        <div class="parallax-container">
-            <div class="valign-wrapper h100">
-                <h1 class="white-text overlay center-align">
-                    <a href="#!" id="projectsA">Projects</a>
-                </h1>
-                <div class="parallax">
-                    <img src="images/slope.png">
-                </div>
-            </div>
-        </div>
-	
-        <a id="projectsAnchor" class="anchor"></a>
-        <div class="section white" id="projectsDiv">
-            <div class="center container">
-                <h2 class="header">Projects</h2>
+            <div class="subtopics ">
+              <div class="subtopic achievement">
                 <div class="row">
-                    <div class="col s12">
-                        <h4>Over the last year I've worked on many projects, be it by myself or with my friend
-                            <a class="link" href="https://github.com/impzero">Lyubo Lyubchev</a>.</h4>
-                    </div>
+                  <img
+                    src="images/uchimi1.png"
+                    alt="uchimi"
+                    class="achievement-image"
+                  />
+                  <img
+                    src="images/uchimi2.png"
+                    alt="uchimi"
+                    class="achievement-image"
+                  />
+                  <img
+                    src="images/uchimif.png"
+                    alt="uchimi"
+                    class="achievement-image"
+                  />
                 </div>
-                <div class="row">
-                    <div class="col s12 m6 l3">
-                        <h5>Delirium Products</h5>
-                        <br>
-                        <a href="https://github.com/DeliriumProducts">
-                            <img height="256" width="256" src="images/dplogobackground.png" class="z-depth-3 responsive-img imglink" />
-                        </a>
-                        <h5>Do you happen to have a Deliri-li-li-li-li-li-um?</h5>
-                        <h6>Delirium Products is a team, which consists of 2 people - Simo Aleksandrov and Lyubo Lyubchev. One
-                            of our favorite chocolate deserts is called
-                            <a class="link" href="http://store.alagroup.eu/img/p/1/3/5/1/1351-thickbox_default.jpg">"Delirium"</a>,
-                            <br>hence the name - Delirium Products.
-                            <br>We are both students in the High School of Mathematics "Baba Tonka" in Ruse, Bulgaria. As of
-                            now we are only working with software development,
-                            <br> but plan on moving to hardware, mobile and web development aswell.</h6>
-                    </div>
-                    <div class="col s12 m6 l3">
-                        <h5>pp from the past!</h5>
-                        <br>
-                        <a href="https://ppfromthepast.ml">
-                            <img height="256" width="256" src="images/ppfp.png" class="responsive-img imglink" />
-                        </a>
-                        <h5>Go back in the past with your current top plays!.</h5>
-                        <h6> A tool that calculates how much pp you would keep
-                            <br> from your current top plays if you were to go back in the past! (Still a WIP)
-                        </h6>
-                    </div>
-                    <div class="col s12 m6 l3">
-                        <h5>osu!speed benchmark</h5>
-                        <br>
-                        <a href="https://osuspeed.ml">
-                            <img height="256" width="256" src="images/osuspeed.png" class="responsive-img imglink" />
-                        </a>
-                        <h5>How fast can you go?</h5>
-                        <h6>
-                            A tool that lets you see how fast you can stream in osu! (remake of the old speed / stream benchmark test.)
-                        </h6>
-                    </div>
-                    <div class="col s12 m6 l3">
-                        <h5>osu!git</h5>
-                        <br>
-                        <a href="https://github.com/DeliriumProducts/osugit">
-                            <img height="256" width="256" src="images/osugit.png" class="responsive-img imglink" />
-                        </a>
-                        <h5>
-                            Simplistic git client made with osu!mappers in mind. (Still a WIP)
-                        </h5>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m6 l3">
-                        <h5>English Test Generator</h5>
-                        <br>
-                        <a href="http://etgproject.tk">
-                            <img height="256" width="256" src="images/etg.png" class="responsive-img imglink" />
-                        </a>
-                        <h5>Creating tests has never been easier.</h5>
-                        <h6>
-                            Just let English Test Generator do all the work for you!
-                            <br> Practise, learn quickly, improve your English skills in no time!
-                            <br> Free, open source and easy to use!
-                        </h6>
-                    </div>
-                    <div class="col s12 m6 l3">
-                        <h5>Postbank Calendar</h5>
-                        <br>
-                        <a href="https://github.com/DeliriumProducts/Postbank-Calendar">
-                            <img height="256" width="256" src="images/pbc.png" class="responsive-img imglink" />
-                        </a>
-                        <h5>
-                            Mobile calendar for the bulgarian bank Postbank.
-                        </h5>
-                        <h6> This was a project assigned by the bank themself to Delirium Products for the
-                            <a class="link" href="http://fest.softuni.bg/">SoftUni Fest</a>, where we won first place in our category and were awarded 1000 BGN.
-                        </h6>
-                    </div>
-                    <div class="col s12 m6 l3">
-                        <h5>Funny Pets!</h5>
-                        <br>
-                        <a href="pets">
-                            <img height="256" width="256" src="images/funnypets.png" class="responsive-img imglink" />
-                        </a>
-                        <h5>
-                            A website about funny pet pictures, which I had to make for homework!
-                        </h5>
-                    </div>
-                    <div class="col s12 m6 l3">
-                        <h5>Ske4ove</h5>
-                        <br>
-                        <a href="https://github.com/DeliriumProducts">
-                            <img height="256" width="256" src="images/ske4ove.png" class="responsive-img imglink" />
-                        </a>
-                        <h5>
-                            Random channel where I and a bunch of my friends upload different skits / videos!
-                        </h5>
-                    </div>
-                </div>
+                <h3>Eighteenth Students’ Conference SK’18</h3>
+                This was my first coding competition that I attended to. Me and
+                my friend
+                <a href="https://github.com/impzero" class="link"
+                  >Lyubo Lyubchev</a
+                >
+                participated with our very first project
+                <a href="http://etgproject.tk" class="link"
+                  >English Test Generator</a
+                >
+                that won 2 awards - for our Very Good performance and a special
+                one.
+              </div>
+              <div class="subtopic achievement">
+                <h3>National IT Olympiad ’18</h3>
+                After our previous competiton, we decided to remake our project
+                from square one, since the code was horrible and was begging to
+                be remade. With our revamped project, we won 99/100 points on
+                the regional round.
+              </div>
+              <div class="subtopic achievement">
+                <img
+                  src="images/softuniada.png"
+                  alt="softuniada"
+                  class="achievement-image"
+                />
+                <img
+                  src="images/softuniada2.png"
+                  alt="softuniada2"
+                  class="achievement-image"
+                />
+                <h3>SoftUniada ’18</h3>
+                We got 3rd place as well as free hosting over at
+                <a href="https://superhosting.bg">Superhosting</a>.
+              </div>
+              <div class="subtopic achievement">
+                <img
+                  src="images/mladi.png"
+                  alt="mladi"
+                  class="achievement-image"
+                />
+                <h3>Mladi Talanti ’18</h3>
+                On my 4th competition we won an award for excellent performance.
+              </div>
+              <div class="subtopic achievement">
+                <img
+                  src="images/fission.png"
+                  alt="fission"
+                  class="achievement-image"
+                />
+                <h3>International Science Fair FISSION ’18</h3>
+                This was our last competition we attended to in 2018 with
+                <a href="http://etgproject.tk" class="link"
+                  >English Test Generator</a
+                >. We got an honrable mention on the 2nd place of the Computer
+                Science and Mathematics category.
+              </div>
+              <div class="subtopic achievement">
+                <img
+                  src="images/fest.png"
+                  alt="fission"
+                  class="achievement-image"
+                />
+                <h3>SoftUni Fest ’18</h3>
+                This was a hackathon-like competition where our team had 24
+                hours to work on an assignment to make a mobile app calendar
+                given by Postbank. We won 1st place in our category as well as
+                1000 BGN.
+              </div>
+              <div class="subtopic achievement">
+                <h3>Zarathon ’18</h3>
+                On this 48 hour hackathon we started our new project
+                <a
+                  href="https://github.com/deliriumproducts/luncher-box"
+                  class="link"
+                  >Luncher Box</a
+                >. We were awarded the largest prize - a coupon for 10 000 BGN
+                for kickstarting startup
+                <a href="http://dynaxinvest.com/" class="link">Dynax Invest</a>
+              </div>
+              <div class="subtopic achievement">
+                <img
+                  src="images/uchimi19.png"
+                  alt="fission"
+                  class="achievement-image"
+                />
+                <h3>Eighteenth Students’ Conference SK’19</h3>
+                After remaking our project from the Zarathon, we presented it on
+                this competiton. We won an award for excellent performance.
+              </div>
             </div>
+          </div>
         </div>
-
-        <div class="parallax-container">
-            <div class="valign-wrapper h100">
-                <h1 class="white-text overlay center-align">
-                    <a href="blog/index.html" id="blog">Blog</a>
-                </h1>
-                <div class="parallax">
-                    <img src="images/flowers2.jpg">
-                </div>
+        <div class="topic" data-aos="zoom-in">
+          <div class="text">
+            <h2>Hobbies 🎉</h2>
+            <p>
+              I have plenty of hobbies / things I do when I'm bored. Some of
+              which I still do almost on a daily basis and some which I just
+              pick up every once and again.
+            </p>
+            <div class="subtopic">
+              <ul>
+                <li>Speedcubing</li>
+                <li>Penspinning</li>
+                <li>Video editing</li>
+                <li>Image editing</li>
+                <li>Drawing / sketching</li>
+                <li>3D modelling</li>
+                <li>3D animating</li>
+                <li>Messing around with Linux</li>
+                <li>Watching anime</li>
+                <li>Listening to music</li>
+              </ul>
             </div>
+          </div>
         </div>
-
-        <div class="parallax-container">
-            <div class="valign-wrapper h100">
-                <h1 class="white-text overlay center-align">
-                    <a href="#!" id="linksA">Links</a>
-                </h1>
-                <div class="parallax">
-                    <img src="images/leaves.jpg">
-                </div>
+        <div class="topic" data-aos="zoom-in">
+          <div class="text">
+            <h2>Contact 📱</h2>
+            <p>You can find me at the following sites:</p>
+            <div class="contacts">
+              <a href="https://github.com/fr3fou">
+                <i class="fab fa-github fa-fw"></i>
+              </a>
+              <a href="https://twitter.com/fr3fou">
+                <i class="fab fa-twitter fa-fw"></i>
+              </a>
+              <a href="https://twitch.tv/fr3fou">
+                <i class="fab fa-twitch fa-fw"></i>
+              </a>
+              <br />
+              <a
+                href="https://www.youtube.com/channel/UCXudfqkZnDPm8Kg8gijrAlA?view_as=subscriber"
+              >
+                <i class="fab fa-youtube fa-fw"></i>
+              </a>
+              <a href="http://steamcommunity.com/id/fr3fou/">
+                <i class="fab fa-steam fa-fw"></i>
+              </a>
+              <a href="https://www.last.fm/user/simo3003xd">
+                <i class="fab fa-lastfm fa-fw"></i>
+              </a>
+              <a href="https://osu.ppy.sh/u/6399277">
+                <i class="icon-osu"></i>
+              </a>
             </div>
+          </div>
         </div>
-        <a id="linksAnchor" class="anchor"></a>
-        <div class="section white" id="linksDiv">
-            <div class="row center container">
-                <h2 class="header">Here are some of my profiles!</h2>
-                <p class="grey-text text-darken-3 lighten-3">
-                    <div style="font-size:5rem; text-align: center">
-                        <a href="https://github.com/fr3fou">
-                            <i class="fab fa-github fa-fw"></i>
-                        </a>
-                        <a href="https://twitter.com/fr3fou">
-                            <i class="fab fa-twitter fa-fw"></i>
-                        </a>
-                        <a href="https://twitch.tv/fr3fou">
-                            <i class="fab fa-twitch fa-fw"></i>
-                        </a>
-                        <br>
-                        <a href="https://www.youtube.com/channel/UCXudfqkZnDPm8Kg8gijrAlA?view_as=subscriber">
-                            <i class="fab fa-youtube fa-fw"></i>
-                        </a>
-                        <a href="http://steamcommunity.com/id/fr3fou/">
-                            <i class="fab fa-steam fa-fw"></i>
-                        </a>
-                        <a href="https://www.last.fm/user/simo3003xd">
-                            <i class="fab fa-lastfm fa-fw"></i>
-                        </a>
-                        <a href="https://osu.ppy.sh/u/6399277">
-                            <i class="icon-osu" style="text-align:center;size: 1.1em"></i>
-                        </a>
-                    </div>
-                </p>
-            </div>
-        </div>
-
-    </main>
-
-</body>
-
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out-back",
+        duration: 350,
+        mirror: true
+      });
+    </script>
+  </body>
 </html>
