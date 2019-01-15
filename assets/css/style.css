@@ -201,7 +201,7 @@ a:active:not(.link) {
 
 .contacts *:hover {
   transform: scale(0.9);
-  color: pink;
+  color: #ffcef0;
 }
 
 #title-name {
