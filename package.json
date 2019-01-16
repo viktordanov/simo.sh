@@ -4,10 +4,13 @@
   },
   "devDependencies": {
     "cssnano": "^4.1.8",
-    "parcel": "^1.11.0"
+    "parcel-plugin-imagemin": "^2.1.1"
   },
   "dependencies": {
     "autoprefixer": "^9.4.5",
-    "postcss": "^7.0.11"
+    "parcel": "^1.11.0",
+    "parcel-bundler": "^1.11.0",
+    "postcss": "^7.0.11",
+    "yarn": "^1.13.0"
   }
 }
