@@ -120,7 +120,7 @@ li:last-child {
   text-align: center;
 }
 
-.flex > div:last-child {
+.flex > article:last-child {
   margin-bottom: 5%;
 }
 
