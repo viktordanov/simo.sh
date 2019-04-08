@@ -1,6 +1,6 @@
 # fr3fou.me
 
-GitHub repo for my website
+GitHub repo for my website.
 
 Ignore: 
 
