@@ -76,7 +76,13 @@ li:last-child {
 
 .flex {
   display: flex;
-  background: #ffcef0;
+  /* background: #ffcef0; */
+  background: rgb(255, 206, 240);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 206, 240, 1) 0%,
+    rgba(222, 206, 255, 1) 100%
+  );
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -98,8 +104,8 @@ li:last-child {
 
 .image-logo {
   box-shadow: 5px 10px;
-  width: 50%;
-  height: 50%;
+  width: 25%;
+  height: 25%;
   box-shadow: 0 7px rgba(0, 0, 0, 0.12);
   border-radius: 18px;
   transition: all 0.45s ease-in-out;
