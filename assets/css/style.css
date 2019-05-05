@@ -78,7 +78,7 @@ li:last-child {
   /* background: #ffcef0; */
   background: rgb(255, 206, 240);
   background: linear-gradient(
-    135deg,
+    180deg,
     rgba(255, 206, 240, 1) 0%,
     rgba(222, 206, 255, 1) 100%
   );
