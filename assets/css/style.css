@@ -1,11 +1,10 @@
-@font-face {
-  font-family: "Avenir";
-  src: url("../../fonts/Avenir-Medium.ttf");
-}
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700%7CMontserrat:400,500,700%7COpen+Sans%27");
 
 * {
   box-sizing: border-box;
-  font-family: "Avenir";
+  font-family: Montserrat, "Arial";
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
   color: #232323;
 }
 
@@ -211,7 +210,6 @@ a:active:not(.link) {
 
 #title-name {
   margin: 10% 0 0 0;
-  font-family: "Avenir";
   font-size: 20px;
   color: #fff;
   text-shadow: 1px 2px rgba(0, 0, 0, 0.12);
