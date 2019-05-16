@@ -1,4 +1,4 @@
-# fr3fou.me
+# simo.sh
 
 GitHub repo for my website xd
 
