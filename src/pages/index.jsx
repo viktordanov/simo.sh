@@ -132,19 +132,22 @@ const Index = () => (
         <AboutHero>
           <Avatar src={avatar} alt="John Doe" />
           <AboutSub>
-            The English language can not fully capture the depth and complexity
-            of my thoughts. So I'm incorporating Emoji into my speech to better
-            express myself. Winky face.
+            My name is Simo Aleksandrov, but go under the nickname "fr3fou".
+            <br />
+            I'm just a 17 year old boy that likes to code, play video games,
+            listen to music and watch anime.
+            <br />
+            I'm in the 10th grade of "MG Baba Tonka" in Ruse, Bulgaria.
           </AboutSub>
         </AboutHero>
         <AboutDesc>
-          You know the way you feel when you see a picture of two otters holding
-          hands? That's how you're gonna feel every day. My mother cried the day
-          I was born because she knew she’d never be prettier than me. You
-          should make me your campaign manager. I was born for politics. I have
-          great hair and I love lying. Captain? The kids want to know where
-          Paulie the Pigeon is. I told them he got sucked up into an airplane
-          engine, is that all right?
+          I've been coding since I was in the 4th grade, but only during the
+          last year (2018), did I get more involved. I primarily do web and
+          mobile development, but have knowledge in desktop development using C#
+          / Java too. I use Linux (more specifically Arch / Antergos) as my
+          daily operating system and do all of my work here! I'm a fan of
+          open-source projects and love contributing to such! I also really like
+          helping people out with coding-related problems.
         </AboutDesc>
       </About>
       <Contact offset={4}>

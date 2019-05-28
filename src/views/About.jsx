@@ -10,7 +10,7 @@ import { UpDown, UpDownWide } from '../styles/animations';
 const About = ({ children, offset }) => (
   <>
     <Divider
-      bg="#23262b"
+      bg="linear-gradient(to right, rgba(57,94,185,1) 0%, #6ca3fc 100%)"
       clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)"
       speed={0.2}
       offset={offset}
