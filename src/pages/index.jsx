@@ -8,7 +8,11 @@ import ProjectCard from '../components/ProjectCard';
 // Elements
 import Inner from '../elements/Inner';
 import { BigTitle, Subtitle, Title } from '../elements/Titles';
-import avatar from '../images/avatar.jpg';
+// Images
+import avatar from '../images/avatar.png';
+import etg from '../images/etgscrot.png';
+import lb from '../images/iphonex.png';
+// Views
 import About from '../views/About';
 import Contact from '../views/Contact';
 // Views
@@ -70,26 +74,21 @@ const Index = () => (
         <Title>Projects</Title>
         <ProjectsWrapper>
           <ProjectCard
-            title="Freiheit"
-            link="https://www.behance.net/gallery/58937147/Freiheit"
-            bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-            img={['https://simo.sh/fest.245abe22.png']}
+            title="English Test Generator"
+            link="https://etgproject.tk"
+            bg="linear-gradient(to right, #D9453A 0%, #ea528a 100%)"
+            img={[etg]}
           >
-            This project is my entry to Adobe's #ChallengeYourPerspective
-            contest.
+            📕 Creating tests has never been easier.
           </ProjectCard>
           <ProjectCard
-            title="Harry Potter"
-            link="https://www.behance.net/gallery/52915793/Harry-Potter"
-            bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
-            img={[
-              'https://simo.sh/uchimi1.d661cb33.png',
-              'https://simo.sh/uchimi2.618554c7.png',
-              'https://simo.sh/uchimif.af32b171.png'
-            ]}
+            title="LuncherBox"
+            link="https://luncherbox.deliriumproducts.me"
+            bg="linear-gradient(to right, #d56aa0 0%, #bc4b84 100%)"
+            img={[lb]}
           >
-            I entered the DOCMA 2017 award with this Harry Potter inspired
-            image.
+            🍖 Cheap to set up web application for making orders without having
+            to wait for waiters..
           </ProjectCard>
           <ProjectCard
             title="Tomb Raider"

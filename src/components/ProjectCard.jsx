@@ -19,18 +19,19 @@ const Text = styled.div`
 `;
 
 const Title = styled.div`
-  ${tw`text-white uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-sans pt-8`};
+  ${tw`text-white uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-sans pb-8`};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `;
 
 const Image = styled.img`
-  ${tw`object-cover relative rounded-lg shadow-lg`}
+  ${tw`object-cover relative rounded-lg `}
   top: -4rem;
-  width: 45%;
-  height: 45%;
+  width: 50%;
+  height: 50%;
   margin: 5px;
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {
+    width: 60%;
     transform: translateY(-5px);
   }
 `;
@@ -43,8 +44,8 @@ const ProjectCard = ({ title, link, children, bg, img }) => {
   if (!img) {
     return (
       <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
-        <Text>{children}</Text>
         <Title>{title}</Title>
+        <Text>{children}</Text>
       </Wrapper>
     );
   }
@@ -56,8 +57,8 @@ const ProjectCard = ({ title, link, children, bg, img }) => {
           <Image src={i} />
         ))}
       </ImageWrapper>
-      <Text>{children}</Text>
       <Title>{title}</Title>
+      <Text>{children}</Text>
     </Wrapper>
   );
 };
