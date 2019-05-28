@@ -1,3 +1,4 @@
+import { Global } from '@emotion/core';
 import React from 'react';
 import 'typeface-cantata-one';
 import 'typeface-open-sans';
@@ -7,7 +8,7 @@ import SEO from './SEO';
 const Layout = () => (
   <>
     <SEO />
-    <GlobalStyle />
+    <Global styles={GlobalStyle} />
   </>
 );
 

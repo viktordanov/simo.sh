@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import tw from 'tailwind.macro';
 import triangle from '../images/triangle.svg';
 import { rotateAnimation } from '../styles/animations';

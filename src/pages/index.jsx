@@ -1,6 +1,6 @@
+import styled from "@emotion/styled";
 import React from 'react';
 import { Parallax } from 'react-spring/renderprops-addons.cjs';
-import styled from 'styled-components';
 import tw from 'tailwind.macro';
 // Components
 import Layout from '../components/Layout';
