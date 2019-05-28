@@ -12,6 +12,7 @@ import { BigTitle, Subtitle, Title } from '../elements/Titles';
 import avatar from '../images/avatar.png';
 import etg from '../images/etgscrot.png';
 import lb from '../images/iphonex.png';
+import postbank from '../images/postbank.png';
 // Views
 import About from '../views/About';
 import Contact from '../views/Contact';
@@ -77,31 +78,28 @@ const Index = () => (
             title="English Test Generator"
             link="https://etgproject.tk"
             bg="linear-gradient(to right, #D9453A 0%, #ea528a 100%)"
-            img={[etg]}
-          >
+            img={[etg]}>
             📕 Creating tests has never been easier.
           </ProjectCard>
           <ProjectCard
             title="LuncherBox"
             link="https://luncherbox.deliriumproducts.me"
             bg="linear-gradient(to right, #d56aa0 0%, #bc4b84 100%)"
-            img={[lb]}
-          >
+            img={[lb]}>
             🍖 Cheap to set up web application for making orders without having
             to wait for waiters..
           </ProjectCard>
           <ProjectCard
-            title="Tomb Raider"
-            link="https://www.behance.net/gallery/43907099/Tomb-Raider"
-            bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
-          >
-            Recreation of a Tomb Raider Wallpaper (Fan Art)
+            title="Postbank Calendar"
+            link="https://github.com/deliriumproducts/postbank-calendar"
+            bg="linear-gradient(45deg, rgba(57,94,185,1) 20%, rgba(231,44,28,1) 80%)"
+            img={[postbank]}>
+            📅 Mobile calendar, made for Postbank. Available on Android and iOS
           </ProjectCard>
           <ProjectCard
             title="Eagle"
             link="https://www.behance.net/gallery/38068151/Eagle"
-            bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
-          >
+            bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)">
             A fantasy image manipulation relocating the habitat of wild animals.
           </ProjectCard>
         </ProjectsWrapper>
@@ -133,9 +131,8 @@ const Index = () => (
             Say
             <a href="mailto:plizNoSp4m@domain.tld">Hi</a>
             or find me on other platforms:
-            <a href="https://dribbble.com/LekoArts">Dribbble</a>
-&
-<a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            <a href="https://dribbble.com/LekoArts">Dribbble</a>&
+            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
           </ContactText>
         </Inner>
         <Footer>
@@ -144,9 +141,8 @@ const Index = () => (
             Github Repository
           </a>
           . Made by
-          <a href="https://www.lekoarts.de">LekoArts</a>
-.
-</Footer>
+          <a href="https://www.lekoarts.de">LekoArts</a>.
+        </Footer>
       </Contact>
     </Parallax>
   </>
