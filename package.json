@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-portfolio-cara",
-  "description": "Playful & Colorful One-Page website with Parallax effect powered by react-spring, TailwindCSS.",
+  "name": "simo.sh",
+  "description": "Just my portfolio made in gatsby.js",
   "version": "3.0.0",
-  "author": "LekoArts <hello@lekoarts.de> (https://www.lekoarts.de)",
+  "author": "Simo Aleksandrov <simo@deliriumproducts.me> (https://simo.sh)",
   "license": "MIT",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
@@ -53,11 +53,11 @@
     "prettier": "^1.17.1"
   },
   "repository": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara",
+    "url": "https://github.com/fr3fou/fr3fou.github.io",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara/issues"
+    "url": "https://github.com/fr3fou/fr3fou.github.io/issues"
   },
-  "homepage": "https://cara.lekoarts.de"
+  "homepage": "https://simo.sh"
 }
