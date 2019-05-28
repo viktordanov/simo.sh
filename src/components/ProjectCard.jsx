@@ -24,10 +24,11 @@ const Title = styled.div`
 `;
 
 const Image = styled.img`
-  ${tw`object-cover relative rounded-lg shadow-lg `}
+  ${tw`object-cover relative rounded-lg shadow-lg`}
   top: -4rem;
-  width: 50%;
-  height: 50%;
+  width: 45%;
+  height: 45%;
+  margin: 5px;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {
     transform: translateY(-5px);
@@ -35,7 +36,7 @@ const Image = styled.img`
 `;
 
 const ImageWrapper = styled.div`
-  ${tw`flex align-center justify-center flex-wrap`}
+  ${tw`w-full flex align-center justify-center flex-row flex-wrap`}
 `;
 
 const ProjectCard = ({ title, link, children, bg, img }) => {
@@ -47,10 +48,13 @@ const ProjectCard = ({ title, link, children, bg, img }) => {
       </Wrapper>
     );
   }
+
   return (
     <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
       <ImageWrapper>
-        <Image src={img} />
+        {img.map(i => (
+          <Image src={i} />
+        ))}
       </ImageWrapper>
       <Text>{children}</Text>
       <Title>{title}</Title>
@@ -66,5 +70,5 @@ ProjectCard.propTypes = {
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
     .isRequired,
   bg: PropTypes.string.isRequired,
-  img: PropTypes.string
+  img: PropTypes.arrayOf(PropTypes.string).isRequired
 };
