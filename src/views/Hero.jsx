@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import React from 'react';
 import tw from 'tailwind.macro';
@@ -112,7 +112,7 @@ const Hero = ({ children, offset }) => (
         width={12}
         fill={colors['grey-darkest']}
         left="50%"
-        top="60%"
+        top="80%"
       />
       <SVG
         icon="upDown"

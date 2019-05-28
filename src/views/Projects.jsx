@@ -25,7 +25,7 @@ const Projects = ({ children, offset }) => (
         <SVG
           icon="triangle"
           width={8}
-          stroke={colors.orange}
+          stroke={colors['pink-light']}
           left="25%"
           top="5%"
         />
@@ -33,7 +33,7 @@ const Projects = ({ children, offset }) => (
           icon="circle"
           hiddenMobile
           width={24}
-          fill={colors.white}
+          fill={colors['grey-dark']}
           left="17%"
           top="60%"
         />
@@ -43,7 +43,7 @@ const Projects = ({ children, offset }) => (
           icon="arrowUp"
           hiddenMobile
           width={16}
-          fill={colors.green}
+          fill={colors['teal-light']}
           left="20%"
           top="90%"
         />
@@ -57,7 +57,7 @@ const Projects = ({ children, offset }) => (
         <SVG
           icon="circle"
           width={16}
-          fill={colors.yellow}
+          fill={colors['teal-light']}
           left="70%"
           top="90%"
         />
@@ -65,7 +65,7 @@ const Projects = ({ children, offset }) => (
           icon="triangle"
           hiddenMobile
           width={16}
-          stroke={colors.teal}
+          stroke={colors['pink-lighter']}
           left="18%"
           top="75%"
         />
@@ -74,17 +74,29 @@ const Projects = ({ children, offset }) => (
           icon="upDown"
           hiddenMobile
           width={8}
-          fill={colors.green}
+          fill={colors.teal}
           left="45%"
           top="10%"
         />
       </UpDownWide>
       <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
       <SVG icon="circle" width={12} fill={colors.pink} left="80%" top="60%" />
-      <SVG icon="box" width={6} fill={colors.orange} left="10%" top="10%" />
-      <SVG icon="box" width={12} fill={colors.yellow} left="29%" top="26%" />
-      <SVG icon="hexa" width={16} stroke={colors.red} left="75%" top="30%" />
-      <SVG icon="hexa" width={8} stroke={colors.yellow} left="80%" top="70%" />
+      <SVG icon="box" width={6} fill={colors.pink} left="10%" top="10%" />
+      <SVG icon="box" width={12} fill={colors.pink} left="29%" top="26%" />
+      <SVG
+        icon="hexa"
+        width={16}
+        stroke={colors['pink-lightest']}
+        left="75%"
+        top="30%"
+      />
+      <SVG
+        icon="hexa"
+        width={8}
+        stroke={colors['pink-lighter']}
+        left="80%"
+        top="70%"
+      />
     </Divider>
   </>
 );

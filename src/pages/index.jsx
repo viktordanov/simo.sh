@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 import React from 'react';
 import { Parallax } from 'react-spring/renderprops-addons.cjs';
 import tw from 'tailwind.macro';
@@ -46,7 +46,7 @@ const AboutDesc = styled.p`
 `;
 
 const ContactText = styled.p`
-  ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
+  ${tw`text-black font-sans text-xl md:text-2xl lg:text-3xl`};
 `;
 
 const Footer = styled.footer`
@@ -59,9 +59,11 @@ const Index = () => (
     <Parallax pages={5}>
       <Hero offset={0}>
         <BigTitle>
-          Sup, <br /> I'm Simo Aleksandrov.
+          Sup,
+          <br />
+          I'm Simo Aleksandrov.
         </BigTitle>
-        <Subtitle>I make cool shit.</Subtitle>
+        <Subtitle>Web & Mobile Developer from Ruse, Bulgaria</Subtitle>
       </Hero>
       <Projects offset={1}>
         <Title>Projects</Title>
@@ -69,27 +71,31 @@ const Index = () => (
           <ProjectCard
             title="Freiheit"
             link="https://www.behance.net/gallery/58937147/Freiheit"
-            bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)">
+            bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+          >
             This project is my entry to Adobe's #ChallengeYourPerspective
             contest.
           </ProjectCard>
           <ProjectCard
             title="Harry Potter"
             link="https://www.behance.net/gallery/52915793/Harry-Potter"
-            bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)">
+            bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+          >
             I entered the DOCMA 2017 award with this Harry Potter inspired
             image.
           </ProjectCard>
           <ProjectCard
             title="Tomb Raider"
             link="https://www.behance.net/gallery/43907099/Tomb-Raider"
-            bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)">
+            bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+          >
             Recreation of a Tomb Raider Wallpaper (Fan Art)
           </ProjectCard>
           <ProjectCard
             title="Eagle"
             link="https://www.behance.net/gallery/38068151/Eagle"
-            bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)">
+            bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+          >
             A fantasy image manipulation relocating the habitat of wild animals.
           </ProjectCard>
         </ProjectsWrapper>
@@ -118,19 +124,31 @@ const Index = () => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on
-            other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
+            Say 
+{' '}
+<a href="mailto:plizNoSp4m@domain.tld">Hi</a>
+{' '}
+or find me on
+            other platforms:
+{' '}
+            <a href="https://dribbble.com/LekoArts">Dribbble</a>
+{' '}
+&
+{' '}
             <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
           </ContactText>
         </Inner>
         <Footer>
-          &copy; 2019 by Gatsby Starter Portfolio Cara.{' '}
+          &copy; 2019 by Gatsby Starter Portfolio Cara.
+{' '}
           <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">
             Github Repository
           </a>
-          . Made by <a href="https://www.lekoarts.de">LekoArts</a>.
-        </Footer>
+          . Made by 
+{' '}
+<a href="https://www.lekoarts.de">LekoArts</a>
+.
+</Footer>
       </Contact>
     </Parallax>
   </>
