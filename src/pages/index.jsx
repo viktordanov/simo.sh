@@ -12,6 +12,8 @@ import { BigTitle, Subtitle, Title } from '../elements/Titles';
 import avatar from '../images/avatar.png';
 import etg from '../images/etgscrot.png';
 import lb from '../images/iphonex.png';
+import osugit from '../images/osugit.png';
+import osuspeed from '../images/osuspeed.png';
 import postbank from '../images/postbank.png';
 // Views
 import About from '../views/About';
@@ -100,11 +102,28 @@ const Index = () => (
             📅 Mobile calendar, made for Postbank. Available on Android and iOS
           </ProjectCard>
           <ProjectCard
-            title="Eagle"
-            link="https://www.behance.net/gallery/38068151/Eagle"
-            bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+            title="osu!git"
+            link="https://github.com/deliriumproducts/osu-git"
+            bg="linear-gradient(to right, #ff98c1 0%, #ffc6dd 100%)"
+            img={[osugit]}
           >
-            A fantasy image manipulation relocating the habitat of wild animals.
+            🔄 simplistic git client made with osu!mappers in mind.
+          </ProjectCard>
+          <ProjectCard
+            title="osu!speed"
+            link="https://osu-speed.simo.sh"
+            bg="linear-gradient(to right, #FF64A8 0%, #fc8fbf 100%)"
+            img={[osuspeed]}
+          >
+            🏃 Check how fast you can stream in osu!
+          </ProjectCard>
+          <ProjectCard
+            title="osu!pass-checker"
+            link="https://osu-pass.simo.sh"
+            bg="linear-gradient(to right, #ff3a61  0%, #f76f89 100%)"
+          >
+            ✔ Simple web tool to check whether you've passed a map or not when
+            using NF.!
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
