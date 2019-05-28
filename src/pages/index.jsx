@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import React from 'react';
 import { Parallax } from 'react-spring/renderprops-addons.cjs';
 import tw from 'tailwind.macro';
+import LanguageCard from '../components/LanguageCard';
 // Components
 import Layout from '../components/Layout';
 import ProjectCard from '../components/ProjectCard';
@@ -12,17 +13,36 @@ import { BigTitle, Subtitle, Title } from '../elements/Titles';
 import avatar from '../images/avatar.png';
 import etg from '../images/etgscrot.png';
 import lb from '../images/iphonex.png';
+import javascript from '../images/js.png';
 import osugit from '../images/osugit.png';
 import osuspeed from '../images/osuspeed.png';
 import postbank from '../images/postbank.png';
+import react from '../images/react.png';
+import typescript from '../images/ts.png';
 // Views
 import About from '../views/About';
 import Contact from '../views/Contact';
 // Views
 import Hero from '../views/Hero';
+import Languages from '../views/Languages';
 import Projects from '../views/Projects';
 
 const ProjectsWrapper = styled.div`
+  ${tw`flex flex-wrap justify-between mt-8`};
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 1200px) {
+    grid-gap: 3rem;
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const LanguagesWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
   display: grid;
   grid-gap: 4rem;
@@ -64,7 +84,7 @@ const Footer = styled.footer`
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={5}>
+    <Parallax pages={6}>
       <Hero offset={0}>
         <BigTitle>
           Sup,
@@ -74,7 +94,7 @@ const Index = () => (
         <Subtitle>Web & Mobile Developer from Ruse, Bulgaria</Subtitle>
       </Hero>
       <Projects offset={1}>
-        <Title>Projects</Title>
+        <Title>Projects 📎</Title>
         <ProjectsWrapper>
           <ProjectCard
             title="English Test Generator"
@@ -123,11 +143,33 @@ const Index = () => (
             bg="linear-gradient(to right, #ff3a61  0%, #f76f89 100%)"
           >
             ✔ Simple web tool to check whether you've passed a map or not when
-            using NF.!
+            using NF!
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
-      <About offset={3}>
+      <Languages offset={3.75}>
+        <LanguagesWrapper>
+          <Title>Languages and Technologies 📚</Title>
+          <LanguageCard
+            title="React.js"
+            link="https://reactjs.org"
+            bg="linear-gradient(to right, #13c5f4  0%, #33cef7 100%)"
+            img={[react]}
+          />
+          <LanguageCard
+            title="TypeScript"
+            link="https://typescriptlang.org"
+            bg="linear-gradient(to right, #2b92e2 0%, #61aae2 100%)"
+            img={[typescript]}
+          />
+          <LanguageCard
+            title="JavaScript"
+            bg="linear-gradient(to right, #f4f481  0%, #f4f450 100%)"
+            img={[javascript]}
+          />
+        </LanguagesWrapper>
+      </Languages>
+      <About offset={4.5}>
         <Title>About</Title>
         <AboutHero>
           <Avatar src={avatar} alt="John Doe" />
@@ -150,7 +192,7 @@ const Index = () => (
           helping people out with coding-related problems.
         </AboutDesc>
       </About>
-      <Contact offset={4}>
+      <Contact offset={5}>
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
