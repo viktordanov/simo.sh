@@ -11,16 +11,22 @@ import Inner from '../elements/Inner';
 import { BigTitle, Subtitle, Title } from '../elements/Titles';
 // Images
 import avatar from '../images/avatar.png';
+import csharp from '../images/cs.png';
 import css from '../images/css.png';
+import docker from '../images/docker.png';
+import dp from '../images/dplogo.png';
 import etg from '../images/etgscrot.png';
 import html from '../images/html.png';
 import lb from '../images/iphonex.png';
+import java from '../images/java.png';
 import javascript from '../images/js.png';
 import nodejs from '../images/node.png';
 import osugit from '../images/osugit.png';
 import osuspeed from '../images/osuspeed.png';
 import postbank from '../images/postbank.png';
+import py from '../images/python.png';
 import react from '../images/react.png';
+import mysql from '../images/sql.png';
 import typescript from '../images/ts.png';
 // Views
 import About from '../views/About';
@@ -87,6 +93,14 @@ const Index = () => (
         <Title>Projects 📎</Title>
         <ProjectsWrapper>
           <ProjectCard
+            title="Delirium Products!"
+            link="https://deliriumproducts.me"
+            bg="linear-gradient(to right, #DF6161 0%, #F56D6D 100%)"
+            img={[dp]}
+          >
+            🍫 Software development team established in Ruse, Bulgaria.
+          </ProjectCard>
+          <ProjectCard
             title="English Test Generator"
             link="https://etgproject.tk"
             bg="linear-gradient(to right, #D9453A 0%, #ea528a 100%)"
@@ -101,7 +115,7 @@ const Index = () => (
             img={[lb]}
           >
             🍖 Cheap to set up web application for making orders without having
-            to wait for waiters..
+            to wait for waiters.
           </ProjectCard>
           <ProjectCard
             title="Postbank Calendar"
@@ -109,7 +123,7 @@ const Index = () => (
             bg="linear-gradient(to right, rgba(57,94,185,1) 20%, #6ca3fc 80%)"
             img={[postbank]}
           >
-            📅 Mobile calendar, made for Postbank. Available on Android and iOS
+            📅 Mobile calendar, made for Postbank. Available on Android and iOS.
           </ProjectCard>
           <ProjectCard
             title="osu!git"
@@ -165,13 +179,43 @@ const Index = () => (
           />
           <LanguageCard
             title="HTML"
-            bg="linear-gradient(to right, #ea6f59 0%, #c94028 100%)"
+            bg="linear-gradient(to right, #c94028 0%, #ea6f59 100%)"
             img={[html]}
           />
           <LanguageCard
             title="CSS"
             bg="linear-gradient(to right, #40a5d6  0%, #279ed8 100%)"
             img={[css]}
+          />
+          <LanguageCard
+            title="C#"
+            link="https://docs.microsoft.com/en-us/dotnet/csharp/"
+            bg="linear-gradient(to right, #a728c1  0%, #d84ef4 100%)"
+            img={[csharp]}
+          />
+          <LanguageCard
+            title="MySQL"
+            link="https://www.mysql.com/"
+            bg="linear-gradient(to right, #297e9b  0%, #2fadd8 100%)"
+            img={[mysql]}
+          />
+          <LanguageCard
+            title="Docker"
+            link="https://docker.com/"
+            bg="linear-gradient(to right, #0C76C9  0%, #48a3ea 100%)"
+            img={[docker]}
+          />
+          <LanguageCard
+            title="Python"
+            link="https://python.org/"
+            bg="linear-gradient(to right, #3A75AA  0%, #5a9fdd 100%)"
+            img={[py]}
+          />
+          <LanguageCard
+            title="Java"
+            link="https://java.com/"
+            bg="linear-gradient(to right, #f79551 0%, #f4a56e  100%)"
+            img={[java]}
           />
         </LanguagesWrapper>
       </Languages>
