@@ -16,10 +16,12 @@ import css from '../images/css.png';
 import docker from '../images/docker.png';
 import dp from '../images/dplogo.png';
 import etg from '../images/etgscrot.png';
+import go from '../images/go.png';
 import html from '../images/html.png';
 import lb from '../images/iphonex.png';
 import java from '../images/java.png';
 import javascript from '../images/js.png';
+import linux from '../images/linux.png';
 import nodejs from '../images/node.png';
 import osugit from '../images/osugit.png';
 import osuspeed from '../images/osuspeed.png';
@@ -51,8 +53,20 @@ const ProjectsWrapper = styled.div`
   }
 `;
 
-const LanguagesWrapper = ProjectsWrapper;
+const LanguagesWrapper = styled.div`
+  ${tw`flex flex-wrap justify-between mt-8`};
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
 
+  @media (max-width: 1200px) {
+    grid-gap: 3rem;
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+`;
 const AboutHero = styled.div`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
 `;
@@ -206,10 +220,22 @@ const Index = () => (
             img={[docker]}
           />
           <LanguageCard
+            title="Linux"
+            link="https://linux.org/"
+            bg="linear-gradient(to right, #303030 0%, #505050 100%)"
+            img={[linux]}
+          />
+          <LanguageCard
             title="Python"
             link="https://python.org/"
             bg="linear-gradient(to right, #3A75AA  0%, #5a9fdd 100%)"
             img={[py]}
+          />
+          <LanguageCard
+            title="Go"
+            link="https://golang.org/"
+            bg="linear-gradient(to right, #67D5E0 0%, #5de7f4  100%)"
+            img={[go]}
           />
           <LanguageCard
             title="Java"
