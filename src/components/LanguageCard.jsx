@@ -5,7 +5,7 @@ import tw from 'tailwind.macro';
 
 const Wrapper = styled.a`
   width: 100%;
-  ${tw`shadow-lg relative no-underline rounded-lg px-8 py-3 md:pb-18 text-white self-center`};
+  ${tw`shadow-lg relative no-underline rounded-lg px-8 py-8 md:pb-24 text-white self-center`};
   background: ${props => props.bg};
   text-align: center;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -20,7 +20,7 @@ const Text = styled.div`
 `;
 
 const Title = styled.div`
-  ${tw`text-white uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-sans pb-8`};
+  ${tw`text-white uppercase text-3xl md:text-3xl xl:text-4xl tracking-wide font-sans pb-8`};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `;
 

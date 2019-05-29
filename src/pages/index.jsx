@@ -11,9 +11,12 @@ import Inner from '../elements/Inner';
 import { BigTitle, Subtitle, Title } from '../elements/Titles';
 // Images
 import avatar from '../images/avatar.png';
+import css from '../images/css.png';
 import etg from '../images/etgscrot.png';
+import html from '../images/html.png';
 import lb from '../images/iphonex.png';
 import javascript from '../images/js.png';
+import nodejs from '../images/node.png';
 import osugit from '../images/osugit.png';
 import osuspeed from '../images/osuspeed.png';
 import postbank from '../images/postbank.png';
@@ -42,20 +45,7 @@ const ProjectsWrapper = styled.div`
   }
 `;
 
-const LanguagesWrapper = styled.div`
-  ${tw`flex flex-wrap justify-between mt-8`};
-  display: grid;
-  grid-gap: 4rem;
-  grid-template-columns: repeat(2, 1fr);
-
-  @media (max-width: 1200px) {
-    grid-gap: 3rem;
-  }
-
-  @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-  }
-`;
+const LanguagesWrapper = ProjectsWrapper;
 
 const AboutHero = styled.div`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
@@ -84,7 +74,7 @@ const Footer = styled.footer`
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={6}>
+    <Parallax pages={7}>
       <Hero offset={0}>
         <BigTitle>
           Sup,
@@ -148,8 +138,8 @@ const Index = () => (
         </ProjectsWrapper>
       </Projects>
       <Languages offset={3.75}>
+        <Title>Languages and Technologies 📚</Title>
         <LanguagesWrapper>
-          <Title>Languages and Technologies 📚</Title>
           <LanguageCard
             title="React.js"
             link="https://reactjs.org"
@@ -167,9 +157,25 @@ const Index = () => (
             bg="linear-gradient(to right, #f4f481  0%, #f4f450 100%)"
             img={[javascript]}
           />
+          <LanguageCard
+            title="node.js"
+            link="https://nodejs.org"
+            bg="linear-gradient(to right, #58e898  0%, #84edb3 100%)"
+            img={[nodejs]}
+          />
+          <LanguageCard
+            title="HTML"
+            bg="linear-gradient(to right, #ea6f59 0%, #c94028 100%)"
+            img={[html]}
+          />
+          <LanguageCard
+            title="CSS"
+            bg="linear-gradient(to right, #40a5d6  0%, #279ed8 100%)"
+            img={[css]}
+          />
         </LanguagesWrapper>
       </Languages>
-      <About offset={4.5}>
+      <About offset={5}>
         <Title>About</Title>
         <AboutHero>
           <Avatar src={avatar} alt="John Doe" />
@@ -192,7 +198,7 @@ const Index = () => (
           helping people out with coding-related problems.
         </AboutDesc>
       </About>
-      <Contact offset={5}>
+      <Contact offset={6}>
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
