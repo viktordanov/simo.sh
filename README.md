@@ -1,6 +1,6 @@
 # simo.sh
 
-GitHub repo for my website 
+GitHub repo for my website.
 
 Ignore: 
 
