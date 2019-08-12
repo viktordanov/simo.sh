@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "parcel build index.html cheatsheet/index.html && cp robots.txt dist/"
+    "build": "parcel build index.html cheatsheet/index.html -d public/ && cp robots.txt dist/ "
   },
   "devDependencies": {
     "cssnano": "^4.1.8"
@@ -8,8 +8,7 @@
   "dependencies": {
     "autoprefixer": "^9.4.5",
     "parcel": "^1.11.0",
-    "parcel-bundler": "^1.11.0",
-    "postcss": "^7.0.11",
-    "yarn": "^1.13.0"
+    "parcel-bundler": "^1.12.3",
+    "postcss": "^7.0.11"
   }
 }
