@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "parcel build index.html cheatsheet/index.html -d public/ && cp robots.txt dist/ "
+    "build": "parcel build index.html cheatsheet/index.html -d public/ && cp robots.txt public/ "
   },
   "devDependencies": {
     "cssnano": "^4.1.8"
