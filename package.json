@@ -9,6 +9,7 @@
     "autoprefixer": "^9.4.5",
     "parcel": "^1.11.0",
     "parcel-bundler": "^1.12.3",
-    "postcss": "^7.0.11"
+    "postcss": "^7.0.11",
+    "aos": "2.3.4"
   }
 }
