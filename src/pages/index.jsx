@@ -1,6 +1,6 @@
 import React from "react"
 import { withTheme } from "emotion-theming"
-import { Link as ChakraLink, Text } from "@chakra-ui/core"
+import { Link as ChakraLink, Icon, Text } from "@chakra-ui/core"
 
 import { Hero } from "../components/Hero"
 import { Container } from "../components/Container"
