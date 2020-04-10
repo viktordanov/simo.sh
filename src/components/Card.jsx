@@ -11,7 +11,7 @@ export const Card = (props) => {
       backgroundColor={bgColor[colorMode]}
       py="3rem"
       borderWidth={{ base: "0px", md: "1px" }}
-      rounded={{ base: "0px", md: "16px" }}
+      rounded={{ base: "0px", md: "10px" }}
       px="2rem"
       justifyContent="center"
       {...props}
