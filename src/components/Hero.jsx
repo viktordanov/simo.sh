@@ -10,7 +10,7 @@ export const Hero = ({ title }) => {
       pt="2rem"
       alignItems="center"
       width="100%"
-      flexDirection={{ base: "column", sm: "row" }}
+      flexDirection={{ base: "column", md: "row" }}
       bg={bgColor[colorMode]}
     >
       <Heading size="2xl">{title}</Heading>

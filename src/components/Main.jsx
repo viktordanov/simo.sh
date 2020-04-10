@@ -1,13 +1,13 @@
-import { Box } from "@chakra-ui/core"
+import { Box, useColorMode } from "@chakra-ui/core"
 
-export const Main = (props) => (
-  <Box
-    width="100%"
-    py="2rem"
-    px="2rem"
-    justifyContent="center"
-    minHeight="100vh"
-    maxWidth="48rem"
-    {...props}
-  />
-)
+export const Main = (props) => {
+  return (
+    <Box
+      width="100%"
+      justifyContent="center"
+      minHeight="100vh"
+      maxWidth="48rem"
+      {...props}
+    />
+  )
+}
