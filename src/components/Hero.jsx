@@ -1,4 +1,4 @@
-import { Flex, Heading, useColorMode } from "@chakra-ui/core"
+import { Flex, Image, Heading, useColorMode } from "@chakra-ui/core"
 
 export const Hero = ({ title }) => {
   const { colorMode } = useColorMode()
@@ -7,12 +7,14 @@ export const Hero = ({ title }) => {
   return (
     <Flex
       justifyContent="center"
+      pt="2rem"
       alignItems="center"
       width="100%"
-      height="100vh"
+      flexDirection={{ base: "column", sm: "row" }}
       bg={bgColor[colorMode]}
     >
-      <Heading fontSize="7vw">{title}</Heading>
+      <Heading size="2xl">{title}</Heading>
+      <Image src="me-transparent.png" objectFit="cover" size="md" />
     </Flex>
   )
 }

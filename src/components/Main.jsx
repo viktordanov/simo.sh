@@ -1,10 +1,10 @@
-import { Stack } from "@chakra-ui/core"
+import { Box } from "@chakra-ui/core"
 
 export const Main = (props) => (
-  <Stack
-    spacing="1.5rem"
+  <Box
     width="100%"
     py="2rem"
+    px="2rem"
     justifyContent="center"
     minHeight="100vh"
     maxWidth="48rem"
