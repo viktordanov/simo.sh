@@ -1,4 +1,4 @@
-export default [
+export const introProjects = [
   {
     name: "Delirium Products!",
     link: "/projects/dp",
@@ -24,3 +24,5 @@ export default [
     logo: "etg-logo.png",
   },
 ]
+
+export const allProjects = [...introProjects]

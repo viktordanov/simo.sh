@@ -7,7 +7,8 @@ import { Main } from "../components/Main"
 import Project from "../components/Project"
 import { SectionTitle } from "../components/SectionTitle"
 import Bio from "../content/bio.mdx"
-import projects from "../data/projects"
+import { introAchievements } from "../data/achievements"
+import { introProjects } from "../data/projects"
 
 const Index = () => (
   <>
@@ -19,11 +20,10 @@ const Index = () => (
       <Card mt="2rem">
         <SectionTitle>Projects 🤘</SectionTitle>
         <Text as="p" fontSize="xl" width>
-          Here you can find some of my projects, you can click on them to read
-          more!
+          Here are some of my projects! You can click on on them to read more!
         </Text>
         <Flex wrap="wrap" justifyContent="center" alignItems="center">
-          {projects.map((p) => (
+          {introProjects.map((p) => (
             <Box m={10} flex={1} key={p.name}>
               <Project {...p} />
             </Box>
@@ -33,11 +33,29 @@ const Index = () => (
               <Button as="a" size="lg" variant="outline">
                 All of my projects here!
               </Button>
-              {/* <ChakraLink fontWeight="bold">here </ChakraLink> */}
             </NextLink>
           </Flex>
-          {/* ... and others, click{" "} */}
-          {/* to explore more of my proejcts! */}
+        </Flex>
+      </Card>
+      <Card mt="2rem">
+        <SectionTitle>Achievements 🏆</SectionTitle>
+        <Text as="p" fontSize="xl" width>
+          Some of my achievements are listed here! Click on one to read about
+          it!
+        </Text>
+        <Flex wrap="wrap" justifyContent="center" alignItems="center">
+          {introAchievements.map((p) => (
+            <Box m={10} flex={1} key={p.name}>
+              <Project {...p} />
+            </Box>
+          ))}
+          <Flex flexBasis="100%" justifyContent="center">
+            <NextLink href="/achievements">
+              <Button as="a" size="lg" variant="outline">
+                All of my achievements here!
+              </Button>
+            </NextLink>
+          </Flex>
         </Flex>
       </Card>
     </Main>
