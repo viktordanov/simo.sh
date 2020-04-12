@@ -17,7 +17,7 @@ export const Container = (props) => {
   const bgColor = { light: "gray.50", dark: "gray.900" }
   const color = { light: "black", dark: "white" }
   const navBgColor = {
-    light: "rgba(255, 255, 255, 0.8)",
+    light: "rgba(247, 250, 252, 0.8)",
     dark: "rgba(23, 25, 35, 0.8)",
   }
   return (
