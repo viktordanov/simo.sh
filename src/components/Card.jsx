@@ -7,7 +7,6 @@ export const Card = (props) => {
   return (
     <Box
       width="100%"
-      marginTop={{ base: "0px", md: "-2rem" }}
       backgroundColor={bgColor[colorMode]}
       py="3rem"
       borderWidth={{ base: "0px", md: "1px" }}

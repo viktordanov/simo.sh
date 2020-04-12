@@ -1,13 +1,15 @@
 import React from "react"
-import { withTheme } from "emotion-theming"
-import { Link as ChakraLink, Text } from "@chakra-ui/core"
+import { Link as ChakraLink, Text, Box, Heading, Flex } from "@chakra-ui/core"
 
 import { Hero } from "../components/Hero"
 import { Container } from "../components/Container"
+import { SectionTitle } from "../components/SectionTitle"
 import { Main } from "../components/Main"
 import { DarkModeSwitch } from "../components/DarkModeSwitch"
 import { Footer } from "../components/Footer"
 import { Card } from "../components/Card"
+import Project from "../components/Project"
+import projects from "../data/projects"
 
 import Bio from "../content/bio.mdx"
 
@@ -15,8 +17,18 @@ const Index = () => (
   <Container>
     <Hero title="Simo Aleksandrov" />
     <Main>
-      <Card>
+      <Card marginTop={{ base: "0px", md: "-2rem" }}>
         <Bio />
+      </Card>
+      <Card mt="2rem">
+        <SectionTitle>Projects</SectionTitle>
+        <Flex wrap="wrap">
+          {projects.map((p) => (
+            <Box m={10}>
+              <Project {...p} />
+            </Box>
+          ))}
+        </Flex>
       </Card>
     </Main>
     <DarkModeSwitch />
@@ -26,4 +38,4 @@ const Index = () => (
   </Container>
 )
 
-export default withTheme(Index)
+export default Index
