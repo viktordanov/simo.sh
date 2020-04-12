@@ -1,6 +1,6 @@
-import { Flex, Image, Heading, useColorMode } from "@chakra-ui/core"
+import { Flex, Heading, Image, useColorMode } from "@chakra-ui/core"
 
-export const Hero = ({ title, src }) => {
+export const Hero = ({ title, src = "", height }) => {
   const { colorMode } = useColorMode()
   const bgColor = { light: "white", dark: "black" }
 
@@ -10,6 +10,7 @@ export const Hero = ({ title, src }) => {
       pt="2rem"
       alignItems="center"
       width="100%"
+      height={height}
       flexDirection={{ base: "column", md: "row" }}
       bg={bgColor[colorMode]}
     >
@@ -17,8 +18,4 @@ export const Hero = ({ title, src }) => {
       {src && <Image src={src} objectFit="cover" size="md" />}
     </Flex>
   )
-}
-
-Hero.defaultProps = {
-  title: "with-chakra-ui",
 }

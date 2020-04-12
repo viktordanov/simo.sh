@@ -1,4 +1,4 @@
-import { Box, Button, Flex, IconButton, useColorMode } from "@chakra-ui/core"
+import { Button, Flex, IconButton, useColorMode } from "@chakra-ui/core"
 import styled from "@emotion/styled"
 import NextLink from "next/link"
 import React from "react"
@@ -30,7 +30,6 @@ export const Container = (props) => {
         color={color[colorMode]}
       >
         <StickyNav
-          flexDirection="row"
           justifyContent="space-between"
           alignItems="center"
           width="100%"
@@ -44,7 +43,7 @@ export const Container = (props) => {
             icon={colorMode === "dark" ? "sun" : "moon"}
             onClick={toggleColorMode}
           />
-          <Box>
+          <Flex flexDirection={{ base: "column", md: "row" }}>
             <NextLink href="/" passHref>
               <Button as="a" variant="ghost" p={[1, 4]}>
                 Home
@@ -65,7 +64,7 @@ export const Container = (props) => {
                 Blog
               </Button>
             </NextLink>
-          </Box>
+          </Flex>
         </StickyNav>
         {props.children}
       </Flex>
