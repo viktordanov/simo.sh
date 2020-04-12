@@ -4,7 +4,7 @@ export default ({ name, link, screenshot, logo }) => (
   <Flex direction="column">
     <Image
       css={css`
-        transition: all 0.45s ease-in-out;
+        transition: all 0.35s ease-in-out;
         &:hover {
           transform: scale(0.95);
         }
@@ -24,7 +24,7 @@ export default ({ name, link, screenshot, logo }) => (
         className="logo"
         mt={-12}
         css={css`
-          transition: all 0.45s ease-in-out;
+          transition: all 0.35s ease-in-out;
         `}
       />
     </Flex>
