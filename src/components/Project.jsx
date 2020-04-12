@@ -1,7 +1,7 @@
 import { Image, Flex, Heading, Box } from "@chakra-ui/core"
 import { css } from "@emotion/core"
 export default ({ name, link, screenshot, logo }) => (
-  <Flex w="100%" direction="column">
+  <Flex direction="column">
     <Image
       css={css`
         transition: all 0.45s ease-in-out;
@@ -14,20 +14,15 @@ export default ({ name, link, screenshot, logo }) => (
         }
       `}
       src={screenshot}
-      rounded={25}
+      rounded={15}
       boxShadow="0px 10px 50px rgba(0, 0, 0, 0.25)"
     />
-    <Flex
-      w="100%"
-      justifyContent="center"
-      alignItems="center"
-      className="logo-flex"
-    >
+    <Flex justifyContent="center" alignItems="center" className="logo-flex">
       <Image
         src={logo}
-        size={100}
+        size={85}
         className="logo"
-        marginTop={-65}
+        mt={-12}
         css={css`
           transition: all 0.45s ease-in-out;
         `}

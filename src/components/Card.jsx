@@ -2,7 +2,7 @@ import { Box, useColorMode } from "@chakra-ui/core"
 
 export const Card = (props) => {
   const { colorMode } = useColorMode()
-  const bgColor = { light: "white", dark: "gray.900" }
+  const bgColor = { light: "white", dark: "black" }
 
   return (
     <Box

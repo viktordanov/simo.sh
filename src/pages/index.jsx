@@ -22,9 +22,9 @@ const Index = () => (
       </Card>
       <Card mt="2rem">
         <SectionTitle>Projects</SectionTitle>
-        <Flex wrap="wrap">
+        <Flex wrap="wrap" justifyContent="center">
           {projects.map((p) => (
-            <Box m={10}>
+            <Box m={10} flex={1}>
               <Project {...p} />
             </Box>
           ))}
