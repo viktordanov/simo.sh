@@ -1,6 +1,6 @@
 import { Flex, Image, Heading, useColorMode } from "@chakra-ui/core"
 
-export const Hero = ({ title }) => {
+export const Hero = ({ title, src }) => {
   const { colorMode } = useColorMode()
   const bgColor = { light: "white", dark: "black" }
 
@@ -14,7 +14,7 @@ export const Hero = ({ title }) => {
       bg={bgColor[colorMode]}
     >
       <Heading size="2xl">{title}</Heading>
-      <Image src="me-transparent.png" objectFit="cover" size="md" />
+      {src && <Image src={src} objectFit="cover" size="md" />}
     </Flex>
   )
 }

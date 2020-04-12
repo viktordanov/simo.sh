@@ -1,4 +1,4 @@
-import { Box, useColorMode } from "@chakra-ui/core"
+import { Box } from "@chakra-ui/core"
 
 export const Main = (props) => {
   return (

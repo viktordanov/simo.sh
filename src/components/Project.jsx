@@ -1,4 +1,4 @@
-import { Image, Flex, Heading, Box } from "@chakra-ui/core"
+import { Flex, Heading, Image } from "@chakra-ui/core"
 import { css } from "@emotion/core"
 export default ({ name, link, screenshot, logo }) => (
   <Flex direction="column">
