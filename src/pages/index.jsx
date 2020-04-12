@@ -22,15 +22,15 @@ const Index = () => (
           Here you can find some of my projects, you can click on them to read
           more!
         </Text>
-        <Flex wrap="wrap" justifyContent="center">
+        <Flex wrap="wrap" justifyContent="center" alignItems="center">
           {projects.map((p) => (
-            <Box m={10} flex={1}>
+            <Box m={10} flex={1} key={p.name}>
               <Project {...p} />
             </Box>
           ))}
           <Flex flexBasis="100%" justifyContent="center">
             <NextLink href="/projects">
-              <Button as="a" size="lg">
+              <Button as="a" size="lg" variant="outline">
                 All of my projects here!
               </Button>
               {/* <ChakraLink fontWeight="bold">here </ChakraLink> */}
