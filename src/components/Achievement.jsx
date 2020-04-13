@@ -1,9 +1,9 @@
 import { Badge, Box, Flex, IconButton, Image, Text } from "@chakra-ui/core"
 import NextLink from "next/link"
 
-export const Achievement = ({ name, link, images, tags }) => (
+export const Achievement = ({ title, link, image, tags }) => (
   <Box borderWidth="1px" rounded={10} overflow="hidden" h="100%">
-    <Image src={images[0]} alt={name} objectFit="contain" />
+    <Image src={image} alt={title} objectFit="contain" />
     <Box p="6">
       <Flex wrap="wrap">
         {tags.map((t) => (
@@ -21,7 +21,7 @@ export const Achievement = ({ name, link, images, tags }) => (
           lineHeight="tight"
           isTruncated
         >
-          {name}
+          {title}
         </Text>
         <Flex justifyContent="center">
           {link != "" && (

@@ -8,11 +8,13 @@ import NextLink from "next/link"
 Here are some of my projects! You can click on on them to read more!
 
 <Flex wrap="wrap" justifyContent="center" alignItems="center">
-  {introProjects.map((p) => (
-    <Box m={10} flex={1} key={p.name}>
-      <ProjectCard {...p} />
-    </Box>
-  ))}
+  {introProjects.map((p) => {
+    return (
+      <Box m={10} flex={1} key={p.name}>
+        <ProjectCard {...p} />
+      </Box>
+    )
+  })}
   <Flex flexBasis="100%" justifyContent="center">
     <NextLink href="/projects">
       <Button size="lg" variant="outline">
