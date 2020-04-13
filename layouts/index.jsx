@@ -2,8 +2,6 @@ import { Badge, Box, Flex, Heading } from "@chakra-ui/core"
 import { Main } from "../src/components/Main"
 
 export default (frontMatter) => {
-  console.log(frontMatter)
-
   return ({ children }) => {
     return (
       <>

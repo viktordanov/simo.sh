@@ -16,7 +16,7 @@ class App extends NextApp {
       <MDXProvider components={MDXComponents}>
         <ThemeProvider theme={theme}>
           <CSSReset />
-          <ColorModeProvider>
+          <ColorModeProvider value="light">
             <Container>
               <DefaultSeo {...SEO} />
               <Component />
