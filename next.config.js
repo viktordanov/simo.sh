@@ -1,3 +1,5 @@
-const withMDX = require("@next/mdx")()
+const withMdxEnhanced = require("next-mdx-enhanced")({
+  defaultLayout: true,
+})
 
-module.exports = withMDX()
+module.exports = withMdxEnhanced()
