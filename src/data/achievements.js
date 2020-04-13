@@ -25,6 +25,11 @@ export const introAchievements = [
     tags: ["1st Place"],
   },
   {
+    name: "TeenHack Ruse ’19",
+    images: ["teenhack.jpg"],
+    tags: ["1st Place", "Grand Prize of 1500 BGN"],
+  },
+  {
     name: "SofUni Fest ’18",
     images: ["fest.png"],
     tags: ["1st Place", "Grand Prize of 1000 BGN"],
