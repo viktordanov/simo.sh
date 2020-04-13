@@ -1,5 +1,6 @@
-import { Flex, Heading, Image } from "@chakra-ui/core"
+import { Flex, Heading, IconButton, Image } from "@chakra-ui/core"
 import { css } from "@emotion/core"
+import NextLink from "next/link"
 export const ProjectCard = ({ name, link, screenshot, logo }) => (
   <Flex direction="column">
     <Image
@@ -33,5 +34,17 @@ export const ProjectCard = ({ name, link, screenshot, logo }) => (
     <Heading mt={2} textAlign="center">
       {name}
     </Heading>
+    <Flex justifyContent="center">
+      {link != "" && (
+        <NextLink href={link}>
+          <IconButton
+            icon="info-outline"
+            size="lg"
+            variant="ghost"
+            aria-label="Go to project"
+          />
+        </NextLink>
+      )}
+    </Flex>
   </Flex>
 )
