@@ -4,8 +4,8 @@ export const ProjectCard = ({ name, link, screenshot, logo }) => (
   <Flex direction="column">
     <Image
       opacity={0.75}
+      transition="all 0.25s ease-in-out"
       css={css`
-        transition: all 0.25s ease-in-out;
         &:hover {
           opacity: 1;
         }
@@ -24,8 +24,8 @@ export const ProjectCard = ({ name, link, screenshot, logo }) => (
         opacity={1}
         className="logo"
         mt={-12}
+        transition="all 0.25s ease-in-out"
         css={css`
-          transition: all 0.25s ease-in-out;
           filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.25));
         `}
       />
