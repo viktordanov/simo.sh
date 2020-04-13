@@ -5,7 +5,7 @@ export default ({ name, link, screenshot, logo }) => (
     <Image
       opacity={0.75}
       css={css`
-        transition: all 0.35s ease-in-out;
+        transition: all 0.25s ease-in-out;
         &:hover {
           opacity: 1;
         }
@@ -25,7 +25,7 @@ export default ({ name, link, screenshot, logo }) => (
         className="logo"
         mt={-12}
         css={css`
-          transition: all 0.35s ease-in-out;
+          transition: all 0.25s ease-in-out;
           filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.25));
         `}
       />
