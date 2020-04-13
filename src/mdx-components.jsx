@@ -31,7 +31,7 @@ const MDXComponents = {
     <Image
       rounded={15}
       css={css`
-        filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.6));
+        filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.5));
       `}
       {...props}
     />
