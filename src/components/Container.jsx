@@ -28,6 +28,7 @@ export const Container = (props) => {
         justifyContent="flex-start"
         bg={bgColor[colorMode]}
         minH="100vh"
+        w="100%"
         color={color[colorMode]}
       >
         <StickyNav

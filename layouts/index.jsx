@@ -5,7 +5,7 @@ export default (frontMatter) => {
   return ({ children }) => {
     return (
       <>
-        <Heading size="2xl" mb="1rem">
+        <Heading fontSize="4rem" mb="1rem">
           {frontMatter.title}
         </Heading>
         <Main>
