@@ -1,5 +1,6 @@
-import { Box, Flex, Heading } from "@chakra-ui/core"
+import { Box } from "@chakra-ui/core"
 import { ProjectSmall } from "../components/ProjectSmall"
+import { Layout } from "../layouts"
 import { frontMatter as projects } from "./projects/**/*.mdx"
 
 const showcaseProjects = projects
@@ -23,11 +24,4 @@ const showcaseProjects = projects
     </Box>
   ))
 
-export default () => (
-  <>
-    <Heading textAlign="left">Projects 🤘</Heading>
-    <Flex direction="column" marginY="1rem">
-      {showcaseProjects}
-    </Flex>
-  </>
-)
+export default () => <Layout title="Projects 🤘">{showcaseProjects}</Layout>
