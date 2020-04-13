@@ -12,7 +12,7 @@ import {
 import { css } from "@emotion/core"
 import NextLink from "next/link"
 
-export const ProjectSmall = ({ name, link = "", tags, logo = "", short }) => {
+export const ProjectSmall = ({ title, slug = "", tags, logo = "", short }) => {
   const { colorMode } = useColorMode()
   const color = { light: "black", dark: "white" }
 
@@ -31,7 +31,7 @@ export const ProjectSmall = ({ name, link = "", tags, logo = "", short }) => {
           {logo != "" ? (
             <Image
               src={logo}
-              alt={name}
+              alt={title}
               mr="1rem"
               w="6rem"
               h="6rem"
@@ -43,7 +43,7 @@ export const ProjectSmall = ({ name, link = "", tags, logo = "", short }) => {
             <Avatar
               size="xl"
               mr="1rem"
-              name={name}
+              name={title}
               backgroundColor="#00000000"
               color={color[colorMode]}
               boxShadow="0px 10px 50px rgba(0, 0, 0, 0.25)"
@@ -51,29 +51,30 @@ export const ProjectSmall = ({ name, link = "", tags, logo = "", short }) => {
           )}
           <Box>
             <Text fontSize="2xl" fontWeight="bold" mb={1}>
-              {name}
+              {title}
             </Text>
             <Flex wrap="wrap">
-              {tags.map((t) => (
-                <Badge
-                  rounded="full"
-                  variantColor="purple"
-                  key={t}
-                  px="0.4rem"
-                  mr={1}
-                  my={[1, 0]}
-                >
-                  {t}
-                </Badge>
-              ))}
+              {tags?.length > 0 &&
+                tags.map((t) => (
+                  <Badge
+                    rounded="full"
+                    variantColor="purple"
+                    key={t}
+                    px="0.4rem"
+                    mr={1}
+                    my={[1, 0]}
+                  >
+                    {t}
+                  </Badge>
+                ))}
             </Flex>
             <Text mt={1} fontSize="xl">
               {short}
             </Text>
           </Box>
         </Flex>
-        {link != "" && (
-          <NextLink href={link}>
+        {slug != "" && (
+          <NextLink href={`projects/${slug}`}>
             <IconButton
               justifySelf="end"
               icon="chevron-right"

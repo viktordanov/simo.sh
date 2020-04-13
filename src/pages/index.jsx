@@ -12,25 +12,20 @@ import MDXComponents from "../mdx-components"
 import { frontMatter as achievements } from "../pages/achievements/**/*.mdx"
 import { frontMatter as projects } from "../pages/projects/**/*.mdx"
 
-const showcase = (arr) =>
+const showcaseArray = (arr) =>
   arr.filter((a) => a.showcase).sort((a, b) => a.order - b.order)
 
-const showcaseProjects = showcase(projects).map((a) => {
-  return (
-    <Box m={10} key={a.title} flex={1}>
-      <ProjectCard {...a} />
-    </Box>
-  )
-})
+const showcaseProjects = showcaseArray(projects).map((a) => (
+  <Box m={10} key={a.title} flex={1}>
+    <ProjectCard {...a} />
+  </Box>
+))
 
-const showcaseAchievements = showcase(achievements).map((a) => {
-  let link = a.__resourcePath.replace("achievements/", "").replace(".mdx", "")
-  return (
-    <Box m={3} key={a.title} flex={1}>
-      <Achievement {...a} link={link} />
-    </Box>
-  )
-})
+const showcaseAchievements = showcaseArray(achievements).map((a) => (
+  <Box m={3} key={a.title} flex={1}>
+    <Achievement {...a} />
+  </Box>
+))
 
 const Showcase = ({ title, paragraph, children }) => (
   <>

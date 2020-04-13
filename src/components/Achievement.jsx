@@ -1,7 +1,7 @@
 import { Badge, Box, Flex, IconButton, Image, Text } from "@chakra-ui/core"
 import NextLink from "next/link"
 
-export const Achievement = ({ title, link, image, tags }) => (
+export const Achievement = ({ title, slug = "", image, tags }) => (
   <Box borderWidth="1px" rounded={10} overflow="hidden" h="100%">
     <Image src={image} alt={title} objectFit="contain" />
     <Box p="6">
@@ -24,8 +24,8 @@ export const Achievement = ({ title, link, image, tags }) => (
           {title}
         </Text>
         <Flex justifyContent="center">
-          {link != "" && (
-            <NextLink href={link}>
+          {slug != "" && (
+            <NextLink href={`achievements/${slug}`}>
               <IconButton
                 ml={1}
                 icon="chevron-right"

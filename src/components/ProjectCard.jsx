@@ -36,7 +36,7 @@ export const ProjectCard = ({ title, slug, image, logo }) => (
     </Heading>
     <Flex justifyContent="center">
       {slug != "" && (
-        <NextLink href={slug}>
+        <NextLink href={`projects/${slug}`}>
           <IconButton
             icon="info-outline"
             size="lg"

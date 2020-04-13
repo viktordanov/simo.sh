@@ -58,7 +58,7 @@ const MDXComponents = {
       w="100%"
       my="1rem"
       css={css`
-        filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.3));
       `}
       {...props}
     />
