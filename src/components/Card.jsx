@@ -9,10 +9,9 @@ export const Card = (props) => {
       width="100%"
       backgroundColor={bgColor[colorMode]}
       py="3rem"
+      px="2rem"
       borderWidth={{ base: "0px", md: "1px" }}
       rounded={{ base: "0px", md: "10px" }}
-      px="2rem"
-      justifyContent="center"
       {...props}
     />
   )
