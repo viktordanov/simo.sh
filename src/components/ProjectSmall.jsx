@@ -17,7 +17,7 @@ export const ProjectSmall = ({ name, link, tags, logo = "", short }) => {
   return (
     <PseudoBox
       transition="all 0.25s ease-in-out"
-      p={2}
+      p={4}
       rounded={15}
       _hover={{
         boxShadow: "0px 10px 50px rgba(0, 0, 0, 0.25)",
