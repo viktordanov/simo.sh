@@ -22,6 +22,7 @@ export const ProjectSmall = ({ name, link, tags, logo = "", short }) => {
       _hover={{
         boxShadow: "0px 10px 50px rgba(0, 0, 0, 0.25)",
       }}
+      boxShadow="0px 8px 30px rgba(0, 0, 0, 0.1)"
     >
       <Flex flexDir="row" alignItems="center">
         {logo != "" ? (
