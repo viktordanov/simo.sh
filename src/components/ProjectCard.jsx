@@ -12,7 +12,7 @@ export const ProjectCard = ({ name, link, screenshot, logo }) => (
         &:hover + .logo-flex > .logo {
           opacity: 0.75;
         }
-        filter: drop-shadow(0px 7px 45px rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.4));
       `}
       src={screenshot}
       rounded={15}
@@ -26,7 +26,7 @@ export const ProjectCard = ({ name, link, screenshot, logo }) => (
         mt={-12}
         transition="all 0.25s ease-in-out"
         css={css`
-          filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.4));
         `}
       />
     </Flex>

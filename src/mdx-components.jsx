@@ -1,4 +1,5 @@
-import { Heading, Text } from "@chakra-ui/core"
+import { Heading, Image, Text } from "@chakra-ui/core"
+import { css } from "@emotion/core"
 
 const hs = {
   "2xl": 1,
@@ -26,6 +27,15 @@ const MDXComponents = {
   h5: (props) => <H size="sm" {...props} />,
   h6: (props) => <H size="xs" {...props} />,
   p: (props) => <Text as="p" fontSize="xl" width {...props} />,
+  img: (props) => (
+    <Image
+      rounded={15}
+      css={css`
+        filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.6));
+      `}
+      {...props}
+    />
+  ),
 }
 
 export default MDXComponents
