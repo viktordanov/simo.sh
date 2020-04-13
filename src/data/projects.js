@@ -1,7 +1,7 @@
 export const introProjects = [
   {
     name: "Delirium Products!",
-    link: "/projects/dp",
+    link: "/projects/deliprods",
     screenshot: "dp-scrot.jpg",
     tags: [],
     short: "🍫 2-man dev team formed in 2018.",
