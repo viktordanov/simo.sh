@@ -37,7 +37,7 @@ export const ProjectSmall = ({ name, link, tags, logo = "", short }) => {
         />
       )}
       <Box>
-        <Text fontSize="2xl" fontWeight="bold">
+        <Text fontSize="2xl" fontWeight="bold" mb={1}>
           {name}
         </Text>
         <Flex>
