@@ -1,9 +1,4 @@
-import {
-  ColorModeProvider,
-  CSSReset,
-  Text,
-  ThemeProvider,
-} from "@chakra-ui/core"
+import { ColorModeProvider, CSSReset, ThemeProvider } from "@chakra-ui/core"
 import { MDXProvider } from "@mdx-js/react"
 import NextApp from "next/app"
 import React from "react"
@@ -23,9 +18,7 @@ class App extends NextApp {
             <Container>
               <Component />
             </Container>
-            <Footer>
-              <Text>Simo Aleksandrov 2020</Text>
-            </Footer>
+            <Footer />
           </ColorModeProvider>
         </ThemeProvider>
       </MDXProvider>

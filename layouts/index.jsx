@@ -5,11 +5,11 @@ export default (frontMatter) => {
   return ({ children }) => {
     return (
       <>
-        <Heading fontSize="4rem" mb="1rem">
+        <Heading fontSize="3.6rem" mb="1rem" textAlign="center">
           {frontMatter.title}
         </Heading>
         <Main>
-          <Box py="3rem" px="2rem">
+          <Box py="3rem" px="2rem" bgColor="white">
             {children}
           </Box>
         </Main>

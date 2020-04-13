@@ -1,8 +1,9 @@
-import { Flex, useColorMode } from "@chakra-ui/core"
+import { Flex, Text, useColorMode } from "@chakra-ui/core"
 
-export const Footer = (props) => {
+export const Footer = () => {
   const { colorMode } = useColorMode()
   const bgColor = { light: "white", dark: "black" }
+  const color = { light: "black", dark: "white" }
 
   return (
     <Flex
@@ -12,7 +13,8 @@ export const Footer = (props) => {
       alignItems="center"
       py="2rem"
       bg={bgColor[colorMode]}
-      {...props}
-    />
+    >
+      <Text color={color[colorMode]}>Simo Aleksandrov 2020</Text>
+    </Flex>
   )
 }
