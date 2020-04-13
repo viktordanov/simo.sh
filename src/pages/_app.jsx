@@ -3,10 +3,10 @@ import { MDXProvider } from "@mdx-js/react"
 import { DefaultSeo } from "next-seo"
 import NextApp from "next/app"
 import React from "react"
+import SEO from "../../next-seo.config"
 import { Container } from "../components/Container"
 import { Footer } from "../components/Footer"
 import MDXComponents from "../mdx-components"
-import SEO from "../next-seo.config"
 import theme from "../theme"
 
 class App extends NextApp {
