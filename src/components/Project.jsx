@@ -3,14 +3,14 @@ import { css } from "@emotion/core"
 export default ({ name, link, screenshot, logo }) => (
   <Flex direction="column">
     <Image
+      opacity={0.75}
       css={css`
         transition: all 0.35s ease-in-out;
         &:hover {
-          transform: scale(0.95);
+          opacity: 1;
         }
         &:hover + .logo-flex > .logo {
-          transform: scale(0.95);
-          opacity: 0.5;
+          opacity: 0.75;
         }
         filter: drop-shadow(0px 7px 45px rgba(0, 0, 0, 0.25));
       `}
@@ -21,6 +21,7 @@ export default ({ name, link, screenshot, logo }) => (
       <Image
         src={logo}
         size={85}
+        opacity={1}
         className="logo"
         mt={-12}
         css={css`
