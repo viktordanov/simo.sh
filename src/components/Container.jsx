@@ -48,27 +48,27 @@ export const Container = (props) => {
           />
           <Box mt={{ base: "1rem", md: 0 }}>
             <NextLink href="/" passHref>
-              <Button as="a" variant="ghost" p={[1, 4]}>
+              <Button as="a" variant="ghost" p={[1, 4]} mr={2}>
                 Home
               </Button>
             </NextLink>
             <NextLink href="/projects" passHref>
-              <Button as="a" variant="ghost" p={[1, 4]}>
+              <Button as="a" variant="ghost" p={[1, 4]} mr={2}>
                 Projects
               </Button>
             </NextLink>
             <NextLink href="/achievements" passHref>
-              <Button as="a" variant="ghost" p={[1, 4]}>
+              <Button as="a" variant="ghost" p={[1, 4]} mr={2}>
                 Achievements
               </Button>
             </NextLink>
             <NextLink href="/blog" passHref>
-              <Button as="a" variant="ghost" p={[1, 4]}>
+              <Button as="a" variant="ghost" p={[1, 4]} mr={2}>
                 Blog
               </Button>
             </NextLink>
             <NextLink href="/social" passHref>
-              <Button as="a" variant="ghost" p={[1, 4]}>
+              <Button as="a" variant="ghost" p={[1, 4]} mr={2}>
                 Social
               </Button>
             </NextLink>
