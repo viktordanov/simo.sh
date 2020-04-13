@@ -22,10 +22,10 @@ class App extends NextApp {
           <ColorModeProvider>
             <Container>
               <Component />
-              <Footer>
-                <Text>Simo Aleksandrov 2020</Text>
-              </Footer>
             </Container>
+            <Footer>
+              <Text>Simo Aleksandrov 2020</Text>
+            </Footer>
           </ColorModeProvider>
         </ThemeProvider>
       </MDXProvider>
