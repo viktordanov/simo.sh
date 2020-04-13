@@ -1,6 +1,6 @@
 import { Badge, Box, Flex, Image, Text } from "@chakra-ui/core"
 
-export default ({ name, images, tags }) => (
+export const Achievement = ({ name, images, tags }) => (
   <Box maxW="sm" borderWidth="1px" rounded={10} overflow="hidden" h="100%">
     <Image src={images[0]} alt={name} objectFit="cover" />
     <Box p="6">

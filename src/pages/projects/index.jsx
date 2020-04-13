@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/core"
 import { Main } from "../../components/Main"
-import Projects from "../../content/projects.mdx"
+import Projects from "../../content/projects/index.mdx"
 
 export default () => {
   return (

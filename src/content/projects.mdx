@@ -1,15 +1,23 @@
-import { Box, Flex } from "@chakra-ui/core"
-import { ProjectSmall } from "../components/ProjectSmall"
-import { allProjects } from "../data/projects"
+import { Flex, Box, Button } from "@chakra-ui/core"
+import { ProjectCard } from "../components/ProjectCard"
+import { introProjects } from "../data/projects"
+import NextLink from "next/link"
 
 # Projects 🤘
 
-Here you can find all of my projects.
+Here are some of my projects! You can click on on them to read more!
 
-<Flex direction="column">
-  {allProjects.map((p) => (
+<Flex wrap="wrap" justifyContent="center" alignItems="center">
+  {introProjects.map((p) => (
     <Box m={10} flex={1} key={p.name}>
-      <ProjectSmall {...p} />
+      <ProjectCard {...p} />
     </Box>
   ))}
+  <Flex flexBasis="100%" justifyContent="center">
+    <NextLink href="/projects">
+      <Button as="a" size="lg" variant="outline">
+        All of my projects here!
+      </Button>
+    </NextLink>
+  </Flex>
 </Flex>
