@@ -16,6 +16,14 @@ export const introSkills = [
     image: "ts.png",
   },
   {
+    name: "HTML",
+    image: "html.png",
+  },
+  {
+    name: "CSS",
+    image: "css.png",
+  },
+  {
     name: "React",
     image: "react.png",
   },

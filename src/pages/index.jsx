@@ -64,7 +64,7 @@ const Index = () => (
       <Card mt="2rem">
         <SectionTitle>Skills 📚</SectionTitle>
         <Text as="p" fontSize="xl" width>
-          Here's a list of skills that I know.
+          Here's a list of skills / languages that I know.
         </Text>
         <Flex wrap="wrap" justifyContent="center" alignItems="center">
           {introSkills.map((s) => (

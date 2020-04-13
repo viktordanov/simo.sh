@@ -65,6 +65,11 @@ export const Container = (props) => {
                 Blog
               </Button>
             </NextLink>
+            <NextLink href="/social" passHref>
+              <Button as="a" variant="ghost" p={[1, 4]}>
+                Social
+              </Button>
+            </NextLink>
           </Box>
         </StickyNav>
         {props.children}
