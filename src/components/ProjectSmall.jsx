@@ -1,7 +1,15 @@
-import { Avatar, Box, Flex, Image, Text, useColorMode } from "@chakra-ui/core"
+import {
+  Avatar,
+  Badge,
+  Box,
+  Flex,
+  Image,
+  Text,
+  useColorMode,
+} from "@chakra-ui/core"
 import { css } from "@emotion/core"
 
-export const ProjectSmall = ({ name, link, logo = "", short }) => {
+export const ProjectSmall = ({ name, link, tags, logo = "", short }) => {
   const { colorMode } = useColorMode()
   const color = { light: "black", dark: "white" }
 
@@ -32,6 +40,13 @@ export const ProjectSmall = ({ name, link, logo = "", short }) => {
         <Text fontSize="2xl" fontWeight="bold">
           {name}
         </Text>
+        <Flex>
+          {tags.map((t) => (
+            <Badge rounded="full" variantColor="purple" key={t} mr={1}>
+              {t}
+            </Badge>
+          ))}
+        </Flex>
         <Text mt={1} fontSize="xl">
           {short}
         </Text>
