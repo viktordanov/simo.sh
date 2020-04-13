@@ -8,9 +8,9 @@ import NextLink from "next/link"
 Some of my achievements are listed here! Click on one to read about
 it!
 
-<Flex wrap="wrap" justifyContent="center" alignItems="center" mt={7}>
+<Flex wrap="wrap" mt={7} justifyContent="center" alignItems="center">
   {introAchievements.map((a) => (
-    <Box m={3} flex={1} key={a.name}>
+    <Box m={3} key={a.name} flex={1}>
       <Achievement {...a} />
     </Box>
   ))}
