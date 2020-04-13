@@ -6,16 +6,22 @@ export const introProjects = [
     logo: "dp-logo.png",
   },
   {
+    name: "Aumo",
+    link: "/projects/aumo",
+    screenshot: "aumo-scrot.png",
+    logo: "aumo-logo.png",
+  },
+  {
     name: "LuncherBox",
     link: "/projects/luncher-box",
     screenshot: "luncherbox-scrot.png",
     logo: "luncherbox-logo.svg",
   },
   {
-    name: "Aumo",
-    link: "/projects/aumo",
-    screenshot: "aumo-scrot.png",
-    logo: "aumo-logo.png",
+    name: "Postbank Calendar",
+    link: "/projects/postbank",
+    screenshot: "postbank-scrot.png",
+    logo: "postbank-logo.png",
   },
   {
     name: "English Test Generator",
