@@ -45,13 +45,13 @@ const Index = () => (
           Some of my achievements are listed here! Click on one to read about
           it!
         </Text>
-        <Flex wrap="wrap" justifyContent="center" alignItems="stretch">
+        <Flex wrap="wrap" justifyContent="center" alignItems="center" mt={7}>
           {introAchievements.map((a) => (
             <Box m={3} flex={1} key={a.name}>
               <Achievement {...a} />
             </Box>
           ))}
-          <Flex flexBasis="100%" justifyContent="center">
+          <Flex flexBasis="100%" justifyContent="center" mt={5}>
             <NextLink href="/achievements">
               <Button as="a" size="lg" variant="outline">
                 All of my achievements here!

@@ -1,12 +1,8 @@
 import { Badge, Box, Flex, Image, Text } from "@chakra-ui/core"
 
 export default ({ name, images, tags }) => (
-  <Box maxW="sm" borderWidth="1px" rounded={10} overflow="hidden">
-    <Flex wrap="wrap">
-      {images.map((i) => (
-        <Image src={i} key={i} alt={name} objectFit="cover" flex="50%" />
-      ))}
-    </Flex>
+  <Box maxW="sm" borderWidth="1px" rounded={10} overflow="hidden" h="100%">
+    <Image src={images[0]} alt={name} objectFit="cover" />
     <Box p="6">
       <Flex wrap="wrap">
         {tags.map((t) => (
