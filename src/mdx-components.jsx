@@ -10,7 +10,7 @@ const hs = {
 }
 
 const H = ({ size, children, ...props }) => (
-  <Heading size={size} mb="1rem" {...props}>
+  <Heading size={size} my="1rem" {...props}>
     <Text textAlign="center" fontWeight="100" d="inline" color="gray.500">
       {"#".repeat(hs[size]) + " "}
     </Text>
