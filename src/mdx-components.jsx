@@ -1,5 +1,5 @@
-import { SectionTitle } from "./components/SectionTitle"
 import { Text } from "@chakra-ui/core"
+import { SectionTitle } from "./components/SectionTitle"
 
 const MDXComponents = {
   h1: SectionTitle,
