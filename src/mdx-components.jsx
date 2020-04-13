@@ -56,7 +56,7 @@ const MDXComponents = {
     <Image
       rounded={15}
       w="100%"
-      my="1rem"
+      my="2rem"
       css={css`
         filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.3));
       `}
