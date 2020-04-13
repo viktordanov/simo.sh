@@ -1,7 +1,7 @@
 import { Flex, Heading, IconButton, Image } from "@chakra-ui/core"
 import { css } from "@emotion/core"
 import NextLink from "next/link"
-export const ProjectCard = ({ name, link, screenshot, logo }) => (
+export const ProjectCard = ({ title, slug, image, logo }) => (
   <Flex direction="column">
     <Image
       opacity={0.75}
@@ -15,7 +15,7 @@ export const ProjectCard = ({ name, link, screenshot, logo }) => (
         }
         filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.4));
       `}
-      src={screenshot}
+      src={image}
       rounded={15}
     />
     <Flex justifyContent="center" alignItems="center" className="logo-flex">
@@ -32,11 +32,11 @@ export const ProjectCard = ({ name, link, screenshot, logo }) => (
       />
     </Flex>
     <Heading mt={2} textAlign="center">
-      {name}
+      {title}
     </Heading>
     <Flex justifyContent="center">
-      {link != "" && (
-        <NextLink href={link}>
+      {slug != "" && (
+        <NextLink href={slug}>
           <IconButton
             icon="info-outline"
             size="lg"
