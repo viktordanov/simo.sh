@@ -51,7 +51,13 @@ export const ProjectSmall = ({ name, link, tags, logo = "", short }) => {
           </Text>
           <Flex>
             {tags.map((t) => (
-              <Badge rounded="full" variantColor="purple" key={t} mr={1}>
+              <Badge
+                rounded="full"
+                variantColor="purple"
+                key={t}
+                px="0.4rem"
+                mr={1}
+              >
                 {t}
               </Badge>
             ))}

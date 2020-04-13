@@ -26,7 +26,7 @@ export const introProjects = [
   {
     name: "LuncherBox",
     link: "/projects/luncher-box",
-    short: "🍖 Ordering food has never been faster",
+    short: "🍖 Ordering food has never been faster.",
     screenshot: "luncherbox-scrot.png",
     tags: ["TypeScript", "React", "Next.js"],
     logo: "luncherbox-logo.svg",
