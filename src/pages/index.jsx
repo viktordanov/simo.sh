@@ -5,7 +5,7 @@ import Achievement from "../components/Achievement"
 import { Card } from "../components/Card"
 import { Hero } from "../components/Hero"
 import { Main } from "../components/Main"
-import Project from "../components/Project"
+import { ProjectCard } from "../components/ProjectCard"
 import { SectionTitle } from "../components/SectionTitle"
 import Skill from "../components/Skill"
 import Bio from "../content/bio.mdx"
@@ -16,7 +16,7 @@ import { introSkills } from "../data/skills"
 const Index = () => (
   <>
     <Hero title="Simo Aleksandrov" src="me-transparent.png" />
-    <Main>
+    <Main pb="2rem">
       <Card marginTop={{ base: "0px", md: "-2rem" }}>
         <Bio />
       </Card>
@@ -28,7 +28,7 @@ const Index = () => (
         <Flex wrap="wrap" justifyContent="center" alignItems="center">
           {introProjects.map((p) => (
             <Box m={10} flex={1} key={p.name}>
-              <Project {...p} />
+              <ProjectCard {...p} />
             </Box>
           ))}
           <Flex flexBasis="100%" justifyContent="center">

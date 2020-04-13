@@ -1,16 +1,13 @@
-import { Box, Text } from "@chakra-ui/core"
+import { Box } from "@chakra-ui/core"
 import { Main } from "../../components/Main"
-import { SectionTitle } from "../../components/SectionTitle"
+import Projects from "../../content/projects.mdx"
 
 export default () => {
   return (
     <>
       <Main>
-        <Box width="100%" py="3rem" px="2rem">
-          <SectionTitle>Projects 🤘</SectionTitle>
-          <Text as="p" fontSize="xl" width>
-            Here you can find all of my projects.
-          </Text>
+        <Box minW="100%" py="3rem" px="2rem">
+          <Projects />
         </Box>
       </Main>
     </>

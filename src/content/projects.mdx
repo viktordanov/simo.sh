@@ -1,0 +1,15 @@
+import { Box, Flex } from "@chakra-ui/core"
+import { ProjectSmall } from "../components/ProjectSmall"
+import { allProjects } from "../data/projects"
+
+# Projects 🤘
+
+Here you can find all of my projects.
+
+<Flex direction="column">
+  {allProjects.map((p) => (
+    <Box m={10} flex={1} key={p.name}>
+      <ProjectSmall {...p} />
+    </Box>
+  ))}
+</Flex>
