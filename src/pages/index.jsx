@@ -9,6 +9,7 @@ import { SectionTitle } from "../components/SectionTitle"
 import Bio from "../content/bio.mdx"
 import { introAchievements } from "../data/achievements"
 import { introProjects } from "../data/projects"
+import { introSkills } from "../data/skills"
 
 const Index = () => (
   <>
@@ -56,6 +57,17 @@ const Index = () => (
               </Button>
             </NextLink>
           </Flex>
+        </Flex>
+      </Card>
+      <Card mt="2rem">
+        <SectionTitle>Skills 📚</SectionTitle>
+        <Text as="p" fontSize="xl" width>
+          Here's a list of my skills / technologies that I know.
+        </Text>
+        <Flex wrap="wrap" justifyContent="center" alignItems="center">
+          {introSkills.map((p) => (
+            <Box m={10} flex={1} key={p.name}></Box>
+          ))}
         </Flex>
       </Card>
     </Main>
