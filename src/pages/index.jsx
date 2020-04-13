@@ -1,6 +1,7 @@
 import { Box, Button, Flex, Text } from "@chakra-ui/core"
 import NextLink from "next/link"
 import React from "react"
+import Achievement from "../components/Achievement"
 import { Card } from "../components/Card"
 import { Hero } from "../components/Hero"
 import { Main } from "../components/Main"
@@ -44,10 +45,10 @@ const Index = () => (
           Some of my achievements are listed here! Click on one to read about
           it!
         </Text>
-        <Flex wrap="wrap" justifyContent="center" alignItems="center">
-          {introAchievements.map((p) => (
-            <Box m={10} flex={1} key={p.name}>
-              <Project {...p} />
+        <Flex wrap="wrap" justifyContent="center" alignItems="stretch">
+          {introAchievements.map((a) => (
+            <Box m={3} flex={1} key={a.name}>
+              <Achievement {...a} />
             </Box>
           ))}
           <Flex flexBasis="100%" justifyContent="center">

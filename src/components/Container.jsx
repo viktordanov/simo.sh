@@ -44,7 +44,7 @@ export const Container = (props) => {
             icon={colorMode === "dark" ? "sun" : "moon"}
             onClick={toggleColorMode}
           />
-          <Box mt={{ base: "1rem", md: "" }}>
+          <Box mt={{ base: "1rem", md: 0 }}>
             <NextLink href="/" passHref>
               <Button as="a" variant="ghost" p={[1, 4]}>
                 Home
