@@ -49,7 +49,7 @@ export const ProjectSmall = ({ name, link, tags, logo = "", short }) => {
           <Text fontSize="2xl" fontWeight="bold" mb={1}>
             {name}
           </Text>
-          <Flex>
+          <Flex wrap="wrap">
             {tags.map((t) => (
               <Badge
                 rounded="full"
@@ -57,6 +57,7 @@ export const ProjectSmall = ({ name, link, tags, logo = "", short }) => {
                 key={t}
                 px="0.4rem"
                 mr={1}
+                my={[1, 0]}
               >
                 {t}
               </Badge>
