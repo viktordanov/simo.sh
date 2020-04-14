@@ -41,7 +41,7 @@ export const ProjectSmall = ({
       <Link href={link}>
         <IconButton
           justifySelf="end"
-          icon="chevron-right"
+          icon="external-link"
           size="lg"
           variant="ghost"
           aria-label="Go to project"
