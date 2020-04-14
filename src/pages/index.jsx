@@ -37,13 +37,13 @@ const showcaseArray = (arr) =>
   arr.filter((a) => a.showcase).sort((a, b) => a.order - b.order)
 
 const showcaseProjects = showcaseArray(projects).map((p) => (
-  <Box m={3} key={p.title} flexBasis="45%">
+  <Box m={3} key={p.title} flexBasis={["35%", "45%"]}>
     <ProjectCard {...p} />
   </Box>
 ))
 
 const showcaseAchievements = showcaseArray(achievements).map((a) => (
-  <Box m={3} key={a.title} flexBasis="45%">
+  <Box m={3} key={a.title} flexBasis={["35%", "45%"]}>
     <Achievement {...a} />
   </Box>
 ))
