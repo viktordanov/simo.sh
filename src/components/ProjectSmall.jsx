@@ -5,6 +5,7 @@ import {
   Flex,
   IconButton,
   Image,
+  Link,
   PseudoBox,
   Text,
   useColorMode,
@@ -12,9 +13,42 @@ import {
 import { css } from "@emotion/core"
 import NextLink from "next/link"
 
-export const ProjectSmall = ({ title, slug = "", tags, logo = "", short }) => {
+export const ProjectSmall = ({
+  title,
+  slug = "",
+  link = "",
+  tags,
+  logo = "",
+  short,
+}) => {
   const { colorMode } = useColorMode()
   const color = { light: "black", dark: "white" }
+  let btn = null
+  if (slug != "") {
+    btn = (
+      <NextLink href={`projects/${slug}`}>
+        <IconButton
+          justifySelf="end"
+          icon="chevron-right"
+          size="lg"
+          variant="ghost"
+          aria-label="Go to project"
+        />
+      </NextLink>
+    )
+  } else if (link != "") {
+    btn = (
+      <Link href={link}>
+        <IconButton
+          justifySelf="end"
+          icon="chevron-right"
+          size="lg"
+          variant="ghost"
+          aria-label="Go to project"
+        />
+      </Link>
+    )
+  }
 
   return (
     <PseudoBox
@@ -73,17 +107,7 @@ export const ProjectSmall = ({ title, slug = "", tags, logo = "", short }) => {
             </Text>
           </Box>
         </Flex>
-        {slug != "" && (
-          <NextLink href={`projects/${slug}`}>
-            <IconButton
-              justifySelf="end"
-              icon="chevron-right"
-              size="lg"
-              variant="ghost"
-              aria-label="Go to project"
-            />
-          </NextLink>
-        )}
+        {btn}
       </Flex>
     </PseudoBox>
   )
