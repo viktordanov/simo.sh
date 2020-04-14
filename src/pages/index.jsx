@@ -36,9 +36,9 @@ const Index = () => (
 const showcaseArray = (arr) =>
   arr.filter((a) => a.showcase).sort((a, b) => a.order - b.order)
 
-const showcaseProjects = showcaseArray(projects).map((a) => (
-  <Box m={3} key={a.title} flexBasis="45%">
-    <ProjectCard {...a} />
+const showcaseProjects = showcaseArray(projects).map((p) => (
+  <Box m={3} key={p.title} flexBasis="45%">
+    <ProjectCard {...p} />
   </Box>
 ))
 
@@ -58,7 +58,9 @@ const Showcase = ({ title, paragraph, children }) => (
   <>
     <MDXComponents.h1>{title}</MDXComponents.h1>
     <MDXComponents.p>{paragraph}</MDXComponents.p>
-    {children}
+    <Flex wrap="wrap" mt={7} justifyContent="center" alignItems="center">
+      {children}
+    </Flex>
   </>
 )
 
@@ -67,15 +69,13 @@ const Achievements = () => (
     title="Achievements 🏆"
     paragraph="Some of my achievements are listed here! Click on one to read about it!"
   >
-    <Flex wrap="wrap" mt={7} justifyContent="center" alignItems="center">
-      {showcaseAchievements}
-      <Flex flexBasis="100%" justifyContent="center" mt={5}>
-        <NextLink href="/achievements">
-          <Button size="lg" variant="outline">
-            All of my achievements here!
-          </Button>
-        </NextLink>
-      </Flex>
+    {showcaseAchievements}
+    <Flex flexBasis="100%" justifyContent="center" mt={5}>
+      <NextLink href="/achievements">
+        <Button size="lg" variant="outline">
+          All of my achievements here!
+        </Button>
+      </NextLink>
     </Flex>
   </Showcase>
 )
@@ -85,15 +85,13 @@ const Projects = () => (
     title="Projects 🤘"
     paragraph="Here are some of my projects! You can click on on them to read more!"
   >
-    <Flex wrap="wrap" justifyContent="center" alignItems="center">
-      {showcaseProjects}
-      <Flex flexBasis="100%" justifyContent="center">
-        <NextLink href="/projects">
-          <Button size="lg" variant="outline">
-            All of my projects here!
-          </Button>
-        </NextLink>
-      </Flex>
+    {showcaseProjects}
+    <Flex flexBasis="100%" justifyContent="center">
+      <NextLink href="/projects">
+        <Button size="lg" variant="outline">
+          All of my projects here!
+        </Button>
+      </NextLink>
     </Flex>
   </Showcase>
 )
@@ -103,9 +101,7 @@ const Skills = () => (
     title="Skills 📚"
     paragraph="Here's a list of skills / languages that I know."
   >
-    <Flex wrap="wrap" justifyContent="center" alignItems="center">
-      {showcaseSkills}
-    </Flex>
+    {showcaseSkills}
   </Showcase>
 )
 
