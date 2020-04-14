@@ -56,11 +56,10 @@ export const Achievement = ({ title, slug = "", image = "", tags }) => {
           >
             {title}
           </Text>
-          <Flex justifyContent="center">
+          <Flex justifyContent="center" alignItems="center">
             {slug != "" && (
               <NextLink href={`achievements/${slug}`}>
                 <IconButton
-                  ml={1}
                   icon="chevron-right"
                   size="lg"
                   variant="ghost"
