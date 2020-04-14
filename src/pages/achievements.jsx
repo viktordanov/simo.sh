@@ -27,7 +27,7 @@ const showcaseAchievements = achievements
 
 export default () => (
   <Layout title="Achievements 🏆">
-    <Main>
+    <Main py="3rem" px="2rem">
       <SimpleGrid minChildWidth="15rem" spacing="40px">
         {showcaseAchievements}
       </SimpleGrid>
