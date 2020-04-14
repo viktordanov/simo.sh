@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/core"
 import NextLink from "next/link"
 
-export const Achievement = ({ title, slug = "", image, tags }) => {
+export const Achievement = ({ title, slug = "", image = "", tags }) => {
   const { colorMode } = useColorMode()
   const bgColor = { light: "gray.50", dark: "gray.900" }
 
@@ -22,15 +22,28 @@ export const Achievement = ({ title, slug = "", image, tags }) => {
       flexDir="column"
       boxShadow="0px 4px 30px rgba(0, 0, 0, 0.2)"
     >
-      <Image src={image} alt={title} objectFit="contain" />
+      {image != "" ? (
+        <Image src={image} alt={title} objectFit="contain" />
+      ) : null
+      // <Flex justifyContent="center" alignItems="center" size="100%">
+      //   <Text>No Image</Text>
+      // </Flex>
+      }
       <Box flex={2} w="100%" h="100%" />
       <Box p="6">
         <Flex wrap="wrap">
-          {tags.map((t) => (
-            <Badge rounded="full" px={2} variantColor="teal" key={t} m="0.3rem">
-              {t}
-            </Badge>
-          ))}
+          {tags?.length > 0 &&
+            tags.map((t) => (
+              <Badge
+                rounded="full"
+                px={2}
+                variantColor="teal"
+                key={t}
+                m="0.3rem"
+              >
+                {t}
+              </Badge>
+            ))}
         </Flex>
         <Flex justifyContent="space-between" flex={1}>
           <Text
