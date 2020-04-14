@@ -12,7 +12,7 @@ const showcaseProjects = projects
     return { ...v, order: -1 }
   })
   .sort((a, b) => {
-    if (a.showcase && b.showcase) {
+    if (a.order > 0 && b.order > 0) {
       return a.order - b.order
     }
 
