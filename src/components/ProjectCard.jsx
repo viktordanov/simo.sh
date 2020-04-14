@@ -30,20 +30,27 @@ export const ProjectCard = ({ title, slug, image, logo }) => {
           transition="all 0.25s ease-in-out"
         />
       </Flex>
-      <Heading mt={2} textAlign="center">
-        {title}
-      </Heading>
-      <Flex justifyContent="center">
-        {slug != "" && (
-          <NextLink href={`projects/${slug}`}>
-            <IconButton
-              icon="info-outline"
-              size="lg"
-              variant="ghost"
-              aria-label="Go to project"
-            />
-          </NextLink>
-        )}
+      <Flex
+        h="100%"
+        flexDirection="column"
+        justifyContent="center"
+        align="center"
+      >
+        <Heading mt={2} textAlign="center">
+          {title}
+        </Heading>
+        <Flex justifyContent="center">
+          {slug != "" && (
+            <NextLink href={`projects/${slug}`}>
+              <IconButton
+                icon="info-outline"
+                size="lg"
+                variant="ghost"
+                aria-label="Go to project"
+              />
+            </NextLink>
+          )}
+        </Flex>
       </Flex>
     </Flex>
   )

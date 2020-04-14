@@ -14,14 +14,16 @@ export const Achievement = ({ title, slug = "", image, tags }) => {
   const bgColor = { light: "gray.50", dark: "gray.900" }
 
   return (
-    <Box
+    <Flex
       rounded={10}
       backgroundColor={bgColor[colorMode]}
       overflow="hidden"
       h="100%"
+      flexDir="column"
       boxShadow="0px 4px 30px rgba(0, 0, 0, 0.2)"
     >
       <Image src={image} alt={title} objectFit="contain" />
+      <Box flex={2} w="100%" h="100%" />
       <Box p="6">
         <Flex wrap="wrap">
           {tags.map((t) => (
@@ -30,7 +32,7 @@ export const Achievement = ({ title, slug = "", image, tags }) => {
             </Badge>
           ))}
         </Flex>
-        <Flex justifyContent="space-between">
+        <Flex justifyContent="space-between" flex={1}>
           <Text
             mt="1"
             ml="0.3rem"
@@ -56,6 +58,6 @@ export const Achievement = ({ title, slug = "", image, tags }) => {
           </Flex>
         </Flex>
       </Box>
-    </Box>
+    </Flex>
   )
 }

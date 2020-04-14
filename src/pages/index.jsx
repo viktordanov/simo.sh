@@ -1,4 +1,4 @@
-import { Box, Button, Flex } from "@chakra-ui/core"
+import { Box, Button, Flex, SimpleGrid } from "@chakra-ui/core"
 import NextLink from "next/link"
 import React from "react"
 import { Achievement } from "../components/Achievement"
@@ -37,19 +37,19 @@ const showcaseArray = (arr) =>
   arr.filter((a) => a.showcase).sort((a, b) => a.order - b.order)
 
 const showcaseProjects = showcaseArray(projects).map((p) => (
-  <Box m={3} key={p.title} flexBasis={["35%", "45%"]}>
+  <Box key={p.title}>
     <ProjectCard {...p} />
   </Box>
 ))
 
 const showcaseAchievements = showcaseArray(achievements).map((a) => (
-  <Box m={3} key={a.title} flexBasis={["35%", "45%"]}>
+  <Box key={a.title}>
     <Achievement {...a} />
   </Box>
 ))
 
 const showcaseSkills = introSkills.map((s) => (
-  <Box m={10} flexBasis={["23%", "25%"]} key={s.name}>
+  <Box key={s.name}>
     <Skill {...s} />
   </Box>
 ))
@@ -69,8 +69,10 @@ const Achievements = () => (
     title="Achievements 🏆"
     paragraph="Some of my achievements are listed here! Click on one to read about it!"
   >
-    {showcaseAchievements}
-    <Flex flexBasis="100%" justifyContent="center" mt={5}>
+    <SimpleGrid minChildWidth="15rem" spacing={5} my={5}>
+      {showcaseAchievements}
+    </SimpleGrid>
+    <Flex flexBasis="100%" justifyContent="center">
       <NextLink href="/achievements">
         <Button size="lg" variant="outline">
           All of my achievements here!
@@ -85,7 +87,9 @@ const Projects = () => (
     title="Projects 🤘"
     paragraph="Here are some of my projects! You can click on on them to read more!"
   >
-    {showcaseProjects}
+    <SimpleGrid minChildWidth="14rem" spacing={5} my={5}>
+      {showcaseProjects}
+    </SimpleGrid>
     <Flex flexBasis="100%" justifyContent="center">
       <NextLink href="/projects">
         <Button size="lg" variant="outline">
@@ -101,7 +105,9 @@ const Skills = () => (
     title="Skills 📚"
     paragraph="Here's a list of skills / languages that I know."
   >
-    {showcaseSkills}
+    <SimpleGrid minChildWidth="10rem" spacing={5} my={5}>
+      {showcaseSkills}
+    </SimpleGrid>
   </Showcase>
 )
 
