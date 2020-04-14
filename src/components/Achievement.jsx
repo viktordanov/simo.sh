@@ -8,6 +8,7 @@ import {
   useColorMode,
 } from "@chakra-ui/core"
 import NextLink from "next/link"
+import { FaTrophy } from "react-icons/fa"
 
 export const Achievement = ({ title, slug = "", image = "", tags }) => {
   const { colorMode } = useColorMode()
@@ -24,11 +25,11 @@ export const Achievement = ({ title, slug = "", image = "", tags }) => {
     >
       {image != "" ? (
         <Image src={image} alt={title} objectFit="contain" />
-      ) : null
-      // <Flex justifyContent="center" alignItems="center" size="100%">
-      //   <Text>No Image</Text>
-      // </Flex>
-      }
+      ) : (
+        <Flex justifyContent="center" alignItems="center" size="100%">
+          <Box as={FaTrophy} size="50%" color="teal.200" />
+        </Flex>
+      )}
       <Box flex={2} w="100%" h="100%" />
       <Box p="6">
         <Flex wrap="wrap">
