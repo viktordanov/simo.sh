@@ -58,7 +58,7 @@ const Showcase = ({ title, paragraph, children }) => (
   <>
     <MDXComponents.h1>{title}</MDXComponents.h1>
     <MDXComponents.p>{paragraph}</MDXComponents.p>
-    <Flex wrap="wrap" mt={7} justifyContent="center" alignItems="center">
+    <Flex wrap="wrap" mt={7} justifyContent="center" alignItems="stretch">
       {children}
     </Flex>
   </>

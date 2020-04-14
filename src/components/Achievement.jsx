@@ -19,7 +19,7 @@ export const Achievement = ({ title, slug = "", image, tags }) => {
       backgroundColor={bgColor[colorMode]}
       overflow="hidden"
       h="100%"
-      boxShadow="0px 10px 50px rgba(0, 0, 0, 0.3)"
+      boxShadow="0px 4px 30px rgba(0, 0, 0, 0.2)"
     >
       <Image src={image} alt={title} objectFit="contain" />
       <Box p="6">

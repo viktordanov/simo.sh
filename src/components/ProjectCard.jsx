@@ -8,18 +8,13 @@ export const ProjectCard = ({ title, slug, image, logo }) => {
   return (
     <Flex
       direction="column"
-      boxShadow="0px 10px 50px rgba(0, 0, 0, 0.3)"
+      boxShadow="0px 4px 30px rgba(0, 0, 0, 0.2)"
       backgroundColor={bgColor[colorMode]}
       rounded={15}
+      h="100%"
       p={5}
     >
-      <Image
-        opacity={1}
-        src={image}
-        rounded={15}
-        objectFit="contain"
-        objectPosition="50% 100%"
-      />
+      <Image opacity={1} src={image} w="100%" rounded={15} />
       <Flex justifyContent="center" alignItems="center" className="logo-flex">
         <Image
           src={logo}
