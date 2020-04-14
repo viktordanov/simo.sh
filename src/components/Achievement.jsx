@@ -39,7 +39,6 @@ export const Achievement = ({ title, slug = "", image, tags }) => {
             fontWeight="semibold"
             fontSize="2xl"
             lineHeight="tight"
-            isTruncated
           >
             {title}
           </Text>
