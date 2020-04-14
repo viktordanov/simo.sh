@@ -8,14 +8,14 @@ export default (frontMatter) => {
         <Heading fontSize="3.6rem" mb="1rem" textAlign="center">
           {frontMatter.title}
         </Heading>
-        <Flex wrap="wrap">
+        <Flex wrap="wrap" justifyContent="center">
           {frontMatter.tags?.map((t) => (
             <Badge
               rounded="full"
               variantColor="teal"
               key={t}
               px="0.4rem"
-              mr={1}
+              mr={2}
               my={[1, 0]}
             >
               {t}
