@@ -4,8 +4,6 @@ import { Main } from "../components/Main"
 import { Layout } from "../layouts"
 import { frontMatter as achievements } from "./achievements/**/*.mdx"
 
-console.log(achievements)
-
 const showcaseAchievements = achievements
   .map((v) => {
     if (v.order > 0) {
