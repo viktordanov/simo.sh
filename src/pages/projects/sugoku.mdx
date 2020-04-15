@@ -1,0 +1,28 @@
+---
+title: Sugoku
+slug: sugoku
+tags:
+  - Go
+  - SDL
+  - Backtracking
+short:
+  Simple sudoku solver using backtracking w/ a neat GUI to better display the
+  algorithm's inner-workings.
+---
+
+# Introduction
+
+Me and my friend [Viktor Danov](https://github.com/viktordanov) were doing some coding in a coffee shop and I came up with the idea that we should try to make a sudoku solver.
+
+We began working on it almost immediately and after 2 days we managed to implement the algorithm in go.
+
+![](/sugoku.png)
+
+The next goal was making a "neat GUI to better display the algorithm's inner-workings".
+We decided we should try using SDL as it's cross-platform and has bindings for go.
+
+After a couple of days of trial and error we got it to work.
+
+![](/sugoku.gif)
+
+_Note: the time `sugoku` takes to solve a board with the GUI is significantly slower than without one, due to the capped framerate and blocking channels_
