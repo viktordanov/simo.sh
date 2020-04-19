@@ -5,7 +5,6 @@ import {
   Flex,
   IconButton,
   Image,
-  Link,
   PseudoBox,
   Text,
   useColorMode,
@@ -38,17 +37,15 @@ export const ProjectSmall = ({
     )
   } else if (link != "") {
     btn = (
-      <Link
+      <IconButton
+        as="a"
         href={link}
-        as={() => (
-          <IconButton
-            justifySelf="end"
-            icon="external-link"
-            size="lg"
-            variant="ghost"
-            aria-label="Go to project"
-          />
-        )}
+        isExternal
+        justifySelf="end"
+        icon="external-link"
+        size="lg"
+        variant="ghost"
+        aria-label="Go to project"
       />
     )
   }
