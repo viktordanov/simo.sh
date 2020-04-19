@@ -38,15 +38,18 @@ export const ProjectSmall = ({
     )
   } else if (link != "") {
     btn = (
-      <Link href={link}>
-        <IconButton
-          justifySelf="end"
-          icon="external-link"
-          size="lg"
-          variant="ghost"
-          aria-label="Go to project"
-        />
-      </Link>
+      <Link
+        href={link}
+        as={() => (
+          <IconButton
+            justifySelf="end"
+            icon="external-link"
+            size="lg"
+            variant="ghost"
+            aria-label="Go to project"
+          />
+        )}
+      />
     )
   }
 
