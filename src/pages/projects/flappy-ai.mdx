@@ -44,18 +44,18 @@ type Bird struct {
 
 ```go
 var BrainLayers = []gone.Layer{
- {
-  Nodes:     5,
-  Activator: gone.Sigmoid(),
- },
- {
-  Nodes:     8,
-  Activator: gone.Sigmoid(),
- },
- {
-  Nodes:     2,
-  Activator: gone.Sigmoid(), // ideally should be softmax
- },
+    {
+        Nodes:     5,
+        Activator: gone.Sigmoid(),
+    },
+    {
+        Nodes:     8,
+        Activator: gone.Sigmoid(),
+    },
+    {
+        Nodes:     2,
+        Activator: gone.Sigmoid(), // ideally should be softmax
+    },
 }
 ```
 
