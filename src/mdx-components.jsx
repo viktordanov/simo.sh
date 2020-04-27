@@ -1,4 +1,12 @@
-import { Box, Heading, Image, Link, Text, useColorMode } from "@chakra-ui/core"
+import {
+  Box,
+  Code,
+  Heading,
+  Image,
+  Link,
+  Text,
+  useColorMode,
+} from "@chakra-ui/core"
 import { css } from "@emotion/core"
 import NextLink from "next/link"
 
@@ -52,6 +60,9 @@ const MDXComponents = {
   h5: (props) => <CustomHeading size="sm" {...props} />,
   h6: (props) => <CustomHeading size="xs" {...props} />,
   p: (props) => <Text as="p" fontSize="xl" width {...props} />,
+  inlineCode: (props) => (
+    <Code variantColor="yellow" fontSize="0.84em" {...props} />
+  ),
   img: (props) => (
     <Image
       rounded={15}
