@@ -6,4 +6,11 @@ const withMdxEnhanced = require("next-mdx-enhanced")({
 })
 const withOptimizedImages = require("next-optimized-images")
 
-module.exports = withMdxEnhanced(withOptimizedImages())
+module.exports = withMdxEnhanced(
+  withOptimizedImages({
+    images: {
+      handleImages: ["jpeg", "png", "svg", "webp", "gif", "ico"],
+      optimize: true,
+    },
+  })
+)
