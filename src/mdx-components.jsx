@@ -59,7 +59,7 @@ const MDXComponents = {
   h4: (props) => <CustomHeading size="md" {...props} />,
   h5: (props) => <CustomHeading size="sm" {...props} />,
   h6: (props) => <CustomHeading size="xs" {...props} />,
-  p: (props) => <Text as="p" fontSize="xl" width {...props} />,
+  p: (props) => <Text as="p" fontSize="xl" width {...props} mt={3} />,
   inlineCode: (props) => (
     <Code variantColor="yellow" fontSize="0.84em" {...props} />
   ),
