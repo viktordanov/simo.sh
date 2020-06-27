@@ -4,5 +4,8 @@ const withMdxEnhanced = require("next-mdx-enhanced")({
   defaultLayout: true,
   rehypePlugins: [mdxPrism],
 })
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+})
 
-module.exports = withMdxEnhanced()
+module.exports = withMdxEnhanced(withBundleAnalyzer())
