@@ -14,9 +14,9 @@ const globby = require("globby")
             ${pages
               .map((page) => {
                 const path = page
-                  .replace("pages", "")
-                  .replace(".js", "")
+                  .replace("src/pages", "")
                   .replace(".jsx", "")
+                  .replace(".js", "")
                   .replace(".mdx", "")
                 const route = path === "/index" ? "" : path
 
