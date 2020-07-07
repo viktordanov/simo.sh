@@ -9,6 +9,10 @@ class MyDocument extends Document {
       <html lang="en">
         <Head>
           <link href="/favicon.ico" rel="shortcut icon" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap"
+            rel="stylesheet"
+          />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
