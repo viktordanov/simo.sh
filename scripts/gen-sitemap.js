@@ -32,5 +32,8 @@ const globby = require("globby")
     `
 
   // eslint-disable-next-line no-sync
-  fs.writeFileSync("public/sitemap.xml", sitemap)
+  fs.writeFileSync(
+    "public/sitemap.xml",
+    sitemap.substring(lines.indexOf("\n") + 1)
+  )
 })()
