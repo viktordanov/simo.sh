@@ -1,8 +1,8 @@
-const mdxPrism = require("mdx-prism")
+const rehypePrism = require("@mapbox/rehype-prism")
 const withMdxEnhanced = require("next-mdx-enhanced")({
   layoutPath: "mdx-layouts",
   defaultLayout: true,
-  rehypePlugins: [mdxPrism],
+  rehypePlugins: [rehypePrism],
 })
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
