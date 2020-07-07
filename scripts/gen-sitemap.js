@@ -6,6 +6,7 @@ const globby = require("globby")
   const pages = await globby([
     "src/pages/**/*{.js,.jsx,.mdx}",
     "!src/pages/_*.js",
+    "!src/pages/_*.jsx",
     "!src/pages/api",
   ])
   const sitemap = `
