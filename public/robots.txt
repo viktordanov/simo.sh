@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://simo.sh/sitemap.xml

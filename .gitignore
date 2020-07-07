@@ -26,3 +26,6 @@ yarn-error.log*
 
 # mdx cache
 .mdx-data
+
+# sitemap
+public/sitemap.xml
