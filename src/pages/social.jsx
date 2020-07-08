@@ -1,5 +1,4 @@
 import { Box, Flex, Link } from "@chakra-ui/core"
-import { NextSeo } from "next-seo"
 import {
   FaGithub,
   FaSteam,
@@ -8,11 +7,12 @@ import {
   FaYoutube,
 } from "react-icons/fa"
 import { MdMail } from "react-icons/md"
+import { SEO } from "../components/SEO"
 import { Layout } from "../layouts"
 
 export default () => (
   <>
-    <NextSeo
+    <SEO
       title="Social"
       description="Here you can find some ways to get in touch with me!"
     />

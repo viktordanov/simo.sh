@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/core"
-import { NextSeo } from "next-seo"
 import { ProjectSmall } from "../components/ProjectSmall"
+import { SEO } from "../components/SEO"
 import { Layout } from "../layouts"
 import { frontMatter as projects } from "./projects/**/*.mdx"
 
@@ -27,7 +27,7 @@ const showcaseProjects = projects
 
 export default () => (
   <>
-    <NextSeo
+    <SEO
       title="Projects"
       description="Here you can find some of my projects!"
     />

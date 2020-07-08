@@ -1,7 +1,7 @@
 import { Box, SimpleGrid } from "@chakra-ui/core"
-import { NextSeo } from "next-seo"
 import { Achievement } from "../components/Achievement"
 import { Main } from "../components/Main"
+import { SEO } from "../components/SEO"
 import { Layout } from "../layouts"
 import { frontMatter as achievements } from "./achievements/**/*.mdx"
 
@@ -28,7 +28,7 @@ const showcaseAchievements = achievements
 
 export default () => (
   <>
-    <NextSeo
+    <SEO
       title="Achievements"
       description="Here you can find some of my achievements!"
     />

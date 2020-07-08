@@ -1,7 +1,12 @@
-import { ArticleJsonLd, NextSeo } from "next-seo"
+import { NextSeo } from "next-seo"
 import React from "react"
 
-export const SEO = ({ title, img, tags }) => {
+export const SEO = ({
+  title,
+  img = "og.png",
+  tags,
+  desc: description = "",
+}) => {
   const image = {
     url: `https://simo.sh/${img}`,
     alt: title,
@@ -10,21 +15,16 @@ export const SEO = ({ title, img, tags }) => {
     <>
       <NextSeo
         title={title}
+        description={description}
         openGraph={{
           type: "article",
           article: {
             tags: tags,
           },
+          description: description,
           title: `${title} | simo.sh`,
           images: [image],
         }}
-      />
-      <ArticleJsonLd
-        authorName="Simo Aleksandrov"
-        images={[img]}
-        publisherLogo="favicon.ico"
-        publisherName="Simo Aleksandrov"
-        title={`${title} | simo.sh`}
       />
     </>
   )
