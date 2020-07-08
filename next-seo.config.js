@@ -1,13 +1,14 @@
-const title = "Simo Aleksandrov – Web and Mobile Developer"
-const description = "Passionate full stack developer"
+const title = "Simo Aleksandrov"
+const description =
+  "Passionate Software Engineer, JavaScript, React and Go Developer, Post-Rock Lover, Rhythm Game Fanatic."
 
 const SEO = {
   title,
+  titleTemplate: "%s | simo.sh",
   description,
   canonical: "https://simo.sh",
   openGraph: {
     type: "website",
-    locale: "en_IE",
     url: "https://simo.sh",
     title,
     description,
