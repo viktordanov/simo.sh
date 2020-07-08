@@ -7,7 +7,7 @@ export default (frontMatter) => {
     return (
       <>
         <SEO
-          title={frontMatter.title}
+          title={frontMatter.title || "Simo Aleksandrov!"}
           img={frontMatter.image || "og.png"}
           tags={frontMatter.tags}
         />

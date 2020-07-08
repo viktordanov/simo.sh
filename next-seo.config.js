@@ -1,4 +1,4 @@
-const title = "Simo Aleksandrov"
+const title = "Simo Aleksandrov!"
 const description =
   "Passionate Software Engineer, JavaScript, React and Go Developer, Post-Rock Lover, Rhythm Game Fanatic."
 
