@@ -8,7 +8,7 @@ export default (frontMatter) => {
       <>
         <SEO
           title={frontMatter.title}
-          img={frontMatter.image || "dp-scrot.jpg"}
+          img={frontMatter.image || "og.jpg"}
           tags={frontMatter.tags}
         />
         <Heading fontSize="3.6rem" mb="1rem" textAlign="center">

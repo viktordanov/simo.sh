@@ -15,7 +15,7 @@ export const SEO = ({ title, img, tags }) => {
           article: {
             tags: tags,
           },
-          title,
+          title: `${title} | simo.sh`,
           images: [image],
         }}
       />
@@ -24,7 +24,7 @@ export const SEO = ({ title, img, tags }) => {
         images={[img]}
         publisherLogo="favicon.ico"
         publisherName="Simo Aleksandrov"
-        title={title}
+        title={`${title} | simo.sh`}
       />
     </>
   )

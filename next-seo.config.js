@@ -14,7 +14,7 @@ const SEO = {
     description,
     images: [
       {
-        url: "https://simo.sh/dp-scrot.jpg",
+        url: "https://simo.sh/og.jpg",
         alt: title,
         width: 1280,
         height: 720,
