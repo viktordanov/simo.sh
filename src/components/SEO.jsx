@@ -1,7 +1,13 @@
 import { NextSeo } from "next-seo"
 import React from "react"
 
-export const SEO = ({ title, img = "og.png", tags, description = "" }) => {
+export const SEO = ({
+  title,
+  img = "og.png",
+  tags,
+  description,
+  cannonical = "https://simo.sh",
+}) => {
   const image = {
     url: `https://simo.sh/${img}`,
     alt: title,
@@ -10,9 +16,11 @@ export const SEO = ({ title, img = "og.png", tags, description = "" }) => {
     <>
       <NextSeo
         title={title}
-        description={description}
+        canonical={cannonical}
+        description={description ?? description}
         openGraph={{
           type: "article",
+          url: cannonical,
           article: {
             tags: tags,
           },

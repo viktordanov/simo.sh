@@ -31,6 +31,7 @@ export default () => (
     <SEO
       title="Achievements"
       description="Here you can find some of my achievements!"
+      cannonical="https://simo.sh/achievements"
     />
     <Layout title="Achievements 🏆">
       <Main py="3rem" px="2rem">

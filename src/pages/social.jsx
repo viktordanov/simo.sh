@@ -15,6 +15,7 @@ export default () => (
     <SEO
       title="Social"
       description="Here you can find some ways to get in touch with me!"
+      cannonical="https://simo.sh/social"
     />
     <Layout title="Social 📱">
       <Flex justifyContent="center" alignItems="center" wrap="wrap">

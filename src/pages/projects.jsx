@@ -30,6 +30,7 @@ export default () => (
     <SEO
       title="Projects"
       description="Here you can find some of my projects!"
+      cannonical="https://simo.sh/projects"
     />
     <Layout title="Projects 🤘">{showcaseProjects}</Layout>
   </>
