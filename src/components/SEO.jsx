@@ -1,12 +1,7 @@
 import { NextSeo } from "next-seo"
 import React from "react"
 
-export const SEO = ({
-  title,
-  img = "og.png",
-  tags,
-  desc: description = "",
-}) => {
+export const SEO = ({ title, img = "og.png", tags, description = "" }) => {
   const image = {
     url: `https://simo.sh/${img}`,
     alt: title,
