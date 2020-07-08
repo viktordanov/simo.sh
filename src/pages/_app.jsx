@@ -55,7 +55,12 @@ class App extends NextApp {
         <ThemeProvider theme={theme}>
           <ColorModeProvider value="light">
             <Container>
-              <DefaultSeo {...SEO} title="Simo Aleksandrov!" />
+              <DefaultSeo
+                {...SEO}
+                openGraph={{
+                  title: "Simo Aleksandrov!",
+                }}
+              />
               <GlobalStyle>
                 <Component />
               </GlobalStyle>
