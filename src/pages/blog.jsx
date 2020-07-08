@@ -1,3 +1,4 @@
+import { Text } from "@chakra-ui/core"
 import { SEO } from "../components/SEO"
 import { Layout } from "../layouts/index"
 
@@ -9,7 +10,9 @@ export default () => (
       cannonical="https://simo.sh/blog"
     />
     <Layout title="Blog ✏">
-      This is going to be my blog, as of now there are 0 posts.
+      <Text as="p" fontSize="xl" width mt={3} textAlign="center">
+        This is going to be my blog, as of now there are 0 posts.
+      </Text>
     </Layout>
   </>
 )
