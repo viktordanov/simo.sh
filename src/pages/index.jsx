@@ -7,7 +7,6 @@ import { Hero } from "../components/Hero"
 import { Main } from "../components/Main"
 import { ProjectCard } from "../components/ProjectCard"
 import { Skill } from "../components/Skill"
-import Bio from "../content/bio.mdx"
 import { introSkills } from "../data/skills"
 import MDXComponents from "../mdx-components"
 import { frontMatter as achievements } from "../pages/achievements/**/*.mdx"
@@ -53,6 +52,36 @@ const showcaseSkills = introSkills.map((s) => (
     <Skill {...s} />
   </Box>
 ))
+
+const Bio = () => (
+  <>
+    <MDXComponents.h1>Hi! I'm Simo 👋</MDXComponents.h1>
+    <MDXComponents.p>
+      I'm just an 18 year old boy that likes to code, play video games, listen
+      to music and watch anime.
+    </MDXComponents.p>
+    <MDXComponents.p>
+      I'm in the 12th grade of "MG Baba Tonka" in Ruse, Bulgaria.
+    </MDXComponents.p>
+    <MDXComponents.p>
+      I've been coding since I was in the 4th grade, but have been much more
+      involved since 2018.
+    </MDXComponents.p>
+    <MDXComponents.p>
+      I'm primarily a full stack web developer but also branch out in other
+      domains too! Some of which include Machine Learning, Image Processing,
+      Security, Linux and others.
+    </MDXComponents.p>
+    <MDXComponents.p>
+      My operating system of choice for development is Arch Linux or macOS
+      (running a Hackintosh).
+    </MDXComponents.p>
+    <MDXComponents.p>
+      I love contributing to open-source projects. I also really like helping
+      people out with coding-related problems.
+    </MDXComponents.p>
+  </>
+)
 
 const Showcase = ({ title, paragraph, children }) => (
   <>
