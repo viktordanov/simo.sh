@@ -3,7 +3,7 @@ import React from "react"
 
 export const SEO = ({ title, url, img, tags }) => {
   const image = {
-    url: `https://simos.sh/${img}`,
+    url: `https://simo.sh/${img}`,
     alt: title,
   }
   return (
