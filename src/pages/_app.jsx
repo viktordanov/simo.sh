@@ -55,7 +55,7 @@ class App extends NextApp {
         <ThemeProvider theme={theme}>
           <ColorModeProvider value="light">
             <Container>
-              <DefaultSeo {...SEO} />
+              <DefaultSeo {...SEO} title="Simo Aleksandrov!" />
               <GlobalStyle>
                 <Component />
               </GlobalStyle>
