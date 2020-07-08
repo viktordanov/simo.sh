@@ -9,7 +9,7 @@ export default (frontMatter) => {
         <SEO
           title={frontMatter.title}
           url={`https://simo.sh/${frontMatter.slug}`}
-          image={frontMatter.image || "dp-scrot.jpg"}
+          img={frontMatter.image || "dp-scrot.jpg"}
           tags={frontMatter.tags}
         />
         <Heading fontSize="3.6rem" mb="1rem" textAlign="center">
