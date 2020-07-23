@@ -57,9 +57,6 @@ class App extends NextApp {
             <Container>
               <DefaultSeo
                 {...SEO}
-                openGraph={{
-                  title: "Simo Aleksandrov!",
-                }}
               />
               <GlobalStyle>
                 <Component />
