@@ -4,17 +4,17 @@ const globby = require("globby")
 
 ;(async () => {
   const pages = await globby([
-    "src/pages/**/*{.js,.jsx,.mdx}",
-    "!src/pages/_*.js",
-    "!src/pages/_*.jsx",
-    "!src/pages/api",
+    "pages/**/*{.js,.jsx,.mdx}",
+    "!pages/_*.js",
+    "!pages/_*.jsx",
+    "!pages/api",
   ])
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages
   .map((page) => {
     const path = page
-      .replace("src/pages", "")
+      .replace("pages", "")
       .replace(".jsx", "")
       .replace(".js", "")
       .replace(".mdx", "")
