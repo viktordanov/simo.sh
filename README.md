@@ -1,6 +1,6 @@
 # simo.sh
 
-[Link](https://simo.sh)
+You can check it out [here](https://simo.sh)
 
 My personal website
 
