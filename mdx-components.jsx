@@ -22,8 +22,8 @@ const hs = {
   xs: 7,
 }
 
-const CustomHeading = ({ size, children, ...props }) => (
-  <Heading size={size} my="1rem" {...props}>
+const CustomHeading = ({ size, children, as, ...props }) => (
+  <Heading size={size} my="1rem" as={as} {...props}>
     <Text textAlign="center" fontWeight="100" d="inline" color="gray.500">
       {"#".repeat(hs[size]) + " "}
     </Text>
@@ -53,12 +53,12 @@ const CustomLink = (props) => {
 }
 
 const MDXComponents = {
-  h1: (props) => <CustomHeading size="2xl" {...props} />,
-  h2: (props) => <CustomHeading size="xl" {...props} />,
-  h3: (props) => <CustomHeading size="lg" {...props} />,
-  h4: (props) => <CustomHeading size="md" {...props} />,
-  h5: (props) => <CustomHeading size="sm" {...props} />,
-  h6: (props) => <CustomHeading size="xs" {...props} />,
+  h1: (props) => <CustomHeading size="2xl" as="h1" {...props} />,
+  h2: (props) => <CustomHeading size="xl" as="h2" {...props} />,
+  h3: (props) => <CustomHeading size="lg" as="h3" {...props} />,
+  h4: (props) => <CustomHeading size="md" as="h4" {...props} />,
+  h5: (props) => <CustomHeading size="sm" as="h5" {...props} />,
+  h6: (props) => <CustomHeading size="xs" as="h6" {...props} />,
   p: (props) => <Text as="p" fontSize="xl" width {...props} mt={3} />,
   inlineCode: (props) => (
     <Code variantColor="yellow" fontSize="0.84em" {...props} />
