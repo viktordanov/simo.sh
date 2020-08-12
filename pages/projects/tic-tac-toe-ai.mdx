@@ -57,6 +57,7 @@ Now that's a lot math-jargon, right? Don't worry! Here are the these terms expla
 - `zero-sum` games are games such that the gains of one player are equal to the losses of the other player
 
 At its core minimax is basically a depth-first search, trying to brute force all possible states and find the best action to take.
+
 You can read more about it in the GitHub repo's references section.
 
 ### Alpha-Beta Pruning
@@ -64,6 +65,7 @@ You can read more about it in the GitHub repo's references section.
 As I explained, Minimax tries to brute force all possible combinations / actions for a given state, which as you can probably guess, is very computationally expensive.
 There are many ways to optimize minimax, one of them is called Alpha-Beta Pruning. The basic idea is that you "prune" off / don't bother computing branches of the tree which will never be picked.
 In simple terms - it doesn't bother computing things if a better action was found earlier on.
+
 Again, you can read more about it in the GitHub repo's references section.
 
 The source code for this can be found on [GitHub](https://github.com/fr3fou/tic-tac-toe-ai)
