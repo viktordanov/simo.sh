@@ -2,7 +2,7 @@ import { Badge, Box, Flex, Heading } from "@chakra-ui/core"
 import { Main } from "../components/Main"
 import { SEO } from "../components/SEO"
 
-export default (frontMatter) => {
+const Layout = (frontMatter) => {
   return ({ children }) => {
     return (
       <>
@@ -37,3 +37,5 @@ export default (frontMatter) => {
     )
   }
 }
+
+export default Layout
