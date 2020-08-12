@@ -11,6 +11,7 @@ My personal website
   - [ ] Projects
   - [ ] Support for off-topic blog posts
 - [ ] Add the tags from each post into meta keyword tags
+- [ ] Add the short / description from each post into Open Graph description tags and meta description tags
 - [ ] Add more images to projects
 - [ ] `/uses` page
 - [ ] Small responsive optimizations
