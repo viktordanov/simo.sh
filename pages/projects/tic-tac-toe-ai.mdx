@@ -12,4 +12,58 @@ image: "tic-tac-toe-win.gif"
 short: "❎ - A Tic-Tac-Toe implementation and AI, using Raylib for the GUI and Minimax + Alpha-Beta pruning for the AI."
 ---
 
+## Intro
+
 This was my first attempt at implementing the Minimax algorithm, as well as implementing the Alpha-Beta search optimization strategy.
+
+![winning-gif](/tic-tac-toe-win.gif)
+
+Here you can see a demo of the AI winning against me.
+
+The AI is impossible to beat, even if you start first. The closest you can get to beating it, is drawing against it, like shown below:
+
+![losing-gif](/tic-tac-toe-draw.gif)
+
+## History
+
+The core game was implemented using Raylib and Go in one day and the Minimax algorithm was made the following day, although with a few bugs.
+After about a week of trying to fix said bugs, I managed to fix one of the dumbest mistakes, I've ever made:
+
+```diff
+ func Minimax(ai Player, g *Game) {
+ 	max := math.Inf(-1)
+ 	bestState := State{}
++	other := otherPlayer(ai)
+ 	for _, state := range nextBoards(g.Board, ai) {
+-		value := float64(minimax(state.Board, ai, ai))
++		value := float64(minimax(state.Board, ai, other))
+ 		if value > max {
+ 			max = value
+ 			bestState = state
+```
+
+I was letting the AI think it can play 2 moves in a row, instead of 1, thus making it possible to beat by humans.
+
+## WTF is Minimax/Alpha-Beta Pruning?
+
+### Minimax
+
+Minimax is an algorithm for solving games that is ideally used for 2-player, turn-based, deterministic, perfect information, zero-sum games.
+Now that's a lot math-jargon, right? Don't worry! Here are the these terms explained:
+
+- `2-player` and `turn-based` are pretty self-explanatory
+- `deterministic` in simple terms means that every action / state can be _determined_, as opposed to `stochastic` (`probabilistic` / `random`) games - such as Backgammon or anything that involes a dice for example!
+- `perfect information` means that our agent is given the _full_ information / state, as oppoosed to environments where the agent isn't given all of the information - such as Poker or Scrabble (the agent doesn't know the other players' cards or tiles).
+- `zero-sum` games are games such that the gains of one player are equal to the losses of the other player
+
+At its core minimax is basically a depth-first search, trying to brute force all possible states and find the best action to take.
+You can read more about it in the GitHub repo's references section.
+
+### Alpha-Beta Pruning
+
+As I explained, Minimax tries to brute force all possible combinations / actions for a given state, which as you can probably guess, is very computationally expensive.
+There are many ways to optimize minimax, one of them is called Alpha-Beta Pruning. The basic idea is that you "prune" off / don't bother computing branches of the tree which will never be picked.
+In simple terms - it doesn't bother computing things if a better action was found earlier on.
+Again, you can read more about it in the GitHub repo's references section.
+
+The source code for this can be found on [GitHub](https://github.com/fr3fou/tic-tac-toe-ai)
