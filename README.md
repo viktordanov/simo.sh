@@ -15,7 +15,7 @@ My personal website
 - [ ] Add more images to projects
 - [ ] `/uses` page
 - [ ] Small responsive optimizations
-- [ ] Link to the source code of projects at the bottom of each post
+- [x] Link to the source code of projects at the bottom of each post
 - [ ] Bump chakra-ui to 1.0 when it's released
 - [ ] Image optimization with next.js' (soon to be) built in feature for image optimization
 
