@@ -9,7 +9,8 @@ const StickyNav = styled(Flex)`
   z-index: 10;
   top: 0;
   backdrop-filter: blur(1rem);
-  transition: background-color 0.1 ease-in-out;
+  padding: 1rem 2rem;
+  transition: background-color 0.1s cubic-bezier(0.4, 0, 0.2, 1);
 `
 
 export const Container = (props) => {
