@@ -8,7 +8,7 @@ const StickyNav = styled(Flex)`
   position: sticky;
   z-index: 10;
   top: 0;
-  backdrop-filter: saturate(180%) blur(5px);
+  backdrop-filter: blur(1rem);
   transition: background-color 0.1 ease-in-out;
 `
 
