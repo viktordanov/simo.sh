@@ -11,7 +11,7 @@ export default () => (
     />
     <Layout title="Blog ✏">
       <Text as="p" fontSize="xl" width mt={3} textAlign="center">
-        This is going to be my blog, as of now there are 0 posts.
+        Here you can see all posts, projects and achievements in one place!
       </Text>
     </Layout>
   </>
