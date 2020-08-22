@@ -41,11 +41,11 @@ const showcaseAchievements = genereatePosts("achievements", achievements)
 const Posts = () => (
   <>
     <SEO
-      title="Posts"
+      title="ALl Posts"
       description="Here you can find all of my posts!"
-      cannonical="https://simo.sh/posts"
+      cannonical="https://simo.sh/all-posts"
     />
-    <Layout title="Posts ✏">
+    <Layout title="All Posts ✏">
       <Main py="3rem">
         <Box>
           <Heading>Random</Heading>
