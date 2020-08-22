@@ -23,25 +23,27 @@ const generatePosts = (baseDir, arr) =>
 
       return b.order - a.order
     })
-    .map((p) => (
-      <Post
-        key={p.title}
-        short={p.short}
-        tags={p.tags}
-        title={p.title}
-        slug={slug}
-        basedir={baseDir}
-      />
+    .map((v) => (
+      <Box m={9} flex={1} key={v.title}>
+        <Post
+          key={v.title}
+          short={v.short}
+          tags={v.tags}
+          title={v.title}
+          slug={v.slug}
+          baseDir={baseDir}
+        />
+      </Box>
     ))
 
 const showcaseRandomPosts = generatePosts("random", randomPosts)
 const showcaseProjects = generatePosts("projects", projects)
-const showcaseAchievements = genereatePosts("achievements", achievements)
+const showcaseAchievements = generatePosts("achievements", achievements)
 
 const Posts = () => (
   <>
     <SEO
-      title="ALl Posts"
+      title="All Posts"
       description="Here you can find all of my posts!"
       cannonical="https://simo.sh/all-posts"
     />

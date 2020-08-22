@@ -1,4 +1,5 @@
-import { Badge, Box, Flex, PseudoBox, Text } from "@chakra-ui/core"
+import { Badge, Box, Flex, IconButton, PseudoBox, Text } from "@chakra-ui/core"
+import NextLink from "next/link"
 
 export const Post = ({ title, slug, baseDir, tags, short }) => {
   return (
@@ -22,7 +23,7 @@ export const Post = ({ title, slug, baseDir, tags, short }) => {
                 tags.map((t) => (
                   <Badge
                     rounded="full"
-                    variantColor="red"
+                    variantColor="yellow.200"
                     key={t}
                     px="0.4rem"
                     mr={1}
