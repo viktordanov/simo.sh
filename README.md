@@ -6,10 +6,10 @@ My personal website
 
 ## TODO
 
-- [ ] Automatically aggregate all content in `/blog`
-  - [ ] Achievements
-  - [ ] Projects
-  - [ ] Support for off-topic blog posts
+- [x] Automatically aggregate all content in `/blog`
+  - [x] Achievements
+  - [x] Projects
+  - [x] Support for off-topic blog posts
 - [ ] Add the tags from each post into meta keyword tags
 - [ ] Add the short / description from each post into Open Graph description tags and meta description tags
 - [ ] Add more images to projects
