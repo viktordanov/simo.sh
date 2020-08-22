@@ -66,9 +66,9 @@ export const Container = (props) => {
                 Achievements
               </Button>
             </NextLink>
-            <NextLink href="/blog" passHref>
+            <NextLink href="/posts" passHref>
               <Button as="a" variant="ghost" p={[1, 4]} mr={2}>
-                Blog
+                Posts
               </Button>
             </NextLink>
             <NextLink href="/social" passHref>
