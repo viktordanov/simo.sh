@@ -23,7 +23,7 @@ export const Post = ({ title, slug, baseDir, tags, short }) => {
                 tags.map((t) => (
                   <Badge
                     rounded="full"
-                    variantColor="yellow.200"
+                    variantColor="yellow"
                     key={t}
                     px="0.4rem"
                     mr={1}
