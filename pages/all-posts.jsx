@@ -52,15 +52,15 @@ const Posts = () => (
     />
     <Layout title="All Posts ✏">
       <Main py="3rem">
-        <Box>
+        <Box p={5}>
           <Heading>Random</Heading>
           {showcaseRandomPosts}
         </Box>
-        <Box>
+        <Box p={5}>
           <Heading>Achievements</Heading>
           {showcaseAchievements}
         </Box>
-        <Box>
+        <Box p={5}>
           <Heading>Projects</Heading>
           {showcaseProjects}
         </Box>
