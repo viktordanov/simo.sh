@@ -21,6 +21,7 @@ My personal website
 - [ ] Alt tags on image links
 - [ ] Fix project page side padding bug
 - [ ] Hide navbar when scrolling on mobile devices
+- [ ] Optional Image in the Post component
 
 ## Shoutouts / credits
 
