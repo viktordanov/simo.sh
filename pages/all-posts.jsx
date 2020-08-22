@@ -9,6 +9,9 @@ import { frontMatter as randomPosts } from "./random/**/*.mdx"
 
 const generatePosts = (baseDir, arr) =>
   arr
+    .filter((v) => {
+      return !!v.slug
+    })
     .map((v) => {
       if (v.order > 0) {
         return v
