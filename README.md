@@ -22,6 +22,7 @@ My personal website
 - [ ] Fix project page side padding bug
 - [ ] Hide navbar when scrolling on mobile devices
 - [ ] Optional Image in the Post component
+- [ ] Remove slugs from posts and derive them from the `__resorcePath` frontmatter field
 
 ## Shoutouts / credits
 
