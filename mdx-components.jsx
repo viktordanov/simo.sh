@@ -44,12 +44,19 @@ const CustomLink = (props) => {
   if (isInternalLink) {
     return (
       <NextLink href={href} passHref>
-        <Link color={color[colorMode]} {...props} />
+        <Link color={color[colorMode]} {...props} overflowWrap="break-word" />
       </NextLink>
     )
   }
 
-  return <Link color={color[colorMode]} isExternal {...props} />
+  return (
+    <Link
+      color={color[colorMode]}
+      isExternal
+      {...props}
+      overflowWrap="break-word"
+    />
+  )
 }
 
 const MDXComponents = {
