@@ -12,7 +12,12 @@ const Layout = (frontMatter) => {
           tags={frontMatter.tags}
         />
         <Flex w="100%" justifyContent="center">
-          <Heading fontSize="3.6rem" mb="1rem" textAlign="center" w="50%">
+          <Heading
+            fontSize={["2rem", "3rem", "3.6rem"]}
+            mb="1rem"
+            textAlign="center"
+            w="50%"
+          >
             {frontMatter.title}
           </Heading>
         </Flex>
