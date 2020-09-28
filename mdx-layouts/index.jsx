@@ -11,9 +11,11 @@ const Layout = (frontMatter) => {
           img={frontMatter.image || "og.png"}
           tags={frontMatter.tags}
         />
-        <Heading fontSize="3.6rem" mb="1rem" textAlign="center">
-          {frontMatter.title}
-        </Heading>
+        <Flex w="100%" justifyContent="center">
+          <Heading fontSize="3.6rem" mb="1rem" textAlign="center" w="50%">
+            {frontMatter.title}
+          </Heading>
+        </Flex>
         <Flex wrap="wrap" justifyContent="center">
           {frontMatter.tags?.map((t) => (
             <Badge
