@@ -19,7 +19,7 @@ My personal website
 - [ ] Bump chakra-ui to 1.0 when it's released
 - [ ] Image optimization with next.js' (soon to be) built in feature for image optimization
 - [ ] Alt tags on image links
-- [ ] Fix project page side padding bug
+- [x] Fix project page side padding bug
 - [ ] Hide navbar when scrolling on mobile devices
 - [ ] Optional Image in the Post component
 - [ ] Remove slugs from posts and derive them from the `__resorcePath` frontmatter field
