@@ -38,7 +38,11 @@ export default () => (
     <Layout title="Achievements 🏆">
       <Main py="3rem" px="2rem">
         <Masonry
-          breakpointCols={2}
+          breakpointCols={{
+            default: 2,
+            1400: 2,
+            600: 1,
+          }}
           className="masonry-grid"
           columnClassName="masonry-column"
           columnAttrs={{ style: { paddingLeft: "2rem" } }}
