@@ -39,7 +39,7 @@ export default () => (
       <Global
         styles={css`
           .masonry-column {
-            padding-left: 2rem; 
+            padding-left: 2rem; // TODO: Figure out why this isn't applied and remove the temporary margin-left below
           }
           .masonry-column > div {
             margin-bottom: 2rem;
@@ -52,7 +52,7 @@ export default () => (
           breakpointCols={2}
           className="masonry-grid"
           columnClassName="masonry-column"
-          style={{ display: "flex", marginLeft: "-2rem", width: "auto" }}
+          style={{ display: "flex", marginLeft: "-2rem", width: "auto" }} // TODO: Consider a better way to apply those styles
         >
           {showcaseAchievements}
         </Masonry>
