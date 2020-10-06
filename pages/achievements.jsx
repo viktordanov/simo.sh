@@ -39,11 +39,11 @@ export default () => (
       <Global
         styles={css`
           .masonry-column {
-            padding-left: 30px;
+            padding-left: 2rem; 
           }
           .masonry-column > div {
-            margin-bottom: 30px;
-            margin-left: 30px;
+            margin-bottom: 2rem;
+            margin-left: 2rem;
           }
         `}
       />
@@ -52,7 +52,7 @@ export default () => (
           breakpointCols={2}
           className="masonry-grid"
           columnClassName="masonry-column"
-          style={{ display: "flex", marginLeft: "-30px", width: "auto" }}
+          style={{ display: "flex", marginLeft: "-2rem", width: "auto" }}
         >
           {showcaseAchievements}
         </Masonry>
