@@ -1,4 +1,6 @@
-import { Box, SimpleGrid } from "@chakra-ui/core"
+import { Box, css } from "@chakra-ui/core"
+import { Global } from "@emotion/core"
+import Masonry from "react-masonry-css"
 import { Achievement } from "../components/Achievement"
 import { Main } from "../components/Main"
 import { SEO } from "../components/SEO"
@@ -34,10 +36,26 @@ export default () => (
       cannonical="https://simo.sh/achievements"
     />
     <Layout title="Achievements 🏆">
+      <Global
+        styles={css`
+          .masonry-column {
+            padding-left: 2rem; // TODO: Figure out why this isn't applied and remove the temporary margin-left below
+          }
+          .masonry-column > div {
+            margin-bottom: 2rem;
+            margin-left: 2rem;
+          }
+        `}
+      />
       <Main py="3rem" px="2rem">
-        <SimpleGrid minChildWidth="15rem" spacing="40px">
+        <Masonry
+          breakpointCols={2}
+          className="masonry-grid"
+          columnClassName="masonry-column"
+          style={{ display: "flex", marginLeft: "-2rem", width: "auto" }} // TODO: Consider a better way to apply those styles
+        >
           {showcaseAchievements}
-        </SimpleGrid>
+        </Masonry>
       </Main>
     </Layout>
   </>
