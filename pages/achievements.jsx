@@ -23,7 +23,7 @@ const showcaseAchievements = achievements
     return b.order - a.order
   })
   .map((a) => (
-    <Box key={a.title}>
+    <Box key={a.title} marginBottom="2rem">
       <Achievement {...a} />
     </Box>
   ))
@@ -36,23 +36,13 @@ export default () => (
       cannonical="https://simo.sh/achievements"
     />
     <Layout title="Achievements 🏆">
-      <Global
-        styles={css`
-          .masonry-column {
-            padding-left: 2rem; // TODO: Figure out why this isn't applied and remove the temporary margin-left below
-          }
-          .masonry-column > div {
-            margin-bottom: 2rem;
-            margin-left: 2rem;
-          }
-        `}
-      />
       <Main py="3rem" px="2rem">
         <Masonry
           breakpointCols={2}
           className="masonry-grid"
           columnClassName="masonry-column"
-          style={{ display: "flex", marginLeft: "-2rem", width: "auto" }} // TODO: Consider a better way to apply those styles
+          columnAttrs={{ style: { paddingLeft: "2rem" } }}
+          style={{ display: "flex", marginLeft: "-2rem", width: "auto" }}
         >
           {showcaseAchievements}
         </Masonry>
