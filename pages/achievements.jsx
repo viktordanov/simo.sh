@@ -1,4 +1,6 @@
-import { Box, SimpleGrid } from "@chakra-ui/core"
+import { Box, css } from "@chakra-ui/core"
+import { Global } from "@emotion/core"
+import Masonry from "react-masonry-css"
 import { Achievement } from "../components/Achievement"
 import { Main } from "../components/Main"
 import { SEO } from "../components/SEO"
@@ -34,10 +36,26 @@ export default () => (
       cannonical="https://simo.sh/achievements"
     />
     <Layout title="Achievements 🏆">
+      <Global
+        styles={css`
+          .masonry-column {
+            padding-left: 30px;
+          }
+          .masonry-column > div {
+            margin-bottom: 30px;
+            margin-left: 30px;
+          }
+        `}
+      />
       <Main py="3rem" px="2rem">
-        <SimpleGrid minChildWidth="15rem" spacing="40px">
+        <Masonry
+          breakpointCols={2}
+          className="masonry-grid"
+          columnClassName="masonry-column"
+          style={{ display: "flex", marginLeft: "-30px", width: "auto" }}
+        >
           {showcaseAchievements}
-        </SimpleGrid>
+        </Masonry>
       </Main>
     </Layout>
   </>
