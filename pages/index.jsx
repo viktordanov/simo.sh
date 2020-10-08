@@ -1,6 +1,7 @@
 import { Box, Button, Flex, SimpleGrid } from "@chakra-ui/core"
 import NextLink from "next/link"
 import React from "react"
+import Masonry from "react-masonry-css"
 import { Achievement } from "../components/Achievement"
 import { Card } from "../components/Card"
 import { Hero } from "../components/Hero"
@@ -42,7 +43,7 @@ const showcaseProjects = showcaseArray(projects).map((p) => (
 ))
 
 const showcaseAchievements = showcaseArray(achievements).map((a) => (
-  <Box key={a.title}>
+  <Box key={a.title} marginBottom="2rem">
     <Achievement {...a} />
   </Box>
 ))
@@ -98,9 +99,24 @@ const Achievements = () => (
     title="Achievements 🏆"
     paragraph="Some of my achievements are listed here! Click on one to read about it!"
   >
-    <SimpleGrid minChildWidth="15rem" spacing={5} my={5}>
+    <Masonry
+      breakpointCols={{
+        default: 2,
+        1400: 2,
+        600: 1,
+      }}
+      className="masonry-grid"
+      columnClassName="masonry-column"
+      columnAttrs={{ style: { paddingLeft: "2rem" } }}
+      style={{
+        display: "flex",
+        marginLeft: "-2rem",
+        padding: "2rem 0",
+        width: "auto",
+      }}
+    >
       {showcaseAchievements}
-    </SimpleGrid>
+    </Masonry>
     <Flex flexBasis="100%" justifyContent="center">
       <NextLink href="/achievements">
         <Button size="lg" variant="outline">

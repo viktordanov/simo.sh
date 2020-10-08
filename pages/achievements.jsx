@@ -1,5 +1,4 @@
-import { Box, css } from "@chakra-ui/core"
-import { Global } from "@emotion/core"
+import { Box } from "@chakra-ui/core"
 import Masonry from "react-masonry-css"
 import { Achievement } from "../components/Achievement"
 import { Main } from "../components/Main"
